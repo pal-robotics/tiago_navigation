@@ -1,0 +1,9 @@
+<launch>
+
+  <!--- Run AMCL localiztion --> 
+  <include file="$(find reem_2dnav)/launch/amcl_diff.launch">
+    <arg name="topic" value="/scan_filtered" />
+  </include> 
+
+</launch>
+

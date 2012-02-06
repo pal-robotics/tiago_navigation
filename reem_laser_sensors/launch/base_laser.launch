@@ -1,0 +1,9 @@
+<launch>
+  <arg name="sick_ip" />	
+  <!-- SICK LMS100 node -->
+  <node pkg="LMS1xx" type="LMS100" name="LMS100_00" respawn="true" output="log" >
+    <param name="frame_id" value="/base_laser_link"/>
+    <param name="host" value="$(arg sick_ip)"/>
+    <param name="topic" value="/LMS1xx/LAS_00"/> 
+  </node>
+</launch>

@@ -1,0 +1,29 @@
+<!-- 
+
+This launch file shows how to start a hokuyo node. 
+
+You may have to change the port parameter if your laser is not at
+/dev/ttyACM0.
+
+You can use rostopic to see the data:
+rostopic echo /scan
+
+-->
+
+<launch>
+  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" respawn="false">
+  
+    <!-- Starts up faster, but timestamps will be inaccurate. --> 
+    <param name="calibrate_time" type="bool" value="true"/> 
+    
+    <!-- Set the port to connect to here -->
+    <param name="port" type="string" value="/dev/ttyACM0"/> 
+
+    <param name="frame_id" type="string" value="/base_torso_laser_link"/>
+
+    <param name="intensity" type="bool" value="false"/>
+
+    <remap from="/scan" to="/hokuyo/LAS_01"/>
+  </node>
+    
+</launch>
