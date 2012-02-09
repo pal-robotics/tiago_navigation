@@ -1,18 +1,14 @@
 <launch>
-
-  <!---Run Throttle for base laser -->
-  <include file="$(find reem_2dnav)/launch/throttle.launch">
-    <!-- all vars required must be set -->
-    <arg name="node_name" value="base_laser_throttle" />
-    <arg name="topic" value="/scan_filtered" />
-    <arg name="frequency" value="10.0" />
-    <arg name="out_topic" value="base_scan_throttle" />
-  </include> 
-
-  <!-- Run the move_base --> 
-  <include file="$(find reem_2dnav)/launch/move_base.launch"> 
-    <arg name="odom_topic" value="/base_odometry/odom" />
-    <arg name="cmd_topic" value="/cmd_vel" />
-  </include>
+  <arg name="odom_topic" />
+  <arg name="cmd_topic" />
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+     <remap from="odom" to="$(arg odom_topic)" />
+     <remap from="cmd_vel" to="$(arg cmd_topic)" />    
+     <rosparam file="$(find reem_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+     <rosparam file="$(find reem_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+     <rosparam file="$(find reem_2dnav)/config/local_costmap_params.yaml" command="load" />
+     <rosparam file="$(find reem_2dnav)/config/global_costmap_params.yaml" command="load" />
+     <rosparam file="$(find reem_2dnav)/config/pal_local_planner_params.yaml" command="load" /> 
+     <rosparam file="$(find reem_2dnav)/config/move_base_params.yaml" command="load" />
+  </node>
 </launch>
-

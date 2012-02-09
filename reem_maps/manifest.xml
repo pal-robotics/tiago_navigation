@@ -1,0 +1,15 @@
+<package>
+  <description brief="reem_maps">
+
+     reem_maps
+
+  </description>
+  <author>Luca Marchionni</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/reem_maps</url>
+  <depend package="map_server"/>
+
+</package>
+
+
