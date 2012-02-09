@@ -5,7 +5,7 @@ raytrace_range: 2.5
 inflation_radius: 0.55 
 
 #observation_sources: base_scan_shadow_filtered base_scan 
-observation_sources:  base_scan  cloud_laser_up cloud_laser_up_holes #virtualObstacles
+observation_sources:  base_scan  #cloud_laser_up cloud_laser_up_holes #virtualObstacles
 
 #base_scan_shadow_filtered: {sensor_frame: base_laser_link, data_type: PointCloud, expected_update_rate: 0.2,
 #  observation_persistence: 0.0, marking: true, clearing: false, min_obstacle_height: -0.08, max_obstalce_height: 2.0}

@@ -1,21 +1,21 @@
 <launch>
 
+  <!-- Run laser filters -->
+   <include file="$(find reem_laser_sensors)/launch/laser.launch">
+  </include>
+
+  <!-- Run map server -->
+   <include file="$(find reem_maps)/launch/map.launch">
+  </include>
+
   <!--- Run AMCL localiztion --> 
   <include file="$(find reem_2dnav)/launch/amcl_diff.launch">
     <arg name="topic" value="/scan_filtered" />
   </include> 
 
-  <!---Run Throttle for base laser -->
-  <include file="$(find reem_2dnav)/launch/throttle.launch">
-    <!-- all vars required must be set -->
-    <arg name="node_name" value="base_laser_throttle" />
-    <arg name="topic" value="/scan_filtered" />
-    <arg name="frequency" value="10.0" />
-    <arg name="out_topic" value="base_scan_throttle" />
-  </include> 
 
   <!-- Run the move_base --> 
-  <include file="$(find reem_2dnav)/launch/move_base.launch"> 
+  <include file="$(find reem_2dnav)/launch/planning_and_control.launch"> 
     <arg name="odom_topic" value="/base_odometry/odom" />
     <arg name="cmd_topic" value="/cmd_vel" />
   </include>
