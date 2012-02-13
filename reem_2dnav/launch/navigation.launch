@@ -1,7 +1,8 @@
 <launch>
-
+  <arg name="laser_ip"/>
   <!-- Run laser filters -->
    <include file="$(find reem_laser_sensors)/launch/laser.launch">
+   <arg name="laser_ip" value="$(arg laser_ip)"/>
   </include>
 
   <!-- Run map server -->
@@ -16,8 +17,6 @@
 
   <!-- Run the move_base --> 
   <include file="$(find reem_2dnav)/launch/planning_and_control.launch"> 
-    <arg name="odom_topic" value="/base_odometry/odom" />
-    <arg name="cmd_topic" value="/cmd_vel" />
   </include>
 </launch>
 
