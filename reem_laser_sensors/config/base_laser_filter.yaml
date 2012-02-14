@@ -1,6 +1,6 @@
 scan_filter_chain:
 - name: fov
-  type: LaserScanAngularBoundsFilter
+  type: laser_filters/LaserScanAngularBoundsFilter
   params:
     lower_angle: -1.39625
     upper_angle: 1.39625
