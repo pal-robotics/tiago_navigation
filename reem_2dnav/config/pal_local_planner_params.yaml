@@ -1,18 +1,18 @@
 PalLocalPlanner:
   transform_tolerance: 0.2
 
-  max_vel_x: 1.0 
-  max_vel_th: 0.7 
+  max_vel_x: 0.9 
+  max_vel_th: 0.6 
   
-  acc_lim_th: 1.8 
-  acc_lim_x: 0.45 
+  acc_lim_th: 2.4 
+  acc_lim_x: 0.4 
 
   xy_goal_tolerance: 0.15
-  yaw_goal_tolerance: 0.20
-  oscillation_reset_dist: 0.05
+  yaw_goal_tolerance: 0.15
+  oscillation_reset_dist: 0.1
 
   travel_speed_sfl: 0.9
-  point_b_sfl: 0.25
+  point_b_sfl: 0.26
   decay: 0.85
   max_dist_plan_ahead: 20.0
   robot_module: 1.5

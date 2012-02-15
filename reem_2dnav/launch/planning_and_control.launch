@@ -1,8 +1,7 @@
 <launch>
 
   <!---Run Throttle for base laser -->
-  <include file="$(find reem_2dnav)/launch/throttle.launch">
-    <!-- all vars required must be set -->
+   <include file="$(find reem_2dnav)/launch/throttle.launch">
     <arg name="node_name" value="base_laser_throttle" />
     <arg name="topic" value="/scan_filtered" />
     <arg name="frequency" value="10.0" />

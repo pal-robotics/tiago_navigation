@@ -1,8 +1,8 @@
-footprint: [[-0.55, -0.30], [-0.55, 0.30], [0.20, 0.30], [0.20, -0.30]]
+footprint: [[-0.5, -0.28], [-0.5, 0.28], [0.19, 0.30], [0.19, -0.30]]
 
 controller_frequency: 20.0
 controller_patience: 15.0
-clearing_radius: 0.65
+clearing_radius: 0.40
 footprint_padding: 0.015
 oscillation_timeout: 20.0
 base_local_planner: pal_local_planner/PalLocalPlanner
