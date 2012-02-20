@@ -1,0 +1,7 @@
+<map>
+<map_point x = "4.136"  y = "-18.753"  theta = "0"  radius = "1.4142135623730951"  type = "5"  id = "kitchen"  description = "" ></map_point>
+<map_point x = "9.714"  y = "-6.411"  theta = "0"  radius = "1.4142135623730951"  type = "5"  id = "charger"  description = "" ></map_point>
+<map_point x = "0.177"  y = "-7.928"  theta = "0"  radius = "1.4142135623730951"  type = "5"  id = "add1"  description = "" ></map_point>
+<map_point x = "1.788"  y = "-10.67"  theta = "0"  radius = "1.4142135623730951"  type = "5"  id = "add2"  description = "" ></map_point>
+<map_point x = "4.43"  y = "-7.37"  theta = "0"  radius = "1.4142135623730951"  type = "5"  id = "add3"  description = "" ></map_point>
+</map>
