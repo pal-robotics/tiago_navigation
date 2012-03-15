@@ -1,29 +1,17 @@
 transform_tolerance: 0.2
 obstacle_range: 2.0
 raytrace_range: 2.5
-#robot_radius: ir_of_robot
-inflation_radius: 0.55 
 
-#observation_sources: base_scan_shadow_filtered base_scan 
-observation_sources:  base_scan  sonar_cloud sonar_max_range_cloud #cloud_laser_up cloud_laser_up_holes #virtualObstacles
-
-#base_scan_shadow_filtered: {sensor_frame: base_laser_link, data_type: PointCloud, expected_update_rate: 0.2,
-#  observation_persistence: 0.0, marking: true, clearing: false, min_obstacle_height: -0.08, max_obstalce_height: 2.0}
+observation_sources:  base_scan #dense_scan sonar_cloud sonar_max_range_cloud 
 
 base_scan: {sensor_frame: base_laser_link, data_type: LaserScan, topic: /base_scan_throttle , expected_update_rate: 0.3,
   observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: -0.08, max_obstalce_height: 2.0}
 
-sonar_cloud: {sensor_frame: base_link, data_type: PointCloud, topic: /sonar_cloud, expected_update_rate: 0.15,
-  observation_persistence: 1.0, marking: true, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 2.0}
+dense_scan: {sensor_frame: base_laser_link, data_type: PointCloud, topic: /dense_laser_cloud , expected_update_rate: 0.3,
+  observation_persistence: 0.0, marking: false, clearing: true, min_obstacle_height: -0.08, max_obstalce_height: 2.0}
 
-sonar_max_range_cloud: {sensor_frame: base_link, data_type: PointCloud, topic: /sonar_max_range_cloud, expected_update_rate: 0.15,
-  observation_persistence: 0.3, marking: false, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 2.0}
+sonar_cloud: {sensor_frame: base_link, data_type: PointCloud, topic: /sonar_cloud, expected_update_rate: 0.3,
+  observation_persistence: 0.4, marking: true, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 2.0}
 
-cloud_laser_up: {sensor_frame: base_link, data_type: PointCloud, topic: /hokuyo/cloud, expected_update_rate: 0.2,
-  observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: 0.05, max_obstalce_height: 0.70}
-
-cloud_laser_up_holes: {sensor_frame: base_link, data_type: PointCloud, topic: /hokuyo/cloud, expected_update_rate: 0.2,
-  observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: -1.0, max_obstalce_height: -0.05}
-
-virtualObstacles: {sensor_frame: map, data_type: PointCloud, topic: /virtual_obstacles , expected_update_rate: 2.0,
-  observation_persistence: 2.0, marking: true, clearing: false, min_obstacle_height: 0.0, max_obstalce_height: 2.0}
+sonar_max_range_cloud: {sensor_frame: base_link, data_type: PointCloud, topic: /sonar_max_range_cloud, expected_update_rate: 0.3,
+  observation_persistence: 0.4, marking: false, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 2.0}
