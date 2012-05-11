@@ -1,6 +1,8 @@
-poi_1: [submap_0, kitchen, -18.062,  6.894, -1.521]
-poi_2: [submap_0, charger, -11.062, -1.050,  2.823]
-poi_3: [submap_0, software, -5.432, -1.519, -2.777]
-poi_4: [submap_0, business, -6.689, 10.563,  2.725]
-poi_5: [submap_0, administration, -9.746, 14.425, 2.70]
-poi_6: [submap_0, new_office, -4.596, 28.905, -0.349]
+poi:
+  submap_0:
+    poi_1: [submap_0, kitchen, -18.062,  6.894, -1.521]
+    poi_2: [submap_0, charger, -11.062, -1.050,  2.823]
+    poi_3: [submap_0, software, -5.432, -1.519, -2.777]
+    poi_4: [submap_0, business, -6.689, 10.563,  2.725]
+    poi_5: [submap_0, administration, -9.746, 14.425, 2.70]
+    poi_6: [submap_0, new_office, -4.596, 28.905, -0.349]

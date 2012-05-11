@@ -1,5 +1,5 @@
 <launch>
 <!-- Run the map server --> 
- <rosparam file="$(find reem_maps)/config/poi.yaml" command="load" ns="poi" />
+ <rosparam file="$(find reem_maps)/config/poi.yaml" command="load" ns="mmap" />
  <node name="map_server" pkg="map_server" type="map_server" args="$(find reem_maps)/config/subMap1.yaml"/> 
 </launch>
