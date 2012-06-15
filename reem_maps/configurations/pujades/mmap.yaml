@@ -1,0 +1,6 @@
+poi:
+  submap_0:
+    poi_1: [submap_0, kitchen, 9.67, -3.91, -3.1415927410125732]
+    poi_2: [submap_0, charger, -0.11, 0.38, 0.0]
+    poi_3: [submap_0, software, -2.81, -1.54, 0.0]
+    poi_4: [submap_0, business, -0.47, -9.30, 0.0]
