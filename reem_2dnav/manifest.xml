@@ -4,10 +4,9 @@
      reem_2dnav
 
   </description>
-  <author>Luca Marchionni</author>
+  <author>Jose Capriles</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/reem_2dnav</url>
 
    <depend package="pal_local_planner"/>
 

@@ -4,10 +4,9 @@
      reem_maps
 
   </description>
-  <author>Luca Marchionni</author>
+  <author>Jose Capriles</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/reem_maps</url>
   <depend package="map_server"/>
 
 </package>

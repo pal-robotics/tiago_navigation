@@ -7,4 +7,5 @@ footprint_padding: 0.015
 oscillation_timeout: 20.0
 base_local_planner: pal_local_planner/PalLocalPlanner
 planner_frequency: 1.0
+recovery_behavior_enabled: false
 shutdown_costmaps: true

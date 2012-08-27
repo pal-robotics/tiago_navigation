@@ -1,10 +1,17 @@
 <launch>
-<!-- Run the map server --> 
  <rosparam command="delete" ns="mmap"/>
  <rosparam file="$(find reem_maps)/config/mmap.yaml" command="load" ns="mmap" />
  <rosparam param="map_package_in_use">reem_maps</rosparam>
- <rosparam param="nice_map_in_use">config/map.bmp</rosparam>
+ <rosparam param="nice_map_in_use">config/map.pgm</rosparam>
  <rosparam param="map_transformation_in_use">config/transformation.xml</rosparam>
 
-<node name="map_server" pkg="map_server" type="map_server" args="$(find reem_maps)/config/map.yaml"/> 
+<!-- Run the map server -->
+<node name="map_server" pkg="map_server" type="map_server" args="$(find reem_maps)/config/map.yaml"/>
+
+<!-- Publish the name of the map in use (waiting for mmap system, then this would be removed) -->
+<node pkg="rostopic" type="rostopic" name="rostopic_pub" args="pub  map_in_use std_msgs/String submap_0"/> 
+
+<!-- Run the vo map server --> 
+<node name="$(anon pal_vo_server)" pkg="pal_vo_server" type="vo_server"/>
+ 
 </launch>
