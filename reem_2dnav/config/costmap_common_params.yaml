@@ -1,22 +1,14 @@
 transform_tolerance: 0.2
-obstacle_range: 3.0
-raytrace_range: 2.5
-#robot_radius: ir_of_robot
-inflation_radius: 0.55 
+obstacle_range: 1.9
+raytrace_range: 2.1
+robot_radius: 0.35 
+inflation_radius: 0.45 
 
-observation_sources:  base_scan vos # inclined_cloud inclined_max_range holes_cloud #sonar_cloud sonar_max_range_cloud #cloud_laser_up cloud_laser_up_holes #virtualObstacles
+observation_sources:  base_scan vos 
 
-base_scan: {sensor_frame: base_laser_link, data_type: LaserScan, topic: /base_scan_throttle , expected_update_rate: 0.3,
-  observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 0.8}
+base_scan: {sensor_frame: base_laser_link, data_type: LaserScan, topic: /scan_filtered , expected_update_rate: 0.3,
+  observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: -0.1, max_obstalce_height: 0.4}
 
 vos: {sensor_frame: map, data_type: PointCloud, topic: /vo_cloud , expected_update_rate: 12.0, 
-  observation_persistence: 0.0, marking: true, clearing: false, obstacle_range: 100.0, min_obstacle_height: 0.00, max_obstalce_height: 2.0}
+  observation_persistence: 0.0, marking: true, clearing: false, obstacle_range: 50.0, min_obstacle_height: 0.00, max_obstalce_height: 2.0}
 
-inclined_cloud: {sensor_frame: base_torso_laser_link, data_type: PointCloud, topic: /upper_laser_cloud , expected_update_rate: 0.3,
-  observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 1.80}
-
-inclined_max_range: {sensor_frame: base_torso_laser_link, data_type: PointCloud, topic: /floor_cloud , expected_update_rate: 0.3,
-  observation_persistence: 0.0, marking: false, clearing: true, min_obstacle_height: 0.0, max_obstalce_height: 1.80}
-
-holes_cloud: {sensor_frame: base_torso_laser_link, data_type: PointCloud, topic: /holes_cloud , expected_update_rate: 0.3,
-  observation_persistence: 20.0, marking: true, clearing: false, min_obstacle_height: 0.0, max_obstalce_height: 2.0}

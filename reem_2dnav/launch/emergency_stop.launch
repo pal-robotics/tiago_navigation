@@ -1,0 +1,7 @@
+<launch>
+<!-- Run the emergency stop --> 
+  <node name="emergency_stop" pkg="pal_emergency_stop" type="emergency_stop" >
+    <rosparam file="$(find reem_2dnav)/config/footprint.yaml" command="load" />
+    <rosparam file="$(find reem_2dnav)/config/acceleration_limits.yaml" command="load" />
+  </node>
+</launch>

@@ -14,7 +14,10 @@
     <arg name="topic" value="/scan_filtered" />
   </include> 
 
-
+  <!-- Run emergency stop -->
+  <include file="$(find reem_2dnav)/launch/emergency_stop.launch"> 
+  </include>
+ 
   <!-- Run the move_base --> 
   <include file="$(find reem_2dnav)/launch/planning_and_control.launch"> 
   </include>

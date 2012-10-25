@@ -1,7 +1,25 @@
 <launch>
-  <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter">
-    <rosparam command="load" file="$(find reem_laser_sensors)/config/base_laser_filter.yaml" />
+  <!--node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter">
+    <rosparam command="load" file="$(find mb3_laser_sensors)/config/base_laser_scan_filter.yaml" />
     <remap from="scan" to="/LMS1xx/LAS_00" />
+  </node-->
+  
+  <!--node pkg="pal_scan_filter" type="pal_scan_filter" name="pal_scan_filter">
+    <param name="lower_angle" value="-1.39625" />
+    <param name="upper_angle" value="1.39625"  />
+  </node-->
+
+  <node pkg="pal_cloud_filter" type="pal_cloud_filter" name="pal_sick_cloud_filter">
+    <param name="topic_in" value="/scan_filtered" />
+    <param name="topic_out" value="/sick_cloud"  />
+    <param name="target_frame" value="/base_link"  />
   </node>
+
+  <!--node pkg="laser_filters" type="scan_to_cloud_filter_chain" name="base_laser_cloud_filter">
+    <rosparam command="load" file="$(find reem_laser_sensors)/config/base_laser_cloud_filter.yaml" />
+    <remap from="scan" to="scan_filtered" />
+    <remap from="cloud_filtered" to="sick_cloud" />
+    <param name="use_hack" value="false" />
+  </node-->
 </launch>
 

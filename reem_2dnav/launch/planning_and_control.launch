@@ -1,17 +1,10 @@
 <launch>
 
-  <!---Run Throttle for base laser -->
-   <include file="$(find reem_2dnav)/launch/throttle.launch">
-    <arg name="node_name" value="base_laser_throttle" />
-    <arg name="topic" value="/scan_filtered" />
-    <arg name="frequency" value="10.0" />
-    <arg name="out_topic" value="base_scan_throttle" />
-  </include> 
-
   <!-- Run the move_base --> 
   <include file="$(find reem_2dnav)/launch/move_base.launch"> 
     <arg name="odom_topic" value="/base_odometry/odom" />
     <arg name="cmd_topic" value="/cmd_vel" />
   </include>
+
 </launch>
 
