@@ -13,8 +13,12 @@
  <include file="$(find reem_laser_sensors)/launch/upper_laser.launch">
  </include>
 
-<!-- torso laser filter-->
+<!-- torso laser filter pointCloud2-->
  <include file="$(find reem_laser_sensors)/launch/upper_laser_filter.launch">
  </include>
+
+<!-- torso laser self-filter-->
+ <!--include file="$(find reem_laser_sensors)/launch/upper_self_laser_filter.launch">
+ </include-->
 
 </launch>
