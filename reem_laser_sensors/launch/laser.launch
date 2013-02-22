@@ -18,7 +18,7 @@
  </include>
 
 <!-- torso laser self-filter-->
- <!--include file="$(find reem_laser_sensors)/launch/upper_self_laser_filter.launch">
- </include-->
+ <include file="$(find reem_laser_sensors)/launch/upper_self_laser_filter.launch">
+ </include>
 
 </launch>

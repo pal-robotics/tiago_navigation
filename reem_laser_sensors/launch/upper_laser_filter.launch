@@ -6,9 +6,9 @@
       <rosparam command="load" file="$(find reem_laser_sensors)/config/upper_laser_filter.yaml" />
 </node-->
 
-  <node pkg="pal_cloud_filter" type="pal_cloud_filter" name="pal_hokuyo_cloud_filter">
+  <node pkg="pal_cloud_filter" type="pal_cloud_filter_node" name="pal_hokuyo_cloud_filter">
     <param name="topic_in" value="/hokuyo/LAS_01" />
-    <param name="topic_out" value="/hokuyo_cloud"  />
+    <param name="topic_out" value="/hokuyo_cloud_no_self_filter"  />
     <param name="target_frame" value="/base_link"  />
   </node>
   
