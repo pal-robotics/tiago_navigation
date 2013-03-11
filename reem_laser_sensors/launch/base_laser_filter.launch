@@ -9,7 +9,7 @@
     <param name="upper_angle" value="1.39625"  />
   </node-->
 
-  <node pkg="pal_cloud_filter" type="pal_cloud_filter" name="pal_sick_cloud_filter">
+  <node pkg="pal_cloud_filter" type="pal_cloud_filter_node" name="pal_sick_cloud_filter">
     <param name="topic_in" value="/scan_filtered" />
     <param name="topic_out" value="/sick_cloud"  />
     <param name="target_frame" value="/base_link"  />
