@@ -19,3 +19,4 @@ PalLocalPlanner:
   robotLength: 0.75
   robotFrontLength: 0.18
   safetyDist: 2.2
+  use_crowd: true

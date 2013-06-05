@@ -2,7 +2,7 @@
  <rosparam command="delete" ns="mmap"/>
  <rosparam file="$(find reem_maps)/config/mmap.yaml" command="load" ns="mmap" />
  <rosparam param="map_package_in_use">reem_maps</rosparam>
- <rosparam param="nice_map_in_use">config/map.pgm</rosparam>
+ <rosparam param="nice_map_in_use">config/map.bmp</rosparam>
  <rosparam param="map_transformation_in_use">config/transformation.xml</rosparam>
 
 <!-- Run the map server -->
