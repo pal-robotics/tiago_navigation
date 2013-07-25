@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <launch>
   <arg name="odom_topic" />
   <arg name="cmd_topic" />
@@ -8,9 +10,11 @@
      <rosparam file="$(find reem_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
      <rosparam file="$(find reem_2dnav)/config/local_costmap_params.yaml" command="load" />
      <rosparam file="$(find reem_2dnav)/config/global_costmap_params.yaml" command="load" />
-     <rosparam file="$(find reem_2dnav)/config/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>
+     <rosparam file="$(find reem_description)/urdf/base/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>
+     <!--<rosparam file="$(find reem_2dnav)/config/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>-->
      <rosparam file="$(find reem_2dnav)/config/pal_local_planner_params.yaml" command="load" />
-     <rosparam file="$(find reem_2dnav)/config/footprint.yaml" command="load" />
+     <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
+     <!--<rosparam file="$(find reem_2dnav)/config/footprint.yaml" command="load" />-->
      <rosparam file="$(find reem_2dnav)/config/move_base_params.yaml" command="load" />
      <rosparam file="$(find reem_2dnav)/config/recovery_behaviors.yaml" command="load" />
   </node>
