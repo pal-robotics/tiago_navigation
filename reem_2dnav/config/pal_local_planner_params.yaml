@@ -1,11 +1,11 @@
 PalLocalPlanner:
   transform_tolerance: 0.2
 
-  max_vel_x: 0.9 
-  max_vel_th: 0.6 
+  max_vel_x: 0.5
+  max_vel_th: 0.6
 
-  xy_goal_tolerance: 0.2
-  yaw_goal_tolerance: 0.2
+  xy_goal_tolerance: 0.1
+  yaw_goal_tolerance: 0.1
   oscillation_reset_dist: 0.1
 
   travel_speed_sfl: 0.9
