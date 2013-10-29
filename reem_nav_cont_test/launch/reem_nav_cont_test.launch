@@ -1,0 +1,4 @@
+<launch>
+  <!-- navActClientReportingTest continuous test -->
+  <node pkg="reem_nav_cont_test" type="navActClientReportingTest" name="navActClientReportingTest"/>
+</launch>

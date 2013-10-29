@@ -2,7 +2,7 @@
 
   <!-- Run the move_base --> 
   <include file="$(find reem_2dnav)/launch/move_base.launch"> 
-    <arg name="odom_topic" value="/base_odometry/odom" />
+    <arg name="odom_topic" value="/odom" />
     <arg name="cmd_topic" value="/cmd_vel" />
   </include>
 

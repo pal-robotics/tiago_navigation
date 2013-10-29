@@ -16,10 +16,9 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #set the default path for built libraries to the "lib" directory
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-rosbuild_add_executable(navigationReportingTest
-                        src/LocalizerReporter.cpp
+rosbuild_add_executable(navActClientReportingTest
                         src/NavActClientReporter.cpp
-                        src/main.cpp)
+                        src/NavActClientReporterTest.cpp)
                     #add_definitions(-DPAL_PROJECT_NAME='"${PROJECT_NAME}"')
 #uncomment if you have defined messages
 #rosbuild_genmsg()

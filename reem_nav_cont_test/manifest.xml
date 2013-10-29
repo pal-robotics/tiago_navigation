@@ -8,8 +8,8 @@
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/reem_nav_cont_test</url>
-  <depend package="pal_core" />
-  <depend package="pal_navigation_client" />
+  <depend package="pal_core"/>
+  <depend package="pal_navigation_client"/>
 
 </package>
 
