@@ -7,11 +7,7 @@
   <author>Luca Marchionni</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-
-   <depend package="pal_local_planner"/>
-   <depend package="pal_emergency_stop"/>
-   <depend package="pal_navigation_sm"/>
-
+  <depend package="pal_local_planner"/>
+  <depend package="pal_emergency_stop"/>
+  <depend package="pal_navigation_sm"/>
 </package>
-
-

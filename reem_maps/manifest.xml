@@ -4,11 +4,8 @@
      reem_maps
 
   </description>
-  <author>Jose Capriles</author>
+  <author>Luca Marchionni</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <depend package="map_server"/>
-
 </package>
-
-

@@ -11,7 +11,4 @@
   <depend package="laser_filters"/>
   <depend package="hokuyo_node"/>
   <depend package="LMS1xx"/>
-
 </package>
-
-
