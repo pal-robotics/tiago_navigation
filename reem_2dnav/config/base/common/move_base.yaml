@@ -4,7 +4,6 @@ clearing_radius: 0.5
 footprint_padding: 0.015
 oscillation_timeout: 10.0
 oscillation_distance: 0.2
-base_local_planner: pal_local_planner/PalLocalPlanner
 planner_frequency: 0.5
 recovery_behavior_enabled: true
 shutdown_costmaps: false

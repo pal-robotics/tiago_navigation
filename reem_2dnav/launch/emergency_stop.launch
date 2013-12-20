@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <launch>
   <!-- Run the emergency stop -->
   <node name="emergency_stop" pkg="pal_emergency_stop" type="emergency_stop"
         launch-prefix="nice --10">
     <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
-    <!--<rosparam file="$(find reem_2dnav)/config/footprint.yaml" command="load"/>-->
     <rosparam file="$(find reem_description)/urdf/base/acceleration_limits.yaml" command="load"/>
-    <!--<rosparam file="$(find reem_2dnav)/config/acceleration_limits.yaml" command="load"/>-->
+
+    <remap from="odom" to="mobile_base_controller/odom"/>
   </node>
 </launch>

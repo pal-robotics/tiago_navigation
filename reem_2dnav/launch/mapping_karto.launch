@@ -1,0 +1,7 @@
+<launch>
+  <arg name="trajectory_file" default=""/>
+
+  <include file="$(find pal_karto)/launch/karto.launch">
+    <arg name="trajectory_file" value="$(arg trajectory_file)"/>
+  </include>
+</launch>

@@ -1,22 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <launch>
-  <arg name="odom_topic" />
-  <arg name="cmd_topic" />
 
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" args="--mathExceptions=0 --onlyAsEmergencyNoGazeboCheck">
-     <remap from="odom" to="$(arg odom_topic)" />
-     <remap from="cmd_vel" to="$(arg cmd_topic)" />    
-     <rosparam file="$(find reem_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
-     <rosparam file="$(find reem_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
-     <rosparam file="$(find reem_2dnav)/config/local_costmap_params.yaml" command="load" />
-     <rosparam file="$(find reem_2dnav)/config/global_costmap_params.yaml" command="load" />
-     <rosparam file="$(find reem_description)/urdf/base/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>
-     <!--<rosparam file="$(find reem_2dnav)/config/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>-->
-     <rosparam file="$(find reem_2dnav)/config/pal_local_planner_params.yaml" command="load" />
-     <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
-     <!--<rosparam file="$(find reem_2dnav)/config/footprint.yaml" command="load" />-->
-     <rosparam file="$(find reem_2dnav)/config/move_base_params.yaml" command="load" />
-     <rosparam file="$(find reem_2dnav)/config/recovery_behaviors.yaml" command="load" />
+  <arg name="local_planner" default="pal"/>
+  <arg name="move_base_output" default="screen"/>
+
+  <arg name="odom_topic" default="no_odom_intentionally"/> <!-- mobile_base_controller/odom -->
+  <arg name="cmd_topic" default="nav_vel"/>
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="$(arg move_base_output)" args="--mathExceptions=0 --onlyAsEmergencyNoGazeboCheck" clear_params="true">
+    <remap from="odom" to="$(arg odom_topic)"/>
+    <remap from="cmd_vel" to="$(arg cmd_topic)"/>
+    <remap from="/bumper_base" to="BUMPERS_ARE_DISABLED_FIXME_FIXME_FIXME"/> <!-- TODO: FIXME -->
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/move_base.yaml"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/recovery_behaviors.yaml"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/costmap_common.yaml" ns="global_costmap"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/costmap_common.yaml" ns="local_costmap"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/global_costmap.yaml"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/local_costmap.yaml"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
+
+    <!-- @todo ns should depend on local_planner! -->
+    <rosparam file="$(find reem_description)/urdf/base/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>
+    <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
   </node>
+
 </launch>

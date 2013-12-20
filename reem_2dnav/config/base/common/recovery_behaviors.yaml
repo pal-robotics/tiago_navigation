@@ -14,4 +14,3 @@ conservative_reset:
 
 aggressive_reset:
   reset_distance: 1.84
-

@@ -1,25 +1,22 @@
 <launch>
-  <arg name="laser_ip"/>
-  <!-- Run laser filters -->
-   <include file="$(find reem_laser_sensors)/launch/laser.launch">
-   <arg name="laser_ip" value="$(arg laser_ip)"/>
+
+  <arg name="planner"       default="base"/>
+  <arg name="local_planner" default="pal"/>  <!-- pal, dwa, trajectory -->
+  <arg name="localization"  default="amcl"/>
+
+  <arg name="map" default="$(find reem_maps)/configurations/simple_office"/>
+
+  <!-- Map -->
+  <include file="$(find reem_maps)/launch/map.launch">
+    <arg name="map" value="$(arg map)"/>
   </include>
 
-  <!-- Run map server -->
-   <include file="$(find reem_maps)/launch/map.launch">
+  <!-- Localization -->
+  <include file="$(find reem_2dnav)/launch/localization_$(arg localization).launch"/>
+
+  <!-- Planning -->
+  <include file="$(find reem_2dnav)/launch/move_$(arg planner).launch">
+    <arg name="local_planner" value="$(arg local_planner)"/>
   </include>
 
-  <!--- Run AMCL localiztion --> 
-  <include file="$(find reem_2dnav)/launch/amcl_diff.launch">
-    <arg name="topic" value="/scan_filtered" />
-  </include> 
-
-  <!-- Run emergency stop -->
-  <include file="$(find reem_2dnav)/launch/emergency_stop.launch"> 
-  </include>
- 
-  <!-- Run the move_base --> 
-  <include file="$(find reem_2dnav)/launch/planning_and_control.launch"> 
-  </include>
 </launch>
-

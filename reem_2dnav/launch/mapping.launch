@@ -1,0 +1,20 @@
+<launch>
+
+  <arg name="mapping" default="karto"/>
+
+  <arg name="planner" default="base"/>
+  <arg name="local_planner" default="pal"/>  <!-- pal, dwa, trajectory -->
+
+  <!-- SLAM -->
+  <include file="$(find reem_2dnav)/launch/mapping_$(arg mapping).launch"/>
+
+  <!-- VO map server -->
+  <node pkg="rostopic" type="rostopic" name="rostopic_pub" args="pub map_in_use std_msgs/String submap_0"/>
+  <include file="$(find pal_vo_server)/launch/vo_server.launch"/>
+
+  <!-- Planning -->
+  <include file="$(find reem_2dnav)/launch/move_$(arg planner).launch">
+    <arg name="local_planner" value="$(arg local_planner)"/>
+  </include>
+
+</launch>
