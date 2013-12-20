@@ -4,18 +4,10 @@
   <node pkg="LMS1xx" type="LMS100" name="LMS100_00" respawn="true" output="log" >
     <param name="frame_id" value="/base_laser_link"/>
     <param name="host" value="$(arg sick_ip)"/>
-    <param name="topic" value="/scan_filtered"/> 
+    <param name="topic" value="scan_filtered"/>
     <param name="range_max" value="20.0"/>
     <param name="start_angle" value="-1.405"/>
     <param name="end_angle" value="1.405"/>
     <param name="frequency" value="12.0"/>
   </node>
-
-   <!---Run Throttle for base laser -->
-<!--  <include file="$(find reem_laser_sensors)/launch/throttle.launch">
-   <arg name="topic" value="/LMS1xx/LAS_00" />
-   <arg name="frequency" value="13.0" />
-   <arg name="out_topic" value="base_scan_throttle" />
-  </include> 
--->
 </launch>

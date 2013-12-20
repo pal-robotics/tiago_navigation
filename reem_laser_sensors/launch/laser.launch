@@ -1,24 +1,15 @@
 <launch>
-<arg name="laser_ip" />
-<!-- base laser-->
- <include file="$(find reem_laser_sensors)/launch/base_laser.launch">
-  <arg name="sick_ip" value="$(arg laser_ip)"/>
- </include>
+  <arg name="laser_ip" />
 
-<!-- base laser filter-->
- <include file="$(find reem_laser_sensors)/launch/base_laser_filter.launch">
- </include>
+  <!-- base laser-->
+  <include file="$(find reem_laser_sensors)/launch/base_laser.launch">
+    <arg name="sick_ip" value="$(arg laser_ip)"/>
+  </include>
 
-<!-- torso laser-->
- <include file="$(find reem_laser_sensors)/launch/upper_laser.launch">
- </include>
+  <!-- torso laser-->
+  <include file="$(find reem_laser_sensors)/launch/upper_laser.launch"/>
 
-<!-- torso laser filter pointCloud2-->
- <include file="$(find reem_laser_sensors)/launch/upper_laser_filter.launch">
- </include>
-
-<!-- torso laser self-filter-->
- <include file="$(find reem_laser_sensors)/launch/upper_self_laser_filter.launch">
- </include>
+  <!-- base and torso laser filters -->
+  <include file="$(find reem_laser_sensors)/launch/laser_filter.launch"/>
 
 </launch>

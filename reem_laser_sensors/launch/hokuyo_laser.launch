@@ -1,10 +1,7 @@
 <launch>
-<!-- torso laser-->
- <include file="$(find reem_laser_sensors)/launch/upper_laser.launch">
- </include>
+  <!-- torso laser-->
+  <include file="$(find reem_laser_sensors)/launch/upper_laser.launch"/>
 
-<!-- torso laser filter-->
- <include file="$(find reem_laser_sensors)/launch/upper_laser_filter.launch">
- </include>
-
+  <!-- torso laser filter-->
+  <include file="$(find reem_laser_sensors)/launch/upper_laser_filter.launch"/>
 </launch>

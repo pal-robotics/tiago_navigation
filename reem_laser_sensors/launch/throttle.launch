@@ -1,7 +1,0 @@
-<launch>
-  <arg name="topic" /> 
-  <arg name="frequency" />
-  <arg name="out_topic" />
-  <node pkg="topic_tools" type="throttle" args="messages $(arg topic) $(arg frequency) $(arg out_topic)" respawn="true" name="base_laser_throttle" output="screen">
-  </node>
-</launch>
