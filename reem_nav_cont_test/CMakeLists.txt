@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(reem_nav_cont_test)
 
+set(PAL_MODULE_NAME 'NAVIGATION')
+set(PAL_LIBRARY_NAME '${PROJECT_NAME}')
+
 find_package(catkin REQUIRED COMPONENTS
   pal_core
   pal_navigation_client
 )
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-
-set(PAL_MODULE_NAME 'NAVIGATION')
-set(PAL_LIBRARY_NAME '${PROJECT_NAME}')
 
 catkin_package(
   INCLUDE_DIRS include
