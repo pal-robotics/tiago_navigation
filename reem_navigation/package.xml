@@ -12,7 +12,7 @@
 
   <run_depend>reem_2dnav</run_depend>
   <run_depend>reem_maps</run_depend>
-  <!--run_depend>reem_laser_sensors</run_depend-->
+  <run_depend>reem_laser_sensors</run_depend>
   <!--run_depend>reem_nav_cont_test</run_depend-->
 
   <export>
