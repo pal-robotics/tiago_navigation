@@ -23,8 +23,6 @@
     <rosparam command="load" file="$(find reem_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
     <rosparam command="load" file="$(find reem_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
 
-    <!-- @todo ns should depend on local_planner! -->
-    <rosparam file="$(find reem_description)/urdf/base/acceleration_limits.yaml" command="load" ns="PalLocalPlanner"/>
     <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
   </node>
 

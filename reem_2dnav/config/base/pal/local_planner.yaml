@@ -1,6 +1,9 @@
 PalLocalPlanner:
   transform_tolerance: 0.2
 
+  acc_lim_th: 1.5
+  acc_lim_x: 0.8
+
   max_vel_x: 0.9
   max_vel_th: 0.6
 
