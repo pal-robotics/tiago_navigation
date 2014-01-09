@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>reem_maps</name>
+  <version>0.9.0</version>
+  <description>REEM-specific maps and launch files.</description>
+  <maintainer email="luca.marchionni@pal-robotics.com">Luca Marchionni</maintainer>
+  <license>Modified BSD</license>
+  <author email="luca.marchionni@pal-robotics.com">Luca Marchionni</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>map_server</run_depend>
+</package>
