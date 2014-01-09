@@ -3,8 +3,7 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /Localization1/Particles1
+      Expanded: ~
       Splitter Ratio: 0.550955
     Tree Height: 745
   - Class: rviz/Selection
@@ -25,7 +24,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: Base laser
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
