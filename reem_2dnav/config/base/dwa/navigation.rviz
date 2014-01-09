@@ -499,7 +499,7 @@ Visualization Manager:
           Color: 25; 255; 0
           Enabled: true
           Name: Footprint
-          Topic: move_base/global_costmap/footprint_layer/footprint_stamped
+          Topic: move_base/local_costmap/footprint_layer/footprint_stamped
           Value: true
         - Class: rviz/TF
           Enabled: false
