@@ -672,26 +672,13 @@ Visualization Manager:
               Name: Plan
               Topic: move_base/NavfnROS/plan
               Value: true
-            - Alpha: 1
-              Class: rviz/GridCells
-              Color: 25; 255; 0
+            - Alpha: 0.7
+              Class: rviz/Map
+              Color Scheme: map
+              Draw Behind: true
               Enabled: true
-              Name: Obstacles
-              Topic: ""
-              Value: true
-            - Alpha: 1
-              Class: rviz/GridCells
-              Color: 25; 255; 0
-              Enabled: true
-              Name: Inflated
-              Topic: ""
-              Value: true
-            - Alpha: 1
-              Class: rviz/GridCells
-              Color: 25; 255; 0
-              Enabled: true
-              Name: Unknown
-              Topic: ""
+              Name: Costmap
+              Topic: move_base/global_costmap/costmap
               Value: true
           Enabled: true
           Name: Global
@@ -705,19 +692,13 @@ Visualization Manager:
               Name: Plan
               Topic: move_base/DWAPlannerROS/local_plan
               Value: true
-            - Alpha: 1
-              Class: rviz/GridCells
-              Color: 25; 255; 0
+            - Alpha: 0.7
+              Class: rviz/Map
+              Color Scheme: costmap
+              Draw Behind: false
               Enabled: true
-              Name: Obstacles
-              Topic: ""
-              Value: true
-            - Alpha: 1
-              Class: rviz/GridCells
-              Color: 25; 255; 0
-              Enabled: true
-              Name: Inflated
-              Topic: ""
+              Name: Costmap
+              Topic: move_base/local_costmap/costmap
               Value: true
           Enabled: true
           Name: Local
@@ -753,7 +734,7 @@ Visualization Manager:
         - Alpha: 0.7
           Class: rviz/Map
           Color Scheme: map
-          Draw Behind: false
+          Draw Behind: true
           Enabled: true
           Name: Map
           Topic: map
