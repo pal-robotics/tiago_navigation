@@ -1,5 +1,0 @@
-<launch>
-  <include file="$(find reem_laser_sensors)/launch/base_laser_filter.launch"/>
-  <include file="$(find reem_laser_sensors)/launch/upper_laser_filter.launch"/>
-  <include file="$(find reem_laser_sensors)/launch/upper_self_laser_filter.launch"/>
-</launch>
