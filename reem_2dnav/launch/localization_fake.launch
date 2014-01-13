@@ -1,0 +1,24 @@
+<launch>
+  <!--
+    ground_truth can be, for example:
+    - ground_truth_odom           : from gazebo simulator
+    - mobile_base_controller/odom : from robot odometry
+  -->
+  <arg name="ground_truth" default="mobile_base_controller/odom"/>
+  <arg name="initialpose"  default="initialpose"/>
+
+  <!-- Fake localization -->
+  <node pkg="fake_localization" type="fake_localization" name="fake_localization">
+    <remap from="base_pose_ground_truth" to="$(arg ground_truth)"/>
+    <remap from="initialpose"            to="$(arg initialpose)"/>
+
+    <param name="odom_frame_id"   value="/odom"/>
+    <param name="global_frame_id" value="/map"/>
+    <param name="base_frame_id"   value="/base_link"/>
+
+    <param name="delta_x"   value="0.0"/>
+    <param name="delta_y"   value="0.0"/>
+    <param name="delta_yaw" value="0.0"/>
+  </node>
+</launch>
+
