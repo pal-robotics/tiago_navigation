@@ -8,8 +8,4 @@
 
   <!-- torso laser-->
   <include file="$(find reem_laser_sensors)/launch/upper_laser.launch"/>
-
-  <!-- base and torso laser filters -->
-  <include file="$(find reem_laser_sensors)/launch/laser_filter.launch"/>
-
 </launch>
