@@ -10,7 +10,6 @@
   <node pkg="move_base" type="move_base" name="move_base" output="$(arg output)" clear_params="true">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
-    <remap from="/bumper_base" to="BUMPERS_ARE_DISABLED_FIXME_FIXME_FIXME"/> <!-- TODO: FIXME -->
 
     <rosparam command="load" file="$(find reem_2dnav)/config/base/common/move_base.yaml"/>
     <rosparam command="load" file="$(find reem_2dnav)/config/base/common/recovery_behaviors.yaml"/>
