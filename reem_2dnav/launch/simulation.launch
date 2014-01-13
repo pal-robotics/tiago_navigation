@@ -1,6 +1,0 @@
-<launch>
-  <!-- Run Gazebo simulator with reem robot -->
-  <include file="$(find reemh2_gazebo)/launch/pujades_world.launch"/>
-
-  <include file="$(find reem_gazebo)/launch/reem_pal.launch"/>
-</launch>
