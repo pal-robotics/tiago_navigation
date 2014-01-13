@@ -1,11 +1,9 @@
 <launch>
   <arg name="laser_ip" />
 
-  <!-- base laser-->
   <include file="$(find reem_laser_sensors)/launch/base_laser.launch">
     <arg name="sick_ip" value="$(arg laser_ip)"/>
   </include>
 
-  <!-- torso laser-->
-  <include file="$(find reem_laser_sensors)/launch/upper_laser.launch"/>
+  <include file="$(find reem_laser_sensors)/launch/torso_laser.launch"/>
 </launch>
