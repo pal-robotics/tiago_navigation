@@ -23,3 +23,5 @@ PalLocalPlanner:
   robotFrontLength: 0.18
   safetyDist: 2.2
   use_crowd: true
+
+  bumpers: false
