@@ -2,12 +2,10 @@
 
   <arg name="local_planner" default="dwa"/>
 
-  <arg name="output" default="screen"/>
-
   <arg name="odom"    default="no_odom_intentionally"/> <!-- mobile_base_controller/odom -->
   <arg name="cmd_vel" default="nav_vel"/>
 
-  <node pkg="move_base" type="move_base" name="move_base" output="$(arg output)" clear_params="true">
+  <node pkg="move_base" type="move_base" name="move_base" clear_params="true">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
