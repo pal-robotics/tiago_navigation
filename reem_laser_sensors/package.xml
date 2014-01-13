@@ -9,7 +9,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>laser_filters</run_depend>
   <run_depend>hokuyo_node</run_depend>
   <run_depend>LMS1xx</run_depend>
 </package>
