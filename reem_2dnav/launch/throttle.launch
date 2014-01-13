@@ -1,9 +1,0 @@
-<launch>
- <arg name="node_name" />
- <arg name="topic" /> 
- <arg name="frequency" />
- <arg name="out_topic" />
-
- <node pkg="topic_tools" type="throttle" args="messages $(arg topic) $(arg frequency) $(arg out_topic)" respawn="true" name="$(arg node_name)" output="screen">
- </node>
-</launch>
