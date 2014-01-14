@@ -1,8 +1,8 @@
 <launch>
 
-  <arg name="local_planner" default="dwa"/>
+  <arg name="local_planner" default="trajectory"/>
 
-  <arg name="odom"    default="no_odom_intentionally"/> <!-- mobile_base_controller/odom -->
+  <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
 
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true">

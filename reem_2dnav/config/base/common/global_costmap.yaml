@@ -1,5 +1,5 @@
 # Independent settings for the planner's costmap
-global_costmap: 
+global_costmap:
   map_type: costmap
 
   global_frame: map
@@ -9,9 +9,8 @@ global_costmap:
   publish_frequency: 1.0
 
   static_map: true
-  map_topic: vo_map
+  map_topic: map # vo server not starting properly on robot, prevents move_base from starting
   track_unknown_space: true
   unknown_cost_value: 255
 
   inflation_radius: 0.81
-  robot_radius: 0.80
