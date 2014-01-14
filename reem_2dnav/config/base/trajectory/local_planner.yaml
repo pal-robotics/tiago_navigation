@@ -11,7 +11,7 @@ TrajectoryPlannerROS:
   min_in_place_rotational_vel: 0.4
 
   # Notice that this velocity is set to be negative. A bit confusing admittedly.
-  backup_vel: -0.1
+  escape_vel: -0.1
   
   holonomic_robot: false 
 
