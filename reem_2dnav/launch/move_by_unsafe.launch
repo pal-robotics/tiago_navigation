@@ -5,7 +5,7 @@
   <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
 
-  <node pkg="move_base" type="move_base" name="move_by" clear_params="true">
+  <node pkg="move_base" type="move_base" name="move_by_unsafe" clear_params="true">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
