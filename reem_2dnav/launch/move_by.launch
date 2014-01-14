@@ -1,0 +1,27 @@
+<launch>
+
+  <arg name="local_planner" default="trajectory"/>
+
+  <arg name="odom"    default="mobile_base_controller/odom"/>
+  <arg name="cmd_vel" default="nav_vel"/>
+
+  <node pkg="move_base" type="move_base" name="move_by" clear_params="true">
+    <remap from="odom"    to="$(arg odom)"/>
+    <remap from="cmd_vel" to="$(arg cmd_vel)"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/move_base.yaml"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/recovery_behaviors.yaml"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/costmap_common.yaml" ns="global_costmap"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/costmap_common.yaml" ns="local_costmap"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/by/common/global_costmap.yaml"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/common/local_costmap.yaml"/>
+
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
+    <rosparam command="load" file="$(find reem_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
+
+    <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
+  </node>
+
+</launch>
