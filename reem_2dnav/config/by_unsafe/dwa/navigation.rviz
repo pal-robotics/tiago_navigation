@@ -498,7 +498,7 @@ Visualization Manager:
           Color: 25; 255; 0
           Enabled: true
           Name: Footprint
-          Topic: move_by_unsafe/local_costmap/footprint_layer/footprint_stamped
+          Topic: move_by_unsafe/move_base/local_costmap/footprint_layer/footprint_stamped
           Value: true
         - Class: rviz/TF
           Enabled: false
@@ -670,7 +670,7 @@ Visualization Manager:
               Color: 25; 255; 0
               Enabled: true
               Name: Plan
-              Topic: move_by_unsafe/NavfnROS/plan
+              Topic: move_by_unsafe/move_base/NavfnROS/plan
               Value: true
             - Alpha: 0.7
               Class: rviz/Map
@@ -678,7 +678,7 @@ Visualization Manager:
               Draw Behind: true
               Enabled: true
               Name: Costmap
-              Topic: move_by_unsafe/global_costmap/costmap
+              Topic: move_by_unsafe/move_base/global_costmap/costmap
               Value: true
           Enabled: true
           Name: Global
@@ -690,7 +690,7 @@ Visualization Manager:
               Color: 25; 255; 0
               Enabled: true
               Name: Plan
-              Topic: move_by_unsafe/DWAPlannerROS/local_plan
+              Topic: move_by_unsafe/move_base/DWAPlannerROS/local_plan
               Value: true
             - Alpha: 0.7
               Class: rviz/Map
@@ -698,7 +698,7 @@ Visualization Manager:
               Draw Behind: false
               Enabled: true
               Name: Costmap
-              Topic: move_by_unsafe/local_costmap/costmap
+              Topic: move_by_unsafe/move_base/local_costmap/costmap
               Value: true
           Enabled: true
           Name: Local
@@ -714,7 +714,7 @@ Visualization Manager:
           Shaft Length: 1
           Shaft Radius: 0.05
           Shape: Arrow
-          Topic: move_by_unsafe/current_goal
+          Topic: move_by_unsafe/move_base/current_goal
           Value: true
       Enabled: true
       Name: Planning
@@ -757,7 +757,7 @@ Visualization Manager:
     - Class: rviz/SetInitialPose
       Topic: initialpose
     - Class: rviz/SetGoal
-      Topic: move_base_simple/goal
+      Topic: move_by_unsafe/move_base_simple/goal
     - Class: rviz/PublishPoint
       Single click: true
       Topic: clicked_point
