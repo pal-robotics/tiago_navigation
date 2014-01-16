@@ -25,7 +25,7 @@ TrajectoryPlannerROS:
   # Configure how long and with what granularity we'll forward simulate trajectories
   sim_time: 1.7
   sim_granularity: 0.025
-  vx_samples: 10 
+  vx_samples: 10
   vtheta_samples: 20
 
   # Parameters for scoring trajectories
