@@ -3,7 +3,7 @@ obstacle_range: 3.0
 raytrace_range: 2.5
 inflation_radius: 0.45
 
-observation_sources: base_scan sonar_cloud ir_cloud #vos #inclined_cloud bumper_cloud
+observation_sources: base_scan #sonar_cloud ir_cloud #vos #inclined_cloud bumper_cloud
 
 base_scan: {sensor_frame: base_laser_link, data_type: LaserScan, topic: scan_filtered, expected_update_rate: 0.3,
   observation_persistence: 0.0, marking: true, clearing: true, min_obstacle_height: -0.1, max_obstacle_height: 0.2}
