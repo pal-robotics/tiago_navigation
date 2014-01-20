@@ -17,4 +17,8 @@
     <arg name="local_planner" value="$(arg local_planner)"/>
   </include>
 
+  <!-- Exploration -->
+  <include file="$(find pal_exploration)/launch/exploration.launch">
+  </include>
+
 </launch>
