@@ -1,7 +1,10 @@
 <launch>
   <arg name="trajectory_file" default=""/>
 
+  <rosparam file="$(find reemc_2dnav)/config/mapping/karto.yaml" command="load"/>
+
   <include file="$(find pal_karto)/launch/karto.launch">
+    <arg name="scan"            value="scan_filtered"/>
     <arg name="trajectory_file" value="$(arg trajectory_file)"/>
   </include>
 </launch>
