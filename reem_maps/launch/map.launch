@@ -8,7 +8,4 @@
 
   <!-- Run the map server -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map)/map.yaml"/>
-
-  <!-- Run the vo map server --> 
-  <include file="$(find pal_vo_server)/launch/vo_server.launch"/>
 </launch>
