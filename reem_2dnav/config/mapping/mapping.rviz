@@ -724,7 +724,7 @@ Visualization Manager:
           Class: rviz/PoseArray
           Color: 255; 25; 0
           Enabled: true
-          Name: Particles
+          Name: Trajectory
           Topic: slam_trajectory
           Value: true
       Enabled: true
@@ -738,6 +738,14 @@ Visualization Manager:
           Enabled: true
           Name: Map
           Topic: map
+          Value: true
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: /slam_graph_marker_array
+          Name: SLAM Graph
+          Namespaces:
+            karto: true
+          Queue Size: 100
           Value: true
       Enabled: true
       Name: Mapping
