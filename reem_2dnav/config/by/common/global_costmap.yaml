@@ -12,7 +12,6 @@ global_costmap:
   rolling_window: true
   width         : 16.0
   height        : 16.0
-  #map_topic: map
 
   inflation_radius: 0.81
   robot_radius    : 0.80
