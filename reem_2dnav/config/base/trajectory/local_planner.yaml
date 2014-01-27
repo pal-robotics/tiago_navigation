@@ -1,13 +1,13 @@
 TrajectoryPlannerROS:
   # Acceleration limits
-  acc_lim_th: 3.2 
-  acc_lim_x: 2.5
+  acc_lim_th: 1.0 
+  acc_lim_x: 0.8
   acc_lim_y: 0.0
 
   # Velocity limits
   max_vel_x: 1.5
   min_vel_x: 0.1
-  max_rotational_vel: 3.0
+  max_rotational_vel: 1.7
   min_in_place_rotational_vel: 0.4
 
   # Notice that this velocity is set to be negative. A bit confusing admittedly.
@@ -23,7 +23,7 @@ TrajectoryPlannerROS:
   yaw_goal_tolerance: 0.2
 
   # Configure how long and with what granularity we'll forward simulate trajectories
-  sim_time: 1.7
+  sim_time: 2.7
   sim_granularity: 0.025
   vx_samples: 10
   vtheta_samples: 20

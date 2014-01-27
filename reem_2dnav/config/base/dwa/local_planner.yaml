@@ -1,6 +1,6 @@
 DWAPlannerROS:
-  acc_lim_th: 3.2
-  acc_lim_x: 2.5
+  acc_lim_th: 1.5
+  acc_lim_x: 0.8
   acc_lim_y: 0.0
 
   max_vel_x: 1.5
