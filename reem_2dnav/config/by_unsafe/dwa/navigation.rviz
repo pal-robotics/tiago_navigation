@@ -724,7 +724,7 @@ Visualization Manager:
           Class: rviz/PoseArray
           Color: 255; 25; 0
           Enabled: true
-          Name: Particles
+          Name: Pose
           Topic: particlecloud
           Value: true
       Enabled: true
