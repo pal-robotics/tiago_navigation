@@ -1,7 +1,7 @@
 <launch>
 
   <arg name="planner"       default="base"/>
-  <arg name="local_planner" default="trajectory"/>  <!-- pal, dwa, trajectory -->
+  <arg name="local_planner" default="pal"/>  <!-- pal, dwa, trajectory -->
   <arg name="localization"  default="amcl"/>
 
   <arg name="map" default="$(find reem_maps)/configurations/simple_office"/>

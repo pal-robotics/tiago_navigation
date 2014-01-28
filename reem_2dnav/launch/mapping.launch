@@ -3,7 +3,7 @@
   <arg name="mapping" default="karto"/>
 
   <arg name="planner" default="base"/>
-  <arg name="local_planner" default="trajectory"/>  <!-- pal, dwa, trajectory -->
+  <arg name="local_planner" default="pal"/>  <!-- pal, dwa, trajectory -->
 
   <!-- SLAM -->
   <include file="$(find reem_2dnav)/launch/mapping_$(arg mapping).launch"/>
