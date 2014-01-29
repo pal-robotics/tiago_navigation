@@ -1,0 +1,8 @@
+odometry: controller
+
+mapping: karto
+
+localization: amcl
+
+planner      : base
+local_planner: trajectory
