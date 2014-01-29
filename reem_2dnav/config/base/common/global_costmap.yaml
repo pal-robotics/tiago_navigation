@@ -14,3 +14,4 @@ global_costmap:
   unknown_cost_value: 255
 
   inflation_radius: 0.81
+  cost_scaling_factor: 2.0
