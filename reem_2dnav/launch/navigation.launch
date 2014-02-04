@@ -7,7 +7,7 @@
   <arg name="localization"  default="amcl"/>
   <arg name="mapping"       default="karto"/>
 
-  <arg name="map" default="$(find reem_maps)/configurations/simple_office"/>
+  <arg name="map" default="$(find reem_maps)/config"/>
 
   <!-- Localization or Mapping state -->
   <include file="$(find reem_2dnav)/launch/$(arg state).launch">
