@@ -3,7 +3,7 @@
 # Update the reem_maps/config symlink to point to the map that is
 # currently being used.
 
-set +e
+set -e
 
 # Check parameters
 if [ $# -lt 2 ]; then
