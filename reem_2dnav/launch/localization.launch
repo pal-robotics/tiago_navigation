@@ -1,0 +1,17 @@
+<launch>
+
+  <arg name="localization"  default="amcl"/>
+
+  <arg name="map" default="$(find reem_maps)/configurations/simple_office"/>
+
+  <arg name="mapping" default=""/>
+
+  <!-- Map -->
+  <include file="$(find reem_maps)/launch/map.launch">
+    <arg name="map" value="$(arg map)"/>
+  </include>
+
+  <!-- Localization -->
+  <include file="$(find reem_2dnav)/launch/localization_$(arg localization).launch"/>
+
+</launch>

@@ -2,22 +2,13 @@
 
   <arg name="mapping" default="karto"/>
 
-  <arg name="planner" default="base"/>
-  <arg name="local_planner" default="pal"/>  <!-- pal, dwa, trajectory -->
+  <arg name="localization" default=""/>
+  <arg name="map"          default=""/>
 
   <!-- SLAM -->
   <include file="$(find reem_2dnav)/launch/mapping_$(arg mapping).launch"/>
 
-  <!-- VO map server -->
-  <include file="$(find pal_vo_server)/launch/vo_server.launch"/>
-
-  <!-- Planning -->
-  <include file="$(find reem_2dnav)/launch/move_$(arg planner).launch">
-    <arg name="local_planner" value="$(arg local_planner)"/>
-  </include>
-
   <!-- Exploration -->
-  <include file="$(find pal_exploration)/launch/exploration.launch">
-  </include>
+  <include file="$(find pal_exploration)/launch/exploration.launch"/>
 
 </launch>
