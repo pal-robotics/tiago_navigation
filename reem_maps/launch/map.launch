@@ -1,6 +1,10 @@
 <launch>
   <arg name="map" default="$(find reem_maps)/config"/>
 
+  <!-- Update "config" symlink -->
+  <node name="update_map_symlink" pkg="reem_maps" type="update_map_symlink.sh"
+    args="$(find reem_maps)/config $(arg map)"/>
+
   <!-- Setup map -->
   <node pkg="reem_maps" type="map_setup.py" name="map_setup">
     <param name="map" value="$(arg map)"/>
