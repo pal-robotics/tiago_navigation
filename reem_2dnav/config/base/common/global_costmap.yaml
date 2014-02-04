@@ -9,7 +9,7 @@ global_costmap:
   publish_frequency: 1.0
 
   static_map: true
-  map_topic: map # vo server not starting properly on robot, prevents move_base from starting
+  map_topic: vo_map
   track_unknown_space: true
   unknown_cost_value: 255
 
