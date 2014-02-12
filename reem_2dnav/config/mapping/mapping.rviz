@@ -582,6 +582,7 @@ Visualization Manager:
           Color: 255; 255; 255
           Enabled: false
           Name: Base sonars
+          Queue Size: 20
           Topic: sonar_base
           Value: false
         - Alpha: 0.5
@@ -590,6 +591,7 @@ Visualization Manager:
           Color: 255; 255; 255
           Enabled: false
           Name: Torso sonars
+          Queue Size: 10
           Topic: sonar_torso
           Value: false
         - Alpha: 0.5
@@ -598,6 +600,7 @@ Visualization Manager:
           Color: 255; 0; 0
           Enabled: false
           Name: Base IR
+          Queue Size: 10
           Topic: ir_base
           Value: false
         - Alpha: 1
