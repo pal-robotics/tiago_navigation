@@ -5,4 +5,4 @@ mapping: karto
 localization: amcl
 
 planner      : base
-local_planner: trajectory
+local_planner: pal
