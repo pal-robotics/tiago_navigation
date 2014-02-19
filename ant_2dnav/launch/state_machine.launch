@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="config" default="$(find reem_2dnav)/config/state_machine/state_machine.yaml"/>
+  <arg name="config" default="$(find ant_2dnav)/config/state_machine/state_machine.yaml"/>
 
   <include file="$(find pal_navigation_sm)/launch/pal_navigation_sm.launch">
     <arg name="config" value="$(arg config)"/>

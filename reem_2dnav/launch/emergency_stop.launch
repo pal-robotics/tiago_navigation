@@ -1,5 +1,0 @@
-<launch>
-  <node name="emergency_stop" pkg="pal_emergency_stop" type="emergency_stop">
-    <rosparam file="$(find reem_description)/urdf/base/footprint.yaml" command="load"/>
-  </node>
-</launch>

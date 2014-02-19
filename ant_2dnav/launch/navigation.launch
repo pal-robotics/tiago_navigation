@@ -7,10 +7,10 @@
   <arg name="localization"  default="amcl"/>
   <arg name="mapping"       default="karto"/>
 
-  <arg name="map" default="$(find reem_maps)/config"/>
+  <arg name="map" default="$(find ant_maps)/config"/>
 
   <!-- Localization or Mapping state -->
-  <include file="$(find reem_2dnav)/launch/$(arg state).launch">
+  <include file="$(find ant_2dnav)/launch/$(arg state).launch">
     <arg name="localization" value="$(arg localization)"/>
     <arg name="mapping"      value="$(arg mapping)"/>
 
@@ -18,10 +18,10 @@
   </include>
 
   <!-- Navigation State Machine -->
-  <include file="$(find reem_2dnav)/launch/state_machine.launch"/>
+  <include file="$(find ant_2dnav)/launch/state_machine.launch"/>
 
   <!-- Planning -->
-  <include file="$(find reem_2dnav)/launch/move_$(arg planner).launch">
+  <include file="$(find ant_2dnav)/launch/move_$(arg planner).launch">
     <arg name="local_planner" value="$(arg local_planner)"/>
   </include>
 

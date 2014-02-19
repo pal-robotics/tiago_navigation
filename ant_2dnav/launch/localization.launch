@@ -2,16 +2,16 @@
 
   <arg name="localization"  default="amcl"/>
 
-  <arg name="map" default="$(find reem_maps)/config"/>
+  <arg name="map" default="$(find ant_maps)/config"/>
 
   <arg name="mapping" default=""/>
 
   <!-- Map -->
-  <include file="$(find reem_maps)/launch/map.launch">
+  <include file="$(find ant_maps)/launch/map.launch">
     <arg name="map" value="$(arg map)"/>
   </include>
 
   <!-- Localization -->
-  <include file="$(find reem_2dnav)/launch/localization_$(arg localization).launch"/>
+  <include file="$(find ant_2dnav)/launch/localization_$(arg localization).launch"/>
 
 </launch>
