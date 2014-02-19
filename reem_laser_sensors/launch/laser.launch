@@ -1,9 +1,0 @@
-<launch>
-  <arg name="laser_ip" />
-
-  <include file="$(find reem_laser_sensors)/launch/base_laser.launch">
-    <arg name="sick_ip" value="$(arg laser_ip)"/>
-  </include>
-
-  <include file="$(find reem_laser_sensors)/launch/torso_laser.launch"/>
-</launch>
