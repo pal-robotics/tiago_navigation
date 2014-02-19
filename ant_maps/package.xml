@@ -8,6 +8,4 @@
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-
-  <run_depend>map_server</run_depend>
 </package>
