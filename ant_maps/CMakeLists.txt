@@ -5,13 +5,7 @@ find_package(catkin REQUIRED)
 
 catkin_package()
 
-install(PROGRAMS
-    scripts/map_setup.py
-    scripts/poi_manager.py
-    scripts/update_map_symlink.sh
-    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
-
-foreach(dir launch configurations)
+foreach(dir configurations)
     install(DIRECTORY ${dir}/
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
 endforeach(dir)
