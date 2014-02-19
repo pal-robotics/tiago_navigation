@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package>
-  <name>reem_nav_cont_test</name>
+  <name>ant_nav_cont_test</name>
   <version>0.9.0</version>
-  <description>REEM navigation continuous tests.</description>
+  <description>ANT navigation continuous tests.</description>
 
-  <maintainer email="paul.mathieu@pal-robotics.com">Paul Mathieu</maintainer>
-  <author email="paul.mathieu@pal-robotics.com">Paul Mathieu</author>
+  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
   <license>BSD</license>
 

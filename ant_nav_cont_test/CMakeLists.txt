@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(reem_nav_cont_test)
+project(ant_nav_cont_test)
 
 set(PAL_MODULE_NAME 'NAVIGATION')
 set(PAL_LIBRARY_NAME '${PROJECT_NAME}')

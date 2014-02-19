@@ -2,7 +2,7 @@
 #include <pal_core/qa/logger.h>
 #include <pal_core/sys/SigHandler.h>
 
-#include "reem_nav_cont_test/NavActClientReporter.h"
+#include "ant_nav_cont_test/NavActClientReporter.h"
 
 int
 main(int argc, char *argv[])
