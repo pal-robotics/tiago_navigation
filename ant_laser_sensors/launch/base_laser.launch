@@ -1,18 +1,6 @@
 <launch>
-  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" respawn="false">
-    <!-- Starts up faster, but timestamps will be inaccurate. --> 
-    <param name="calibrate_time" type="bool" value="true"/> 
-    
-    <!-- Set the port to connect to here -->
-    <param name="port" type="string" value="/dev/ttyACM0"/> 
-
-    <param name="frame_id" type="string" value="/base_laser_link"/>
-
-    <param name="intensity" type="bool" value="false"/>
-
-    <param name="min_ang" type="double" value="-1.28" />
-    <param name="max_ang" type="double" value="1.28" />
-    
+  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node">
+    <rosparam file="$(find ant_laser_sensors)/config/base_laser.yaml" command="load"/>
     <remap from="scan" to="scan"/>
   </node>
 </launch>
