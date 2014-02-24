@@ -20,8 +20,6 @@
 
     <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
     <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
-
-    <rosparam command="load" file="$(find ant_description)/urdf/base/footprint.yaml"/>
   </node>
 
 </launch>
