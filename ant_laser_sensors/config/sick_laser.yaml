@@ -1,0 +1,14 @@
+hostname: 192.168.0.1
+frame_id: /base_laser_link
+
+calibrate_time: true
+time_offset   : 0.0
+
+intensity: false
+
+min_ang: !degrees -135
+max_ang: !degrees  135
+
+skip: 0
+
+publish_datagram: false
