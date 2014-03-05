@@ -2,13 +2,15 @@
 
   <arg name="localization"  default="amcl"/>
 
-  <arg name="map" default="$(find ant_maps)/config"/>
+  <arg name="map"     default="$(find ant_maps)/config"/>
+  <arg name="symlink" default="$(find ant_maps)/config"/>
 
   <arg name="mapping" default=""/>
 
   <!-- Map -->
-  <include file="$(find reem_maps)/launch/map.launch">
-    <arg name="map" value="$(arg map)"/>
+  <include file="$(find pal_navigation_sm)/launch/map.launch">
+    <arg name="map"     value="$(arg map)"/>
+    <arg name="symlink" value="$(arg symlink)"/>
   </include>
 
   <!-- Localization -->
