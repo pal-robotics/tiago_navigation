@@ -14,12 +14,13 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
+  CATKIN_DEPENDS pal_core 
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(navActClientReportingTest
+add_executable(antNavActClientReportingTest
   src/NavActClientReporter.cpp
   src/NavActClientReporterTest.cpp
 )
-target_link_libraries(navActClientReportingTest ${catkin_LIBRARIES})
+target_link_libraries(antNavActClientReportingTest ${catkin_LIBRARIES})
