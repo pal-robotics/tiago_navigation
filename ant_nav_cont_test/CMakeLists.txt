@@ -24,3 +24,8 @@ add_executable(antNavActClientReportingTest
   src/NavActClientReporterTest.cpp
 )
 target_link_libraries(antNavActClientReportingTest ${catkin_LIBRARIES})
+
+install(DIRECTORY include/
+   DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}
+   FILES_MATCHING PATTERN "*.h"
+)
