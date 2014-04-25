@@ -1,9 +1,11 @@
 # Independent settings for the local costmap
 local_costmap:
   map_type: costmap
+  resolution: 0.05
 
   global_frame    : odom
   robot_base_frame: base_link
+  transform_tolerance: 0.2
 
   update_frequency : 5.0
   publish_frequency: 2.0
@@ -13,3 +15,114 @@ local_costmap:
   width         : 5.0
   height        : 5.0
   resolution    : 0.03
+
+  cost_scaling_factor: 2.0
+
+  plugins:
+  - name: laser_layer
+    type: 'costmap_2d::ObstacleLayer'
+  - name: sonar_layer
+    type: 'costmap_2d::ObstacleLayer'
+  - name: ir_layer
+    type: 'costmap_2d::ObstacleLayer'
+  - name: bumper_layer
+    type: 'costmap_2d::ObstacleLayer'
+  - name: vos_layer
+    type: 'costmap_2d::ObstacleLayer'
+  - name: footprint_layer
+    type: 'costmap_2d::FootprintLayer'
+  - name: inflation_layer
+    type: 'costmap_2d::InflationLayer'
+
+  laser_layer:
+    enabled: true
+    observation_sources: base_scan
+
+    base_scan:
+      sensor_frame: base_laser_link
+      data_type: LaserScan
+      topic: scan
+      expected_update_rate: 0.3
+      observation_persistence: 0.0
+      marking: true
+      clearing: true
+      raytrace_range: 2.5
+      obstacle_range: 3.0
+      min_obstacle_height: -0.1
+      max_obstacle_height: 0.2
+
+  sonar_layer:
+    enabled: false
+    observation_sources: sonar_cloud
+
+    sonar_cloud:
+      sensor_frame: base_link
+      data_type: PointCloud2
+      topic: sonar_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: true
+      clearing: true
+      raytrace_range: 1.0
+      obstacle_range: 3.0
+      min_obstacle_height: 0.1
+      max_obstacle_height: 1.8
+
+  ir_layer:
+    enabled: false
+    observation_sources: ir_cloud
+
+    ir_cloud:
+      sensor_frame: base_link
+      data_type: PointCloud2
+      topic: ir_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: true
+      clearing: true
+      raytrace_range: 2.0
+      obstacle_range: 1.7
+      min_obstacle_height: 0.2
+      max_obstacle_height: 1.8
+
+  bumper_layer:
+    enabled: false
+    observation_sources: bumper_cloud
+
+    bumper_cloud:
+      sensor_frame: base_link
+      data_type: PointCloud2
+      topic: bumper_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: true
+      clearing: true
+      raytrace_range: 1.0
+      obstacle_range: 0.2
+      min_obstacle_height: 0.1
+      max_obstacle_height: 0.3
+
+  vos_layer:
+    enabled: true
+    observation_sources: vo_cloud
+
+    vo_cloud:
+      sensor_frame: map
+      data_type: PointCloud2
+      topic: vo_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: true
+      clearing: false
+      raytrace_range: 1.0
+      obstacle_range: 100.0
+      min_obstacle_height: 0.0
+      max_obstacle_height: 2.0
+
+  footprint_layer:
+    enabled: true
+
+  inflation_layer:
+    enabled: true
+    robot_radius: 0.5
+    inflation_radius: 0.45
