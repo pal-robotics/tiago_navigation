@@ -108,9 +108,9 @@ local_costmap:
 
     vo_cloud:
       sensor_frame: map
-      data_type: PointCloud2
+      data_type: PointCloud
       topic: vo_cloud
-      expected_update_rate: 1.0
+      expected_update_rate: 12.0
       observation_persistence: 0.0
       marking: true
       clearing: false
