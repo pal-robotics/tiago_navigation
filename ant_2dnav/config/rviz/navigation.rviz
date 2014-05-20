@@ -225,7 +225,7 @@ Visualization Manager:
               Use rainbow: true
               Value: true
             - Alpha: 0.5
-              Buffer Length: 4
+              Buffer Length: 3
               Class: rviz/Range
               Color: 255; 255; 255
               Enabled: true
