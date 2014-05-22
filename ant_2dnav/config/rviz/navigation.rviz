@@ -595,7 +595,7 @@ Visualization Manager:
           Axis: Z
           Channel Name: intensity
           Class: rviz/PointCloud2
-          Color: 255; 0; 0
+          Color: 0; 255; 0
           Color Transformer: FlatColor
           Decay Time: 0
           Enabled: true
@@ -609,7 +609,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 5
-          Size (m): 0.01
+          Size (m): 0.1
           Style: Spheres
           Topic: cloud_dock
           Use Fixed Frame: true
