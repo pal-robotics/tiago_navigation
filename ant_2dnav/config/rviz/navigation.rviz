@@ -178,7 +178,7 @@ Visualization Manager:
           Value: true
         - Class: rviz/Marker
           Enabled: true
-          Marker Topic: joy_marker
+          Marker Topic: twist_marker
           Name: Twist
           Namespaces:
             {}
@@ -585,6 +585,49 @@ Visualization Manager:
           Topic: scan_dock
           Use Fixed Frame: true
           Use rainbow: true
+          Value: true
+        - Alpha: 0.5
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 0; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 999999
+          Min Color: 0; 0; 0
+          Min Intensity: -2.66468e-14
+          Name: Cloud
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.01
+          Style: Spheres
+          Topic: cloud_dock
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Axes Length: 0.1
+          Axes Radius: 0.01
+          Class: rviz/Pose
+          Color: 255; 25; 0
+          Enabled: true
+          Head Length: 0.1
+          Head Radius: 0.1
+          Name: Pose
+          Shaft Length: 0.2
+          Shaft Radius: 0.05
+          Shape: Arrow
+          Topic: dock_pose
           Value: true
       Enabled: true
       Name: Dock
