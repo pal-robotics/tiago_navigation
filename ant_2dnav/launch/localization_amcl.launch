@@ -2,8 +2,6 @@
   <arg name="amcl_with_mapping" default="false" />
 
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
-    <remap from="scan" to="scan_filtered" />
-
     <!-- Load the last saved pose estimate (initial pose) -->
     <rosparam file="$(find pal_navigation_sm)/config/pose.yaml" command="load"/>
 
