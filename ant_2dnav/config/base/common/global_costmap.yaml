@@ -34,7 +34,7 @@ global_costmap:
     map_topic: vo_map
 
   laser_layer:
-    enabled: false
+    enabled: true
     observation_sources: base_scan
 
     base_scan:
