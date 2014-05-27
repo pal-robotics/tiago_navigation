@@ -23,11 +23,11 @@ temporalUpdate   : -1.0
 resampleThreshold:  0.7
 particles        : 30
 
-xmin : -100.0
-ymin : -100.0
-xmax :  100.0
-ymax :  100.0
-delta:    0.05
+xmin : -50.0
+ymin : -50.0
+xmax :  50.0
+ymax :  50.0
+delta:   0.05
 
 llsamplerange: 0.01
 llsamplestep : 0.01
