@@ -2,10 +2,11 @@
 
   <arg name="state" default="localization"/>
 
-  <arg name="planner"       default="base"/>
-  <arg name="local_planner" default="pal"/>
-  <arg name="localization"  default="amcl"/>
-  <arg name="mapping"       default="karto"/>
+  <arg name="planner"        default="base"/>
+  <arg name="global_planner" default="navfn"/>
+  <arg name="local_planner"  default="pal"/>
+  <arg name="localization"   default="amcl"/>
+  <arg name="mapping"        default="karto"/>
 
   <arg name="map" default="$(find ant_maps)/config"/>
 
@@ -22,7 +23,8 @@
 
   <!-- Planning -->
   <include file="$(find ant_2dnav)/launch/move_$(arg planner).launch">
-    <arg name="local_planner" value="$(arg local_planner)"/>
+    <arg name="global_planner" value="$(arg global_planner)"/>
+    <arg name="local_planner"  value="$(arg local_planner)"/>
   </include>
 
   <!-- VO map server -->
