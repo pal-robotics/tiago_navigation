@@ -18,24 +18,16 @@ local_costmap:
   cost_scaling_factor: 2.0
 
   plugins:
-  - name: laser_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: sonar_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: ir_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: bumper_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: vos_layer
+  - name: sensor_layer
     type: 'costmap_2d::ObstacleLayer'
   - name: footprint_layer
     type: 'costmap_2d::FootprintLayer'
   - name: inflation_layer
     type: 'costmap_2d::InflationLayer'
 
-  laser_layer:
+  sensor_layer:
     enabled: true
-    observation_sources: base_scan
+    observation_sources: base_scan vo_cloud #sonar_cloud #ir_cloud #bumper_cloud
 
     base_scan:
       sensor_frame: base_laser_link
@@ -51,10 +43,6 @@ local_costmap:
       min_obstacle_height: -0.1
       max_obstacle_height: 0.2
 
-  sonar_layer:
-    enabled: false
-    observation_sources: sonar_cloud
-
     sonar_cloud:
       sensor_frame: base_link
       data_type: PointCloud2
@@ -67,10 +55,6 @@ local_costmap:
       obstacle_range: 2.5
       min_obstacle_height: 0.1
       max_obstacle_height: 1.8
-
-  ir_layer:
-    enabled: false
-    observation_sources: ir_cloud
 
     ir_cloud:
       sensor_frame: base_link
@@ -85,10 +69,6 @@ local_costmap:
       min_obstacle_height: 0.2
       max_obstacle_height: 1.8
 
-  bumper_layer:
-    enabled: false
-    observation_sources: bumper_cloud
-
     bumper_cloud:
       sensor_frame: base_link
       data_type: PointCloud2
@@ -101,10 +81,6 @@ local_costmap:
       obstacle_range: 0.2
       min_obstacle_height: 0.1
       max_obstacle_height: 0.3
-
-  vos_layer:
-    enabled: true
-    observation_sources: vo_cloud
 
     vo_cloud:
       sensor_frame: map
