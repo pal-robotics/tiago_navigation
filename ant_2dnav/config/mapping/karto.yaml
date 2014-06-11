@@ -1,4 +1,6 @@
 slam_karto:
+  base_frame: base_footprint
+
   # Scans:
   minimum_travel_distance: 0.3
   minimum_travel_heading : 0.2
