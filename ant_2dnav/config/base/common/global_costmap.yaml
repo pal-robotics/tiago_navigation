@@ -15,6 +15,7 @@ global_costmap:
   track_unknown_space: true
   unknown_cost_value : 255
 
+  robot_radius       : 0.25
   cost_scaling_factor: 2.0
 
   plugins:
@@ -79,5 +80,6 @@ global_costmap:
     enabled: true
 
   inflation_layer:
-    enabled            : true
-    inflation_radius   : 0.81
+    enabled         : true
+    robot_radius    : 0.25
+    inflation_radius: 0.30
