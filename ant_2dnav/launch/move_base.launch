@@ -1,7 +1,7 @@
 <launch>
 
   <arg name="global_planner" default="navfn"/>
-  <arg name="local_planner"  default="pal"/>
+  <arg name="local_planner"  default="trajectory"/>
 
   <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
