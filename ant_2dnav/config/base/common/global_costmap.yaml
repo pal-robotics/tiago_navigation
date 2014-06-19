@@ -20,7 +20,7 @@ global_costmap:
   plugins:
     - name: static_layer
       type: 'costmap_2d::StaticLayer'
-    - name: sensor_layer
+    - name: obstacle_layer
       type: 'costmap_2d::ObstacleLayer'
     - name: footprint_layer
       type: 'costmap_2d::FootprintLayer'
@@ -31,7 +31,7 @@ global_costmap:
     enabled  : true
     map_topic: vo_map
 
-  sensor_layer:
+  obstacle_layer:
     enabled: true
     observation_sources: base_scan #sonar_cloud sonar_max_range_cloud #ir_cloud
     combination_method: 0

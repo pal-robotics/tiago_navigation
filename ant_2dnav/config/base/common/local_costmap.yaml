@@ -18,14 +18,14 @@ local_costmap:
   robot_radius: 0.25
 
   plugins:
-  - name: sensor_layer
+  - name: obstacle_layer
     type: 'costmap_2d::ObstacleLayer'
   - name: footprint_layer
     type: 'costmap_2d::FootprintLayer'
   - name: inflation_layer
     type: 'costmap_2d::InflationLayer'
 
-  sensor_layer:
+  obstacle_layer:
     enabled: true
     observation_sources: base_scan vo_cloud #sonar_cloud sonar_max_range_cloud #ir_cloud #bumper_cloud
     combination_method: 1
