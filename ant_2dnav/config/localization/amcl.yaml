@@ -4,7 +4,6 @@ odom_alpha1    : 0.2
 odom_alpha2    : 0.2
 odom_alpha3    : 0.8
 odom_alpha4    : 0.2
-odom_alpha5    : 0.1
 
 # Particle filter:
 min_particles    : 500

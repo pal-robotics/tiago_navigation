@@ -1,8 +1,8 @@
 PalLocalPlanner:
   transform_tolerance: 0.2
 
-  acc_lim_x : 0.8
-  acc_lim_th: 1.5
+  acc_lim_x    : 0.8
+  acc_lim_theta: 1.6
 
   max_vel_x : 0.9
   max_vel_th: 0.6
@@ -12,11 +12,11 @@ PalLocalPlanner:
 
   oscillation_reset_dist: 0.1
 
-  travel_speed_sfl   :  0.9
-  point_b_sfl        :  0.26
-  decay              :  0.85
-  max_dist_plan_ahead: 20.0
-  dist_to_avoid      :  0.7
+  travel_speed_sfl   : 0.9
+  point_b_sfl        : 0.26
+  decay              : 0.85
+  max_dist_plan_ahead: 4.0
+  dist_to_avoid      : 0.85
 
   robotWidth      : 0.65
   robotLength     : 0.75

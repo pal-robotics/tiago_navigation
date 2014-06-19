@@ -15,9 +15,6 @@ global_costmap:
   track_unknown_space: true
   unknown_cost_value : 255
 
-  robot_radius       : 0.25
-  cost_scaling_factor: 2.0
-
   plugins:
     - name: static_layer
       type: 'costmap_2d::StaticLayer'
@@ -34,14 +31,15 @@ global_costmap:
 
   sensor_layer:
     enabled: true
-    observation_sources: base_scan #sonar_cloud #ir_cloud
+    observation_sources: base_scan #sonar_cloud sonar_max_range_cloud #ir_cloud
+    combination_method: 0
 
     base_scan:
       sensor_frame: base_laser_link
       data_type: LaserScan
       topic: scan
       expected_update_rate: 0.3
-      observation_persistence: 0.0
+      observation_persistence: 1.0
       inf_is_valid: true
       marking: true
       clearing: true
@@ -57,6 +55,19 @@ global_costmap:
       expected_update_rate: 1.0
       observation_persistence: 0.0
       marking: true
+      clearing: true
+      raytrace_range: 4.5
+      obstacle_range: 3.0
+      min_obstacle_height: 0.1
+      max_obstacle_height: 1.8
+
+    sonar_max_range_cloud:
+      sensor_frame: base_link
+      data_type: PointCloud2
+      topic: sonar_max_range_cloud
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: false
       clearing: true
       raytrace_range: 4.5
       obstacle_range: 3.0
@@ -80,6 +91,7 @@ global_costmap:
     enabled: true
 
   inflation_layer:
-    enabled         : true
-    robot_radius    : 0.25
-    inflation_radius: 0.30
+    enabled            : true
+    robot_radius       : 0.25
+    inflation_radius   : 0.30
+    cost_scaling_factor: 2.0
