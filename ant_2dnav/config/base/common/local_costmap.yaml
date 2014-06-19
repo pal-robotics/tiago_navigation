@@ -15,6 +15,8 @@ local_costmap:
   height        : 5.0
   resolution    : 0.05
 
+  robot_radius: 0.25
+
   plugins:
   - name: sensor_layer
     type: 'costmap_2d::ObstacleLayer'
@@ -112,6 +114,5 @@ local_costmap:
 
   inflation_layer:
     enabled            : true
-    robot_radius       : 0.25
     inflation_radius   : 0.30
     cost_scaling_factor: 2.0

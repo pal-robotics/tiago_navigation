@@ -15,6 +15,8 @@ global_costmap:
   track_unknown_space: true
   unknown_cost_value : 255
 
+  robot_radius: 0.25
+
   plugins:
     - name: static_layer
       type: 'costmap_2d::StaticLayer'
@@ -92,6 +94,5 @@ global_costmap:
 
   inflation_layer:
     enabled            : true
-    robot_radius       : 0.25
     inflation_radius   : 0.30
     cost_scaling_factor: 2.0
