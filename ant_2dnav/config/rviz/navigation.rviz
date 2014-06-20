@@ -268,6 +268,39 @@ Visualization Manager:
                       Value: true
                   Enabled: true
                   Name: Plan
+                - Class: rviz/Group
+                  Displays:
+                    - Alpha: 0.2
+                      Autocompute Intensity Bounds: true
+                      Autocompute Value Bounds:
+                        Max Value: 518.908
+                        Min Value: 0
+                        Value: true
+                      Axis: Z
+                      Channel Name: intensity
+                      Class: rviz/PointCloud2
+                      Color: 255; 255; 255
+                      Color Transformer: AxisColor
+                      Decay Time: 0
+                      Enabled: true
+                      Invert Rainbow: false
+                      Max Color: 255; 255; 255
+                      Max Intensity: 4096
+                      Min Color: 0; 0; 0
+                      Min Intensity: 0
+                      Name: Navfn
+                      Position Transformer: XYZ
+                      Queue Size: 10
+                      Selectable: true
+                      Size (Pixels): 3
+                      Size (m): 0.05
+                      Style: Flat Squares
+                      Topic: move_base/NavfnROS/potential
+                      Use Fixed Frame: true
+                      Use rainbow: true
+                      Value: true
+                  Enabled: true
+                  Name: Potential
                 - Alpha: 0.7
                   Class: rviz/Map
                   Color Scheme: map
