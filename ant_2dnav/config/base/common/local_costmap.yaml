@@ -18,20 +18,20 @@ local_costmap:
   robot_radius: 0.25
 
   plugins:
-  - name: obstacle_laser_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: obstacle_sonar_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: obstacle_ir_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: obstacle_bumper_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: obstacle_vo_layer
-    type: 'costmap_2d::ObstacleLayer'
-  - name: footprint_layer
-    type: 'costmap_2d::FootprintLayer'
-  - name: inflation_layer
-    type: 'costmap_2d::InflationLayer'
+    - name: obstacle_laser_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_sonar_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_ir_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_bumper_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_vo_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: footprint_layer
+      type: 'costmap_2d::FootprintLayer'
+    - name: inflation_layer
+      type: 'costmap_2d::InflationLayer'
 
   obstacle_laser_layer:
     enabled: true
