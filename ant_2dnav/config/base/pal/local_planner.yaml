@@ -16,7 +16,7 @@ PalLocalPlanner:
   point_b_sfl        : 0.26
   decay              : 0.85
   max_dist_plan_ahead: 4.0
-  dist_to_avoid      : 0.85
+  dist_to_avoid      : 0.25
 
   robotWidth      : 0.5
   robotLength     : 0.5
