@@ -42,7 +42,7 @@ global_costmap:
   obstacle_laser_layer:
     enabled: true
     observation_sources: base_scan
-    combination_method: 0
+    combination_method: 0 # @todo only with 1 works on the robot: otherwise the map walls are cleared
 
     base_scan:
       sensor_frame: base_laser_link
@@ -108,7 +108,7 @@ global_costmap:
       max_obstacle_height: 1.8
 
   obstacle_vo_layer:
-    enabled: true
+    enabled: false # @todo not tested with true on the robot
     observation_sources: vo_cloud
     combination_method: 0
 
@@ -130,5 +130,5 @@ global_costmap:
 
   inflation_layer:
     enabled            : true
-    inflation_radius   : 1.0
+    inflation_radius   : 0.6
     cost_scaling_factor: 2.0
