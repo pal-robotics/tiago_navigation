@@ -6,3 +6,5 @@ localization: amcl
 
 planner      : base
 local_planner: pal
+
+visual_enabled: false
