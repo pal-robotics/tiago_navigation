@@ -378,6 +378,14 @@ Visualization Manager:
                   Use Fixed Frame: true
                   Use rainbow: true
                   Value: true
+                - Class: rviz/MarkerArray
+                  Enabled: true
+                  Marker Topic: trajectories
+                  Name: Trajectories
+                  Namespaces:
+                    {}
+                  Queue Size: 100
+                  Value: true
               Enabled: true
               Name: Local
             - Alpha: 1
