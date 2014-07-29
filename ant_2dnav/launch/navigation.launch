@@ -4,7 +4,7 @@
 
   <arg name="planner"        default="base"/>
   <arg name="global_planner" default="navfn"/>
-  <arg name="local_planner"  default="trajectory"/>
+  <arg name="local_planner"  default="pal"/>
   <arg name="localization"   default="amcl"/>
   <arg name="mapping"        default="karto"/>
 
