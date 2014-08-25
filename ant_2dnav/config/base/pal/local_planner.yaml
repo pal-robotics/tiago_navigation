@@ -2,13 +2,13 @@ PalLocalPlanner:
   transform_tolerance: 0.2
 
   acc_lim_x    : 0.8
-  acc_lim_theta: 1.6
+  acc_lim_theta: !degrees 96.0
 
   max_vel_x : 0.5
-  max_vel_th: 0.6
+  max_vel_th: !degrees 36.0
 
   xy_goal_tolerance : 0.2
-  yaw_goal_tolerance: 0.2
+  yaw_goal_tolerance: !degrees 12.0
 
   oscillation_reset_dist: 0.1
 
