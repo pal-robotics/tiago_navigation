@@ -31,8 +31,12 @@ TrajectoryPlannerROS:
   pdist_scale: 1.2
   gdist_scale: 0.8
   occdist_scale: 0.01
+  heading_scale: 0.3 #@todo create PR to support changing it!
   path_distance_bias: 1.2
   goal_distance_bias: 0.8
+  #@todo test the heading_scoring; when set to true the navigation goes bad (many rotations), so it seems that serious scoring tuning is needed
+  heading_scoring: false
+  heading_scoring_timestep: 0.1
   heading_lookahead: 0.325
   dwa: true
   #sim_granularity: 0.025
