@@ -30,6 +30,8 @@ global_costmap:
       type: 'costmap_2d::ObstacleLayer'
     - name: obstacle_vo_layer
       type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_rgbd_layer
+      type: 'costmap_2d::VoxelLayer' # @todo might be worth trying VoxelWithFootprintLayer
     - name: footprint_layer
       type: 'costmap_2d::FootprintLayer'
     - name: inflation_layer
@@ -124,6 +126,38 @@ global_costmap:
       obstacle_range: 100.0
       min_obstacle_height: 0.0
       max_obstacle_height: 2.0
+
+  obstacle_rgbd_layer:
+    # @todo we might have this problem:
+    # http://answers.ros.org/question/32633/costmap-2d-kinectlaser-clearing-problem-when-encountering-objects-with-thin-legs-eg-tables-or-chairs/
+    # or we might even need:
+    # http://wiki.ros.org/octomap_server
+    # http://wiki.ros.org/octomap_mapping
+    # http://wiki.ros.org/3d_navigation
+    enabled: false
+    observation_sources: rgbd_cloud
+    combination_method: 0
+
+    # @todo tune this (using defaults for now)
+    origin_z         :  0.0
+    z_resolution     :  0.2
+    z_voxels         : 10
+    unknown_threshold: 10
+    mark_threshold   :  0
+    publish_voxel_map: true
+
+    rgbd_cloud:
+      sensor_frame: base_xtion_optical_frame
+      data_type: PointCloud2
+      topic: base_xtion/depth/points
+      expected_update_rate: 1.0
+      observation_persistence: 0.0
+      marking: true
+      clearing: true
+      raytrace_range: 4.0
+      obstacle_range: 3.8
+      min_obstacle_height: 0.1
+      max_obstacle_height: 1.8
 
   footprint_layer:
     enabled: true
