@@ -76,12 +76,12 @@ Visualization Manager:
               Show Axes: false
               Show Trail: false
               Value: true
-            base_xtion_link:
+            base_rgbd_camera_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
               Value: true
-            base_xtion_optical_frame:
+            base_rgbd_camera_optical_frame:
               Alpha: 1
               Show Axes: false
               Show Trail: false
@@ -272,7 +272,7 @@ Visualization Manager:
               Size (Pixels): 1
               Size (m): 0.01
               Style: Points
-              Topic: base_xtion/rgb/points
+              Topic: softkinetic_camera/depth_registered/points
               Use Fixed Frame: true
               Use rainbow: true
               Value: true
@@ -775,7 +775,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: map
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
