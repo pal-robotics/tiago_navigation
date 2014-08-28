@@ -147,9 +147,9 @@ global_costmap:
     publish_voxel_map: true
 
     rgbd_cloud:
-      sensor_frame: base_xtion_optical_frame
+      sensor_frame: base_rgbd_camera_optical_frame
       data_type: PointCloud2
-      topic: base_xtion/depth/points
+      topic: softkinetic_camera/depth_registered/points
       expected_update_rate: 1.0
       observation_persistence: 0.0
       marking: true
