@@ -6,6 +6,8 @@
   <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
 
+  <arg name="debug_rgbd" default="true"/>
+
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
@@ -21,5 +23,17 @@
     <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/move_base.yaml"/>
     <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
   </node>
+
+  <group if="$(arg debug_rgbd)">
+    <node pkg="costmap_2d" type="costmap_2d_markers" name="costmap_2d_markers_global">
+      <remap from="voxel_grid" to="move_base/global_costmap/obstacle_rgbd_layer/voxel_grid"/>
+      <remap from="visualization_marker" to="voxel_grid_global_marker"/>
+    </node>
+
+    <node pkg="costmap_2d" type="costmap_2d_markers" name="costmap_2d_markers_local">
+      <remap from="voxel_grid" to="move_base/local_costmap/obstacle_rgbd_layer/voxel_grid"/>
+      <remap from="visualization_marker" to="voxel_grid_local_marker"/>
+    </node>
+  </group>
 
 </launch>
