@@ -372,9 +372,17 @@ Visualization Manager:
                   Size (Pixels): 1
                   Size (m): 0.01
                   Style: Points
-                  Topic: /move_base/global_costmap/obstacle_rgbd_layer/clearing_endpoints
+                  Topic: move_base/global_costmap/obstacle_rgbd_layer/clearing_endpoints
                   Use Fixed Frame: true
                   Use rainbow: true
+                  Value: true
+                - Class: rviz/Marker
+                  Enabled: true
+                  Marker Topic: voxel_grid_global_marker
+                  Name: Voxel Grid
+                  Namespaces:
+                    {}
+                  Queue Size: 100
                   Value: true
               Enabled: true
               Name: Global
@@ -775,7 +783,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: odom
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
