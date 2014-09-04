@@ -791,6 +791,26 @@ Visualization Manager:
           Value: true
       Enabled: true
       Name: Dock
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /pal_waypoint/waypoints
+          Name: Waypoints
+          Namespaces:
+            pal_waypoint: true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: /inventory/detection_markers
+          Name: Tags
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: Inventory
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
