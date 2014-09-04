@@ -673,6 +673,17 @@ Visualization Manager:
           Name: Map (with Virtual Obstacles)
           Topic: vo_map
           Value: true
+        - Class: rviz/Image
+          Enabled: true
+          Image Topic: map/image
+          Max Value: 1
+          Median window: 5
+          Min Value: 0
+          Name: Compressed Map
+          Normalize Range: true
+          Queue Size: 2
+          Transport Hint: compressed
+          Value: true
       Enabled: true
       Name: Mapping
     - Class: rviz/Group
