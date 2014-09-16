@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>ant_rgbd_sensors</name>
+  <version>0.9.0</version>
+  <description>ANT-specific RGBD sensors launch and config files.</description>
+  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <license>Modified BSD</license>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>softkinetic_camera</run_depend>
+</package>
