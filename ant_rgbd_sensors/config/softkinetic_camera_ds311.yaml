@@ -8,9 +8,9 @@ voxel_grid_side      : 0.03
 
 # Outlier removal (using PCL radius outlier removal filter)
 # Note that this is applied on the output of the downsampling filter!
-use_radius_filter    : false
-search_radius        : 0.05
-minNeighboursInRadius: 50
+use_radius_filter: true
+search_radius    : 0.05
+min_neighbours   : 20
 
 # PassThrough filter
 use_passthrough_filter: true
@@ -18,12 +18,12 @@ limit_min             :  0.1
 limit_max             : 10.0
 
 enable_depth      : true
-depth_mode        : long   # close or long
-depth_frame_format: QQVGA  # QQVGA
+depth_mode        : long   # close, long
+depth_frame_format: QQVGA  # QQVGA, QVGA, VGA
 depth_frame_rate  : 30     # 25, 30, 50, 60
 
 # @todo with the current driver we cannot use depth and color simultaneously
 enable_color      : false
-color_compression : YUY2   # YUY2
-color_frame_format: VGA    # VGA
+color_compression : YUY2   # YUY2, MJPEG
+color_frame_format: VGA    # QQVGA, QVGA, VGA, NHD, WXGA_H
 color_frame_rate  : 30     # 30
