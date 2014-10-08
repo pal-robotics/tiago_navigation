@@ -17,6 +17,13 @@ use_passthrough_filter: true
 limit_min             :  0.1
 limit_max             : 10.0
 
+# Frustum Culling filter
+use_frustum_culling_filter: true
+hfov                      :  40.0
+vfov                      :  60.0
+near_plane                :   0.0
+far_plane                 : 100.0
+
 enable_depth      : true
 depth_mode        : long   # close, long
 depth_frame_format: QQVGA  # QQVGA, QVGA, VGA
