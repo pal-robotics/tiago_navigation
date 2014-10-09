@@ -34,3 +34,5 @@ enable_color      : false
 color_compression : YUY2   # YUY2, MJPEG
 color_frame_format: VGA    # QQVGA, QVGA, VGA, NHD, WXGA_H
 color_frame_rate  : 30     # 30
+
+range_max: 4.0 # m
