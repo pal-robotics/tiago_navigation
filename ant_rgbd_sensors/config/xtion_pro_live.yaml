@@ -1,0 +1,5 @@
+driver:
+    data_skip : 4
+    ir_mode   : 6
+    color_mode: 6
+    depth_mode: 6
