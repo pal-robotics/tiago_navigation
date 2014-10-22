@@ -1,0 +1,6 @@
+<launch>
+  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node">
+    <rosparam file="$(find ant_laser_sensors)/config/base_laser.yaml" command="load"/>
+    <remap from="scan" to="scan"/>
+  </node>
+</launch>

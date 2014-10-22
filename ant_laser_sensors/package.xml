@@ -10,4 +10,5 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>hokuyo_node</run_depend>
+  <run_depend>sick_tim3xx</run_depend>
 </package>
