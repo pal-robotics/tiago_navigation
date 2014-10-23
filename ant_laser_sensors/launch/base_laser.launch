@@ -1,3 +1,3 @@
 <launch>
-  <include file="$(find ant_laser_sensors)/launch/sick_tim511_laser.launch"/>
+  <include file="$(find ant_laser_sensors)/launch/sick_tim551_laser.launch"/>
 </launch>
