@@ -1,6 +1,6 @@
 image_width: 640
 image_height: 480
-camera_name: base_rgbd_camera
+camera_name: rgb_PS1080_PrimeSense
 camera_matrix:
   rows: 3
   cols: 3
