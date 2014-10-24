@@ -26,3 +26,9 @@ driver:
     # which for mode #8 (30Hz) and data_skip = 4 gives:
     # 30Hz / (1 + 4) = 30Hz / 5 = 6Hz
     data_skip : 4
+
+depth_points:
+    range_max: &depth_range_max 10.0
+
+points_xyzrgb_hw_registered:
+    range_max: *depth_range_max
