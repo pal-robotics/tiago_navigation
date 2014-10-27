@@ -1,3 +1,5 @@
+robot: ant
+
 odometry: controller
 
 mapping: karto

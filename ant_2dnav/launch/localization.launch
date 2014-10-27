@@ -2,8 +2,8 @@
 
   <arg name="localization"  default="amcl"/>
 
-  <arg name="map"     default="$(find ant_maps)/config"/>
-  <arg name="symlink" default="$(find ant_maps)/config"/>
+  <arg name="map"     default="$(env HOME)/.pal/ant_maps/config"/>
+  <arg name="symlink" default="$(env HOME)/.pal/ant_maps/config"/>
 
   <arg name="mapping" default=""/>
 

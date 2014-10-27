@@ -8,7 +8,7 @@
   <arg name="localization"   default="amcl"/>
   <arg name="mapping"        default="karto"/>
 
-  <arg name="map" default="$(find ant_maps)/config"/>
+  <arg name="map" default="$(env HOME)/.pal/ant_maps/config"/>
 
   <!-- Localization or Mapping state -->
   <include file="$(find ant_2dnav)/launch/$(arg state).launch">
