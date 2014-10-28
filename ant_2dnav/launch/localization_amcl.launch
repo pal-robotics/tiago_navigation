@@ -3,7 +3,7 @@
 
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
     <!-- Load the last saved pose estimate (initial pose) -->
-    <rosparam file="$(find pal_navigation_sm)/config/pose.yaml" command="load"/>
+    <rosparam file="$(env HOME)/.pal/pose.yaml" command="load"/>
 
     <rosparam file="$(find ant_2dnav)/config/localization/amcl.yaml" command="load"/>
     <param name="use_map_topic" value="$(arg amcl_with_mapping)"/>
