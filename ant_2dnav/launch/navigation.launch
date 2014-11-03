@@ -11,12 +11,8 @@
   <arg name="map" default="$(env HOME)/.pal/ant_maps/config"/>
 
   <!-- Localization or Mapping state -->
-  <include file="$(find ant_2dnav)/launch/$(arg state).launch">
-    <arg name="localization" value="$(arg localization)"/>
-    <arg name="mapping"      value="$(arg mapping)"/>
-
-    <arg name="map" value="$(arg map)"/>
-  </include>
+  <node pkg="pal_navigation_sm" type="navigation.sh" name="navigation"
+        args="ant $(arg state) $(arg localization) $(arg mapping) $(arg map)"/>
 
   <!-- Navigation State Machine -->
   <include file="$(find ant_2dnav)/launch/state_machine.launch"/>
