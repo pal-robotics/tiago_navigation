@@ -272,7 +272,7 @@ Visualization Manager:
               Size (Pixels): 1
               Size (m): 0.01
               Style: Points
-              Topic: softkinetic_camera/depth_registered/points
+              Topic: base_rgbd_camera/depth/points
               Use Fixed Frame: true
               Use rainbow: true
               Value: true
