@@ -9,4 +9,4 @@ scan_time  : 0.033 # 30Hz
 range_min:  0.45  # m
 range_max: 10.0   # m
 
-output_frame_id: base_xtion_link
+output_frame_id: base_rgbd_camera_link
