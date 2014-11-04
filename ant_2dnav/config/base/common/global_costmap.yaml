@@ -133,7 +133,7 @@ global_costmap:
     combination_method: 0
 
     rgbd_scan:
-      sensor_frame: base_rgbd_camera_link
+      sensor_frame: base_footprint
       data_type: LaserScan
       topic: rgbd_scan
       expected_update_rate: 0.5
