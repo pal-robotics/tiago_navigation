@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan" name="pointcloud_to_laserscan">
+    <remap from="cloud_in" to="base_rgbd_camera/depth/points"/>
+    <remap from="scan"     to="rgbd_scan"/>
+
+    <rosparam file="$(find ant_laser_sensors)/config/rgbd_pc_laser.yaml" command="load"/>
+  </node>
+</launch>
