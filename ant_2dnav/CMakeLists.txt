@@ -5,6 +5,13 @@ find_package(catkin REQUIRED)
 
 catkin_package()
 
+install(
+    PROGRAMS
+        scripts/record_mapping.sh
+        scripts/record_move_base.sh
+        scripts/record_2dnav.sh
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 foreach(dir launch config)
     install(DIRECTORY ${dir}/
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
