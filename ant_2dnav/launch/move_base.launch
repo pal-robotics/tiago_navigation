@@ -6,7 +6,7 @@
   <arg name="odom"    default="mobile_base_controller/odom"/>
   <arg name="cmd_vel" default="nav_vel"/>
 
-  <arg name="debug_rgbd" default="true"/>
+  <arg name="debug_rgbd" default="false"/>
 
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen">
     <remap from="odom"    to="$(arg odom)"/>
