@@ -15,7 +15,9 @@
         args="ant $(arg state) $(arg localization) $(arg mapping) $(arg map)"/>
 
   <!-- Navigation State Machine -->
-  <include file="$(find ant_2dnav)/launch/state_machine.launch"/>
+  <include file="$(find ant_2dnav)/launch/state_machine.launch">
+    <arg name="state" value="$(arg state)"/>
+  </include>
 
   <!-- Planning -->
   <include file="$(find ant_2dnav)/launch/move_$(arg planner).launch">
