@@ -653,14 +653,14 @@ Visualization Manager:
           Name: Trajectory
           Topic: slam_trajectory
           Value: true
-         - Class: rviz/MarkerArray
-           Enabled: true
-           Marker Topic: slam_graph_marker_array
-           Name: Pose Graph
-           Namespaces:
-             {}
-           Queue Size: 100
-           Value: true
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: slam_graph_marker_array
+          Name: Pose Graph
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
       Enabled: true
       Name: Localization
     - Class: rviz/Group
