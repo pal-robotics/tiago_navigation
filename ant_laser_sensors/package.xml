@@ -11,4 +11,6 @@
 
   <run_depend>hokuyo_node</run_depend>
   <run_depend>sick_tim3xx</run_depend>
+  <run_depend>depthimage_to_laserscan</run_depend>
+  <run_depend>pointcloud_to_laserscan</run_depend>
 </package>

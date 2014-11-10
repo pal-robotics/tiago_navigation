@@ -1,0 +1,16 @@
+<launch>
+  <arg name="camera"  value="base_rgbd_camera"/>
+  <arg name="manager" value="$(arg camera)/$(arg camera)_nodelet_manager"/>
+  <arg name="respawn" default="false"/>
+  <arg     if="$(arg respawn)" name="bond" value=""/>
+  <arg unless="$(arg respawn)" name="bond" value="--no-bond"/>
+
+  <node pkg="nodelet" type="nodelet" name="depthimage_to_laserscan"
+        args="load pointcloud_to_laserscan/PointCloudToLaserScanNodelet $(arg manager) $(arg bond)"
+        respawn="$(arg respawn)">
+    <remap from="cloud_in" to="$(arg camera)/depth/points"/>
+    <remap from="scan"     to="rgbd_scan"/>
+
+    <rosparam file="$(find ant_laser_sensors)/config/rgbd_pc_laser.yaml" command="load"/>
+  </node>
+</launch>

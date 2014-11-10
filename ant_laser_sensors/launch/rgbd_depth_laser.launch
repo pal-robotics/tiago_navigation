@@ -3,6 +3,6 @@
     <remap from="image" to="base_rgbd_camera/depth/image_raw"/>
     <remap from="scan"  to="rgbd_scan"/>
 
-    <rosparam file="$(find ant_laser_sensors)/config/rgbd_laser.yaml" command="load"/>
+    <rosparam file="$(find ant_laser_sensors)/config/rgbd_depth_laser.yaml" command="load"/>
   </node>
 </launch>
