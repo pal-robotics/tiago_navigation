@@ -8,6 +8,8 @@
 
   <arg name="debug_rgbd" default="false"/>
 
+  <arg name="floor_filter" default="true"/>
+
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
@@ -24,10 +26,16 @@
     <rosparam command="load" file="$(find ant_2dnav)/config/base/$(arg local_planner)/local_planner.yaml"/>
   </node>
 
-  <include file="$(find pal_pcl)/launch/stockbot_floor_filter_xtion.launch"/>
-  <include file="$(find ant_laser_sensors)/launch/rgbd_cloud_laser.launch">
-    <arg name="cloud" default="floor_filter_xtion/filtered_cloud"/>
-  </include>
+  <group if="$(arg floor_filter)">
+    <include file="$(find pal_pcl)/launch/stockbot_floor_filter_xtion.launch"/>
+
+    <include file="$(find ant_laser_sensors)/launch/rgbd_cloud_laser.launch">
+      <arg name="cloud" default="floor_filter_xtion/filtered_cloud"/>
+    </include>
+  </group>
+  <group unless="$(arg floor_filter)">
+    <include file="$(find ant_laser_sensors)/launch/rgbd_cloud_laser.launch"/>
+  </group>
 
   <group if="$(arg debug_rgbd)">
     <node pkg="costmap_2d" type="costmap_2d_markers" name="costmap_2d_markers_global">
