@@ -8,7 +8,7 @@
   <arg name="cloud" default="$(arg camera)/depth/points"/>
   <arg name="scan"  default="rgbd_scan"/>
 
-  <node pkg="nodelet" type="nodelet" name="depthimage_to_laserscan"
+  <node pkg="nodelet" type="nodelet" name="pointcloud_to_laserscan"
         args="load pointcloud_to_laserscan/PointCloudToLaserScanNodelet $(arg manager) $(arg bond)"
         respawn="$(arg respawn)">
     <remap from="cloud_in" to="$(arg cloud)"/>
