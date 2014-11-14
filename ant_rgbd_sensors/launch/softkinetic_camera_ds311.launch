@@ -1,5 +1,0 @@
-<launch>
-  <node name="softkinetic_camera" pkg="softkinetic_camera" type="softkinetic_bringup_node" args="0" output="screen" >
-    <rosparam file="$(find ant_rgbd_sensors)/config/softkinetic_camera_ds311.yaml" command="load"/>
-  </node>
-</launch>

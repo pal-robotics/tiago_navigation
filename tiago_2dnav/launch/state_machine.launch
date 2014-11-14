@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="state"  default="localization"/>
+  <arg name="config" default="$(find tiago_2dnav)/config/state_machine/state_machine.yaml"/>
+
+  <include file="$(find pal_navigation_sm)/launch/pal_navigation_sm.launch">
+    <arg name="state"  value="$(arg state)"/>
+    <arg name="config" value="$(arg config)"/>
+  </include>
+
+</launch>

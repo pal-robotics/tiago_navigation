@@ -1,0 +1,11 @@
+<launch>
+  <arg name="amcl_with_mapping" default="false" />
+
+  <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <!-- Load the last saved pose estimate (initial pose) -->
+    <rosparam file="$(env HOME)/.pal/pose.yaml" command="load"/>
+
+    <rosparam file="$(find tiago_2dnav)/config/localization/amcl.yaml" command="load"/>
+    <param name="use_map_topic" value="$(arg amcl_with_mapping)"/>
+  </node>
+</launch>

@@ -1,0 +1,14 @@
+<launch>
+
+  <arg name="mapping" default="karto"/>
+
+  <arg name="localization" default=""/>
+  <arg name="map"          default=""/>
+
+  <!-- SLAM -->
+  <include file="$(find tiago_2dnav)/launch/mapping_$(arg mapping).launch"/>
+
+  <!-- Exploration -->
+  <include file="$(find pal_exploration)/launch/exploration.launch"/>
+
+</launch>
