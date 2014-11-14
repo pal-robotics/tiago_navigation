@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <rosparam file="$(find tiago_2dnav)/config/mapping/gmapping.yaml" command="load"/>
+  </node>
+</launch>

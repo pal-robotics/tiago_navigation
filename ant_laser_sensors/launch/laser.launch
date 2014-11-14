@@ -1,3 +1,0 @@
-<launch>
-  <include file="$(find ant_laser_sensors)/launch/base_laser.launch"/>
-</launch>

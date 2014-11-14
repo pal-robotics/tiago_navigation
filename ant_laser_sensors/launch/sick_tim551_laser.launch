@@ -1,6 +1,0 @@
-<launch>
-  <node name="sick" pkg="sick_tim3xx" type="sick_tim551_2050001" clear_params="true">
-    <rosparam file="$(find ant_laser_sensors)/config/sick_tim551_laser.yaml" command="load"/>
-    <remap from="scan" to="scan"/>
-  </node>
-</launch>

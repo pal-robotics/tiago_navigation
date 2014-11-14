@@ -1,4 +1,0 @@
-<launch>
-  <!-- navActClientReportingTest continuous test -->
-  <node pkg="ant_nav_cont_test" type="navActClientReportingTest" name="navActClientReportingTest"/>
-</launch>
