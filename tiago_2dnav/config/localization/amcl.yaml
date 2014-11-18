@@ -37,3 +37,6 @@ recovery_alpha_fast: 0.0
 # Frames:
 base_frame_id: base_footprint
 odom_frame_id: odom
+
+# Initial pose:
+save_pose_rate: -1.0 # disabled (< 0.0)
