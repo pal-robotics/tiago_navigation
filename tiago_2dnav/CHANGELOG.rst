@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.1 (2015-01-20)
+------------------
 * refs #10237 : removes rgbd sensor from navigation
   This is still experimental in ant... in the future it could be taken
   from there
