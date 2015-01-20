@@ -12,7 +12,6 @@
   <run_depend>tiago_2dnav</run_depend>
   <run_depend>tiago_maps</run_depend>
   <run_depend>tiago_laser_sensors</run_depend>
-  <run_depend>tiago_nav_cont_test</run_depend>
 
   <export>
     <metapackage/>
