@@ -2,6 +2,9 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.1 (2015-01-20)
 ------------------
 * refs #10237 : removes rgbd sensor from navigation
