@@ -1,3 +1,0 @@
-<launch>
-  <include file="$(find tiago_rgbd_sensors)/launch/base_rgbd.launch"/>
-</launch>
