@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.3 (2015-04-14)
+------------------
 * Set hokuyo laser
 * Contributors: Enrique Fernandez
 
