@@ -4,5 +4,6 @@ slam_karto:
   # Scans:
   minimum_travel_distance: 0.3
   minimum_travel_heading : 0.2
-  range_threshold        : 9.0  # laser max range: 10.0
+  range_threshold        : 5.0  # laser max range: 10.0
   use_scan_barycenter    : true
+  map_free_space         : false
