@@ -1,3 +1,7 @@
 <launch>
-  <include file="$(find tiago_laser_sensors)/launch/base_laser.launch"/>
+  <arg name="laser" default="hokuyo_urg_04lx_ug01"/>
+
+  <include file="$(find tiago_laser_sensors)/launch/base_laser.launch">
+    <arg name="laser" default="$(arg laser)"/>
+  </include>
 </launch>
