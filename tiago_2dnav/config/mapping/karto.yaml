@@ -3,7 +3,9 @@ slam_karto:
 
   # Scans:
   minimum_travel_distance: 0.3
-  minimum_travel_heading : !degrees 7
+  minimum_travel_heading : !degrees 11.5
   range_threshold        : 5.0  # laser max range: 5.6
   use_scan_barycenter    : true
-  map_free_space         : true
+
+  # ! As for now this feature works only with SICK lasers
+  map_free_space         : false

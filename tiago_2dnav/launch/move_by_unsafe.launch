@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="global_planner" default="navfn"/>
+  <arg name="global_planner" default="global_planner"/>
   <arg name="local_planner"  default="pal"/>
 
   <arg name="odom"    default="/mobile_base_controller/odom"/>

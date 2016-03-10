@@ -4,17 +4,26 @@
   <version>0.9.3</version>
   <description>TiaGo-specific launch files needed to run
     navigation on the TiaGo robot.</description>
-  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>Modified BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>amcl</run_depend>
+  <run_depend>fake_localization</run_depend>
   <run_depend>move_base</run_depend>
+  <run_depend>pal_local_planner</run_depend>
+  <run_depend>dwa_local_planner</run_depend>
+  <run_depend>global_planner</run_depend>
+  <run_depend>navfn</run_depend>
+  <run_depend>carrot_planner</run_depend>
   <run_depend>gmapping</run_depend>
   <run_depend>pal_karto</run_depend>
   <run_depend>pal_vo_server</run_depend>
   <run_depend>pal_navigation_sm</run_depend>
   <run_depend>pal_pcl</run_depend>
+  <run_depend>tiago_laser_sensors</run_depend>
+  <run_depend>tiago_maps</run_depend>
+  <run_depend>rviz_plugin_covariance</run_depend>
 </package>

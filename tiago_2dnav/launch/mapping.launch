@@ -9,6 +9,6 @@
   <include file="$(find tiago_2dnav)/launch/mapping_$(arg mapping).launch"/>
 
   <!-- Exploration -->
-  <include file="$(find pal_exploration)/launch/exploration.launch"/>
+  <!--include file="$(find pal_exploration)/launch/exploration.launch"/-->
 
 </launch>
