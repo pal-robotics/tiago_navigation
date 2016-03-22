@@ -2,14 +2,9 @@
 # hostname: laserFront
 frame_id: /base_laser_link
 
-calibrate_time: true
-time_offset   : 0.0
-
 intensity: false
 
 min_ang: !degrees -90
 max_ang: !degrees  90
 
-skip: 0
-
-publish_datagram: false
+range_max: 10.0

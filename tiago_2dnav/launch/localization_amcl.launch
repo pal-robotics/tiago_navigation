@@ -1,7 +1,11 @@
 <launch>
-  <arg name="amcl_with_mapping" default="false" />
+  <arg name="scan" default="scan"/>
+
+  <arg name="amcl_with_mapping" default="false"/>
 
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <remap from="scan" to="$(arg scan)"/>
+
     <!-- Load the last saved pose estimate (initial pose) -->
     <rosparam file="$(env HOME)/.pal/pose.yaml" command="load"/>
 

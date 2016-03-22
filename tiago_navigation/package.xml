@@ -3,7 +3,7 @@
   <name>tiago_navigation</name>
   <version>0.9.3</version>
   <description>TiaGo navigation metapackage</description>
-  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 

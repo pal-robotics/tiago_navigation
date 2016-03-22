@@ -3,14 +3,15 @@
   <name>tiago_laser_sensors</name>
   <version>0.9.3</version>
   <description>TiaGo-specific laser sensors launch and config files.</description>
-  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>Modified BSD</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>hokuyo_node</run_depend>
-  <run_depend>sick_tim3xx</run_depend>
+  <run_depend>sick_tim</run_depend>
   <run_depend>depthimage_to_laserscan</run_depend>
   <run_depend>pointcloud_to_laserscan</run_depend>
+  <run_depend>pal_laser_filters</run_depend>
 </package>

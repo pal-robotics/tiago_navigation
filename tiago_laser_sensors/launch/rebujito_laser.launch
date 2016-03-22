@@ -1,6 +1,0 @@
-<launch>
-  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node">
-    <rosparam file="$(find tiago_laser_sensors)/config/rebujito_laser.yaml" command="load"/>
-    <remap from="scan" to="scan"/>
-  </node>
-</launch>
