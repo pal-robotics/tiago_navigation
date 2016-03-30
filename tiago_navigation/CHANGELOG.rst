@@ -2,6 +2,11 @@
 Changelog for package tiago_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainer
+* Contributors: Jeremie Deray
+
 0.9.3 (2015-04-14)
 ------------------
 
