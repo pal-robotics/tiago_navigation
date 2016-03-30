@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.4 (2016-03-30)
+------------------
 * tiago default laser sick tim 561
 * fix lasers launch
 * laser launch set laser param

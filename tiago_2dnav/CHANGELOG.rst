@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.4 (2016-03-30)
+------------------
 * increase karto scan range threshold
 * record scan
 * new laser launch

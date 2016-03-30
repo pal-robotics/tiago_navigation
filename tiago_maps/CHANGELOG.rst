@@ -2,8 +2,8 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.4 (2016-03-30)
+------------------
 * rm map pal_office_ant
 * Contributors: Jeremie Deray
 
