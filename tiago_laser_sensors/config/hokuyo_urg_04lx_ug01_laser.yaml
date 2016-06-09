@@ -1,4 +1,4 @@
-port    : /dev/ttyACM0
+port    : /dev/hokuyo_laser
 frame_id: /base_laser_link
 
 calibrate_time: true
