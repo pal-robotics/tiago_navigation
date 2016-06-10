@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix hokuyo port accordingly to new dev rule
+* Contributors: Jeremie Deray
+
 0.9.4 (2016-03-30)
 ------------------
 * tiago default laser sick tim 561

@@ -2,6 +2,13 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update rviz with sonars & POI
+* add rviz launch file
+* update rviz conf
+* Contributors: Jeremie Deray
+
 0.9.4 (2016-03-30)
 ------------------
 * increase karto scan range threshold
