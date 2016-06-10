@@ -4,7 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Robot1/Dynamic Footprint1/Status1
+        - /Robot1/Odometry1/Status1
       Splitter Ratio: 0.598726
     Tree Height: 568
   - Class: rviz/Selection
@@ -68,22 +68,27 @@ Visualization Manager:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+              Value: true
             arm_3_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+              Value: true
             arm_4_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+              Value: true
             arm_5_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+              Value: true
             arm_6_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+              Value: true
             arm_7_link:
               Alpha: 1
               Show Axes: false
@@ -122,6 +127,37 @@ Visualization Manager:
               Show Trail: false
               Value: true
             base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_mic_back_left_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_mic_back_right_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_mic_front_left_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_mic_front_right_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_sonar_01_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_sonar_02_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            base_sonar_03_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
@@ -166,185 +202,22 @@ Visualization Manager:
               Show Axes: false
               Show Trail: false
               Value: true
-            hand_grasping_frame:
+            gripper_grasping_frame:
               Alpha: 1
               Show Axes: false
               Show Trail: false
-            hand_index_abd_link:
+            gripper_left_finger_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
-              Value: true
-            hand_index_flex_1_link:
+            gripper_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
-            hand_index_flex_2_link:
+            gripper_right_finger_link:
               Alpha: 1
               Show Axes: false
               Show Trail: false
-            hand_index_flex_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_index_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_index_virtual_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_index_virtual_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_index_virtual_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_little_abd_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_little_flex_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_little_flex_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_little_flex_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_little_virtual_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_little_virtual_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_little_virtual_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_middle_abd_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_middle_flex_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_middle_flex_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_middle_flex_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_middle_virtual_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_middle_virtual_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_middle_virtual_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_mrl_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_palm_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_ring_abd_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_ring_flex_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_ring_flex_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_ring_flex_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_ring_virtual_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_ring_virtual_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_ring_virtual_3_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_safety_box:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_thumb_abd_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_thumb_flex_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_thumb_flex_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-            hand_thumb_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_thumb_virtual_1_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
-            hand_thumb_virtual_2_link:
-              Alpha: 1
-              Show Axes: false
-              Show Trail: false
-              Value: true
             head_1_link:
               Alpha: 1
               Show Axes: false
@@ -369,6 +242,7 @@ Visualization Manager:
               Alpha: 1
               Show Axes: false
               Show Trail: false
+              Value: true
             wheel_left_link:
               Alpha: 1
               Show Axes: false
@@ -440,10 +314,10 @@ Visualization Manager:
           Color: 204; 51; 204
           Enabled: false
           Name: Odometry
-          Orientation: true
-          Position: true
+          Orientation: false
+          Position: false
           Scale: 1
-          Topic: ""
+          Topic: /mobile_base_controller/odom
           Value: false
         - Class: rviz/MarkerArray
           Enabled: true
@@ -472,7 +346,7 @@ Visualization Manager:
           Marker Topic: twist_marker
           Name: Twist
           Namespaces:
-            {}
+            "": true
           Queue Size: 100
           Value: true
         - Class: rviz/Marker
@@ -480,7 +354,7 @@ Visualization Manager:
           Marker Topic: text_marker
           Name: Mode
           Namespaces:
-            {}
+            "": true
           Queue Size: 100
           Value: true
         - Class: rviz/Group
@@ -572,6 +446,15 @@ Visualization Manager:
               Use Fixed Frame: true
               Use rainbow: true
               Value: false
+            - Alpha: 0.5
+              Buffer Length: 1
+              Class: rviz/Range
+              Color: 0; 0; 255
+              Enabled: true
+              Name: Sonars
+              Queue Size: 100
+              Topic: /sonar_base
+              Value: true
           Enabled: true
           Name: Sensors
       Enabled: true
@@ -831,7 +714,7 @@ Visualization Manager:
           Marker Topic: /loc_measure/loc_status_marker
           Name: Localization Quality
           Namespaces:
-            {}
+            "": true
           Queue Size: 100
           Value: true
       Enabled: true
@@ -888,6 +771,19 @@ Visualization Manager:
           Name: Trajectory
           Topic: slam_trajectory
           Value: true
+        - Class: rviz/Group
+          Displays:
+            - Class: rviz/InteractiveMarkers
+              Enable Transparency: true
+              Enabled: true
+              Name: Points of Interest
+              Show Axes: false
+              Show Descriptions: true
+              Show Visual Aids: false
+              Update Topic: /poi_marker_server/update
+              Value: true
+          Enabled: true
+          Name: Zone of Interest
       Enabled: true
       Name: Mapping
     - Alpha: 1
@@ -924,26 +820,27 @@ Visualization Manager:
     - Class: rviz/PublishPoint
       Single click: true
       Topic: clicked_point
+    - Class: pal-waypoint_rviz_plugins/Point of Interest
   Value: true
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 8.56246
+      Distance: 21.4205
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.11262
-        Y: -0.455371
-        Z: 0.465534
+        X: -2.13432
+        Y: 3.52058
+        Z: -0.19581
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.609797
+      Pitch: 1.0298
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.02546
+      Yaw: 5.56047
     Saved: ~
 Window Geometry:
   Compressed Map:
@@ -953,7 +850,7 @@ Window Geometry:
   Height: 1056
   Hide Left Dock: false
   Hide Right Dock: true
-  QMainWindow State: 000000ff00000000fd00000004000000000000013c00000396fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000028000002c7000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0043006f006d00700072006500730073006500640020004d0061007001000002f5000000c90000001600ffffff000000010000010f00000378fc0200000004fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000006400fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000000000000000fb0000000a0056006900650077007300000000d1000002cf000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002f600fffffffb0000000800540069006d006501000000000000045000000000000000000000063e0000039600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000019100000396fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000028000002c7000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001c0043006f006d00700072006500730073006500640020004d0061007001000002f5000000c90000001600ffffff000000010000010f00000396fc0200000004fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000c10000006400fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000028000000a30000000000000000fb0000000a0056006900650077007300000000ef000002cf000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000005e90000039600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
