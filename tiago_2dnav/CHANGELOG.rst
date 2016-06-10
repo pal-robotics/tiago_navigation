@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.5 (2016-06-10)
+------------------
 * update rviz with sonars & POI
 * add rviz launch file
 * update rviz conf
