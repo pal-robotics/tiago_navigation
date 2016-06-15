@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update rviz conf to add sonars
+* Contributors: Jeremie Deray
+
 0.9.5 (2016-06-10)
 ------------------
 * update rviz with sonars & POI
