@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* move_base config file base path param
+* Contributors: Jeremie Deray
+
 0.9.6 (2016-06-15)
 ------------------
 * update rviz conf to add sonars
