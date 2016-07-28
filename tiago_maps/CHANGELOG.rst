@@ -2,6 +2,11 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove deprecated maps
+* Contributors: Victor Lopez
+
 0.9.7 (2016-06-22)
 ------------------
 

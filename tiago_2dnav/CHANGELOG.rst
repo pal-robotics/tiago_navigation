@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add advanced navigation rviz file
+* Contributors: Victor Lopez
+
 0.9.7 (2016-06-22)
 ------------------
 * move_base config file base path param
