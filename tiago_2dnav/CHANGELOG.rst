@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.8 (2016-07-28)
+------------------
 * Add advanced navigation rviz file
 * Contributors: Victor Lopez
 
