@@ -1,7 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
   <arg name="state"  default="localization"/>
-  <arg name="config" default="$(find tiago_2dnav)/config/state_machine/state_machine.yaml"/>
+
+  <arg name="public_sim"   default="false"/>
+
+  <arg name="sim_sufix" value="_public_sim"     if="$(arg public_sim)"/>
+  <arg name="sim_sufix" value=""                   unless="$(arg public_sim)"/>
+
+  <arg name="config" default="$(find tiago_2dnav)/config/state_machine/state_machine$(arg sim_sufix).yaml"/>
 
   <include file="$(find pal_navigation_sm)/launch/pal_navigation_sm.launch">
     <arg name="state"  value="$(arg state)"/>

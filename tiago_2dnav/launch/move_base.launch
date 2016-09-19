@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
   <arg name="global_planner" default="global_planner"/>
@@ -14,6 +15,12 @@
 
   <arg name="config_base_path" default="$(find tiago_2dnav)"/>
 
+  <arg name="public_sim"   default="false"/>
+
+  <arg name="sim_sufix" value="_public_sim"     if="$(arg public_sim)"/>
+  <arg name="sim_sufix" value=""                unless="$(arg public_sim)"/>
+
+
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
@@ -21,8 +28,8 @@
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/move_base.yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors.yaml"/>
 
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap.yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap.yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap$(arg sim_sufix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap$(arg sim_sufix).yaml"/>
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/global_planner/$(arg global_planner).yaml"/>
 
