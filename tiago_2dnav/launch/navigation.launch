@@ -21,7 +21,7 @@
   <!-- Navigation State Machine -->
   <include file="$(find tiago_2dnav)/launch/state_machine.launch">
     <arg name="state" value="$(arg state)"/>
-    <arg name="public_sim"     default="false"/>
+    <arg name="public_sim" value="$(arg public_sim)"/>
   </include>
 
   <!-- Planning -->
