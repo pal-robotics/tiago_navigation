@@ -14,6 +14,12 @@
 
   <arg name="map" default="$(env HOME)/.pal/tiago_maps/config"/>
 
+  <!-- Project RGBD point cloud to laser-scan -->
+  <include file="$(find tiago_laser_sensors)/launch/rgbd_depth_laser.launch">
+    <arg name="image" value="/xtion/depth_registered/image_raw"/>
+    <arg name="scan"  value="/rgbd_scan"/>
+  </include>
+
   <!-- Localization or Mapping state -->
   <node pkg="pal_navigation_sm" type="navigation.sh" name="navigation"
         args="tiago $(arg state) $(arg localization) $(arg mapping) $(arg map) $(arg octomap)"/>
