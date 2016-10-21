@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixe RGBD laser-scan frame. Refs #14514
+* Contributors: Jordi Pages
+
 0.9.8 (2016-07-28)
 ------------------
 

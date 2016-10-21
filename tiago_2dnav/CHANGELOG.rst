@@ -2,6 +2,22 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix rviz config file
+* add proper obstacle layers in recovery mode yaml
+* visualize RGBD laser scan. Refs #14514
+* refs #14514: project RGBD pointcloud to laserscan
+* fixes #14514
+* fixes #14512, #14514
+* remove tab
+* fix arg not being assigned
+* remove typo
+* remove commented lines in public sim config files
+* public simulation for tiago including navigation
+  refs #14239
+* Contributors: Jordi Pages
+
 0.9.8 (2016-07-28)
 ------------------
 * Add advanced navigation rviz file
