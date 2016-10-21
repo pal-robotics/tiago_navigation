@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.9 (2016-10-21)
+------------------
 * fix rviz config file
 * add proper obstacle layers in recovery mode yaml
 * visualize RGBD laser scan. Refs #14514
