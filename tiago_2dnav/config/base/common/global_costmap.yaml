@@ -26,8 +26,8 @@ global_costmap:
       type: 'costmap_2d::ObstacleLayer'
     - name: obstacle_vo_layer
       type: 'costmap_2d::ObstacleLayer'
-    #- name: obstacle_rgbd_layer
-    #  type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_rgbd_layer
+      type: 'costmap_2d::ObstacleLayer'
     - name: footprint_layer
       type: 'costmap_2d::FootprintLayer'
     - name: inflation_layer
@@ -106,7 +106,7 @@ global_costmap:
       max_obstacle_height: 2.0
 
   obstacle_rgbd_layer:
-    enabled: false
+    enabled: true
     observation_sources: rgbd_scan
     combination_method: 1
 
