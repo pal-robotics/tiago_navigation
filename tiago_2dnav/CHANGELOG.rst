@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* enable rgbd layer for obstacle avoidance
+* Contributors: Jordi Pages
+
 0.9.9 (2016-10-21)
 ------------------
 * fix rviz config file
