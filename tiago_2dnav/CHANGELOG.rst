@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.10 (2016-10-25)
+-------------------
 * enable rgbd layer for obstacle avoidance
 * Contributors: Jordi Pages
 

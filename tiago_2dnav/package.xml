@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>tiago_2dnav</name>
-  <version>0.9.9</version>
+  <version>0.9.10</version>
   <description>TiaGo-specific launch files needed to run
     navigation on the TiaGo robot.</description>
   <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
