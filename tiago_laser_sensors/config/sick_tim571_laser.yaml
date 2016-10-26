@@ -5,5 +5,4 @@ intensity: false
 min_ang: !degrees -90
 max_ang: !degrees  90
 
-range_max: 30.0
-time_increment: 0.000061722
+range_max: 25.0

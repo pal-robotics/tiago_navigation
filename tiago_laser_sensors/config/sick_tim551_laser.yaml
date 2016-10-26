@@ -1,5 +1,3 @@
-# Uncomment the 'hostname' to use ethernet instead of USB
-# hostname: laserFront
 frame_id: /base_laser_link
 
 intensity: false
