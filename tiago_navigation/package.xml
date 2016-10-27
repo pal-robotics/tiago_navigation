@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>tiago_navigation</name>
-  <version>0.9.10</version>
+  <version>0.9.11</version>
   <description>TiaGo navigation metapackage</description>
   <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>BSD</license>
