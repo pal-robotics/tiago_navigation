@@ -6,3 +6,6 @@ GlobalPlanner:
   allow_unknown: false
 
   visualize_potential: true
+
+  neutral_cost: 100
+  last_plan_if_blocked: true
