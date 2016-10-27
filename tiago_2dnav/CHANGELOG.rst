@@ -2,6 +2,14 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update global_planner.yaml, commented neutral_cost
+* added param config to activate global planner special behaviors:
+  1. reuse last valid path if goal becames blocked
+  2. (commented) try alternative goto points inside a radius if original is blocked
+* Contributors: Procópio Stein
+
 0.9.10 (2016-10-25)
 -------------------
 * enable rgbd layer for obstacle avoidance

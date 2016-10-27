@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated dependencies, updated laser filter, normalized config files, updated pc2ls launch and config
+* Contributors: Procópio Stein
+
 0.9.10 (2016-10-25)
 -------------------
 
