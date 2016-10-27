@@ -13,5 +13,6 @@
   <run_depend>sick_tim</run_depend>
   <run_depend>depthimage_to_laserscan</run_depend>
   <run_depend>pointcloud_to_laserscan</run_depend>
-  <run_depend>pal_laser_filters</run_depend>
+  <run_depend>laser_filters</run_depend>
+  <run_depend>pal_filters</run_depend>
 </package>

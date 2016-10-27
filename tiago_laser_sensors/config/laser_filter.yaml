@@ -1,2 +1,12 @@
-threshold: 0.5
-width    : 3
+scan_filter_chain:
+
+- name: outlier
+  type: pal_filters/LaserScanOutlierFilter
+  params:
+    distance_threshold: 0.5
+
+#- name: range
+#  type: LaserScanRangeFilter
+#  params:
+#    lower_threshold: 0.05
+#    upper_threshold: 25.0
