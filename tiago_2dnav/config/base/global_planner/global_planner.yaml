@@ -7,5 +7,5 @@ GlobalPlanner:
 
   visualize_potential: true
 
-  neutral_cost: 100
+  #neutral_cost: 100
   last_plan_if_blocked: true
