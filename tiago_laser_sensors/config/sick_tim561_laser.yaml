@@ -2,6 +2,8 @@ frame_id: /base_laser_link
 
 intensity: false
 
+time_offset: -0.08
+
 min_ang: !degrees -90
 max_ang: !degrees  90
 

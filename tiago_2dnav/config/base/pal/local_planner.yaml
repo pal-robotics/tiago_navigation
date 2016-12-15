@@ -10,7 +10,7 @@ PalLocalPlanner:
 
   # mcc and oac params
   max_vel_x : &max_vel_x 0.3
-  max_rot_vel: !degrees 60.0
+  max_rot_vel: !degrees 30.0
   travel_speed_sfl   : *max_vel_x
   point_b_sfl        : 0.26
   decay              : 0.85
