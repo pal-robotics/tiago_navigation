@@ -5,8 +5,10 @@ scan_filter_chain:
   params:
     distance_threshold: 0.5
 
-#- name: range
-#  type: LaserScanRangeFilter
-#  params:
-#    lower_threshold: 0.05
-#    upper_threshold: 25.0
+- name: footprint_filter
+  type: laser_filters/LaserScanFootprintFilter
+  params:
+    inscribed_radius: 0.30
+
+
+
