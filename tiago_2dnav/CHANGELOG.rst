@@ -2,6 +2,9 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.9.11 (2016-10-27)
 -------------------
 * Update global_planner.yaml, commented neutral_cost

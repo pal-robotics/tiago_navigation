@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add footprint filter
+* Contributors: Jordi Pages
+
 0.9.11 (2016-10-27)
 -------------------
 * updated dependencies, updated laser filter, normalized config files, updated pc2ls launch and config
