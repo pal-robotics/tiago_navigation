@@ -10,9 +10,14 @@
 
   <arg name="config" default="$(find tiago_2dnav)/config/state_machine/state_machine$(arg sim_sufix).yaml"/>
 
+  <arg name="base_frame" default="/base_footprint"/>
+  <arg name="map_frame"  default="/map"/>
+
   <include file="$(find pal_navigation_sm)/launch/pal_navigation_sm.launch">
     <arg name="state"  value="$(arg state)"/>
     <arg name="config" value="$(arg config)"/>
+    <arg name="base_frame" value="$(arg base_frame)"/>
+    <arg name="map_frame"  value="$(arg map_frame)"/>
   </include>
 
 </launch>
