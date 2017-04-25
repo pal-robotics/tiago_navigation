@@ -1,5 +1,7 @@
 <launch>
   <arg name="scan" default="scan"/>
+  <arg name="multiple" default="false"/>
+  <arg name="tf_prefix" default=""/>
 
   <arg name="amcl_with_mapping" default="false"/>
 
@@ -11,5 +13,8 @@
 
     <rosparam file="$(find tiago_2dnav)/config/localization/amcl.yaml" command="load"/>
     <param name="use_map_topic" value="$(arg amcl_with_mapping)"/>
+    <param if="$(arg multiple)" name="odom_frame_id" value="$(arg tf_prefix)/odom"/>
+    <param if="$(arg multiple)" name="base_frame_id" value="$(arg tf_prefix)/base_footprint"/>
+    <param if="$(arg multiple)" name="global_frame_id" value="$(arg tf_prefix)/map"/>
   </node>
 </launch>

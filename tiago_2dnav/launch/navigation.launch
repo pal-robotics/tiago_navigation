@@ -11,23 +11,29 @@
   <arg name="octomap"        default="false"/>
   <arg name="disable_vo"     default="false"/>
   <arg name="public_sim"     default="false"/>
+  <arg name="tf_prefix"      default=""/>
+  <arg name="multiple"       default="false"/>
 
   <arg name="map" default="$(env HOME)/.pal/tiago_maps/config"/>
 
   <!-- Project RGBD point cloud to laser-scan -->
   <include file="$(find tiago_laser_sensors)/launch/rgbd_depth_laser.launch">
-    <arg name="image" value="/xtion/depth_registered/image_raw"/>
-    <arg name="scan"  value="/rgbd_scan"/>
+    <arg name="image" value="xtion/depth_registered/image_raw"/>
+    <arg name="scan"  value="rgbd_scan"/>
+    <arg name="multiple" value="$(arg multiple)"/>
+    <arg name="tf_prefix"      value="$(arg tf_prefix)"/>
   </include>
 
   <!-- Localization or Mapping state -->
   <node pkg="pal_navigation_sm" type="navigation.sh" name="navigation"
-        args="tiago $(arg state) $(arg localization) $(arg mapping) $(arg map) $(arg octomap)"/>
+        args="tiago $(arg state) $(arg localization) $(arg mapping) $(arg map) $(arg octomap) $(arg tf_prefix)"/>
 
   <!-- Navigation State Machine -->
   <include file="$(find tiago_2dnav)/launch/state_machine.launch">
     <arg name="state" value="$(arg state)"/>
     <arg name="public_sim" value="$(arg public_sim)"/>
+    <arg if="$(arg multiple)" name="map_frame" value="/$(arg tf_prefix)/map"/>
+    <arg if="$(arg multiple)" name="base_frame" value="/$(arg tf_prefix)/base_footprint"/>
   </include>
 
   <!-- Planning -->
@@ -35,6 +41,8 @@
     <arg name="global_planner" value="$(arg global_planner)"/>
     <arg name="local_planner"  value="$(arg local_planner)"/>
     <arg name="public_sim"     value="$(arg public_sim)"/>
+    <arg name="tf_prefix"      value="$(arg tf_prefix)"/>
+    <arg name="multiple"       value="$(arg multiple)"/>
   </include>
 
   <!-- VO map server -->

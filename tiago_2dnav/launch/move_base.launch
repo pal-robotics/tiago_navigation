@@ -20,6 +20,8 @@
   <arg name="sim_sufix" value="_public_sim"     if="$(arg public_sim)"/>
   <arg name="sim_sufix" value=""                unless="$(arg public_sim)"/>
 
+  <arg name="multiple" default="false"/>
+  <arg name="tf_prefix" default=""/>
 
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
@@ -35,6 +37,18 @@
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/$(arg local_planner)/move_base.yaml"/>
     <rosparam command="load" file="$(arg config_base_path)/config/base/$(arg local_planner)/local_planner.yaml"/>
+
+    <param if="$(arg multiple)" name="global_costmap/global_frame" value="$(arg tf_prefix)/map"/>
+    <param if="$(arg multiple)" name="global_costmap/robot_base_frame" value="$(arg tf_prefix)/base_footprint"/>
+    <param if="$(arg multiple)" name="global_costmap/obstacle_laser_layer/base_scan/sensor_frame" value="$(arg tf_prefix)/base_laser_link"/>
+    <param if="$(arg multiple)" name="global_costmap/obstacle_rgbd_layer/rgbd_scan/sensor_frame" value="$(arg tf_prefix)/base_footprint"/>
+    <param if="$(arg multiple)" name="local_costmap/global_frame" value="$(arg tf_prefix)/odom"/>
+    <param if="$(arg multiple)" name="local_costmap/robot_base_frame" value="$(arg tf_prefix)/base_footprint"/>
+    <param if="$(arg multiple)" name="local_costmap/obstacle_laser_layer/base_scan/sensor_frame" value="$(arg tf_prefix)/base_laser_link"/>
+    <param if="$(arg multiple)" name="local_costmap/obstacle_rgbd_layer/rgbd_scan/sensor_frame" value="$(arg tf_prefix)/base_footprint"/>
+    <param if="$(arg multiple)" name="local_costmap/obstacle_sonar_layer/sonar_cloud/sensor_frame" value="$(arg tf_prefix)/sonar_cloud"/>
+    <param if="$(arg multiple)" name="local_costmap/obstacle_sonar_layer/sonar_max_range_cloud/sensor_frame" value="$(arg tf_prefix)/base_link"/>
+
   </node>
 
   <group if="$(arg debug_rgbd)">
