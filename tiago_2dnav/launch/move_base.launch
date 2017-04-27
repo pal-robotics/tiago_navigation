@@ -51,8 +51,6 @@
 
   </node>
 
-  <include file="$(find tiago_laser_sensors)/launch/rgbd_cloud_laser.launch"/>
-
   <group if="$(arg debug_rgbd)">
     <node pkg="costmap_2d" type="costmap_2d_markers" name="costmap_2d_markers_global">
       <remap from="voxel_grid" to="move_base/global_costmap/obstacle_rgbd_layer/voxel_grid"/>
