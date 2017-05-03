@@ -13,6 +13,7 @@ install(
         scripts/record_odom.sh
         scripts/record_patrol.sh
         scripts/record_rgbd.sh
+        scripts/navigation_camera_mgr.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 foreach(dir launch config)
