@@ -2,6 +2,17 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed pointcloud_to_laserscan entries and files
+  the pointcloud to laserscan files were moved to specific tools
+  they will be available only if advanced navigation is active
+* added launch and config for rgbd_scan
+* reduced max rot vel and adde time offset for all laser configs
+* added footprint laser filter
+* Allow multiple Tiagos on a single Gazebo
+* Contributors: Procópio Stein, davidfernandez
+
 0.9.12 (2016-12-21)
 -------------------
 * add footprint filter
