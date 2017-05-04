@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.13 (2017-05-04)
+-------------------
 * added navigation camera manager script and inst rules
 * removed pointcloud_to_laserscan entries and files
   the pointcloud to laserscan files were moved to specific tools

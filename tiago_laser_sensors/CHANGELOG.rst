@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.13 (2017-05-04)
+-------------------
 * removed pointcloud_to_laserscan entries and files
   the pointcloud to laserscan files were moved to specific tools
   they will be available only if advanced navigation is active
