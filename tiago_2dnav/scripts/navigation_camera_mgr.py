@@ -2,6 +2,8 @@
 import rospy
 from actionlib_msgs.msg import GoalStatusArray
 from control_msgs.msg import PointHeadActionGoal
+from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
+from pal_startup_msgs.srv import StartupStart, StartupStop
 
 class NavigationCameraMgr:
 
@@ -13,9 +15,47 @@ class NavigationCameraMgr:
         self.pub_head_topic = rospy.Publisher(
             '/head_controller/point_head_action/goal', 
             PointHeadActionGoal, queue_size=1)
+        self.torso_cmd = rospy.Publisher('/torso_controller/command', 
+            JointTrajectory, queue_size=1)
 
         rospy.loginfo("monitoring move_base goal " 
             "status and moving the head accordingly.")
+
+    def head_mgr_service(self, command):
+        if (command == "start"):
+            try:
+                rospy.wait_for_service('/pal_startup_control/start', 2)
+            except rospy.ROSException and rospy.ServiceException as e:
+                rospy.logerr('Could not reach pal_startup_control/start : %s', e.message)
+
+            pal_start = rospy.ServiceProxy('/pal_startup_control/start', StartupStart)
+            try:
+                rospy.loginfo("enabling head_manager.")
+                pal_start("head_manager", "")
+            except rospy.ROSException and rospy.ServiceException as e:
+                rospy.logerr('Could not start head_manager: %s', e.message)
+
+        elif (command == "stop"):
+            try:
+                rospy.wait_for_service('/pal_startup_control/stop', 2)
+            except rospy.ROSException and rospy.ServiceException as e:
+                rospy.logerr('Could not reach pal_startup_control/stop : %s', e.message)
+            pal_stop = rospy.ServiceProxy('/pal_startup_control/stop', StartupStop)
+            try:
+                rospy.loginfo("disabling head_manager.")
+                pal_stop("head_manager")
+            except rospy.ROSException and rospy.ServiceException as e:
+                rospy.logerr('Could not stop head_manager: %s', e.message)
+
+    def elevate_torso(self):
+        rospy.loginfo("Moving torso up")
+        jt = JointTrajectory()
+        jt.joint_names = ['torso_lift_joint']
+        jtp = JointTrajectoryPoint()
+        jtp.positions = [0.20]
+        jtp.time_from_start = rospy.Duration(2.5)
+        jt.points.append(jtp)
+        self.torso_cmd.publish(jt)
 
     def look_down(self):
         phag = PointHeadActionGoal()
@@ -54,12 +94,15 @@ class NavigationCameraMgr:
 
         if (self.goal.status == 1 and 
             self.goal.status != self.previous_status):
+            self.head_mgr_service("stop")
             self.look_down()
+            self.elevate_torso()
             rospy.loginfo(self.goal.text)
 
         elif (self.goal.status != 1 and 
             self.goal.status != self.previous_status):
-            self.look_up()
+            self.head_mgr_service("start")
+        #     self.look_up()
             rospy.loginfo(self.goal.text)
 
         self.previous_status = self.goal.status

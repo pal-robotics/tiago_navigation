@@ -26,4 +26,6 @@
   <run_depend>tiago_laser_sensors</run_depend>
   <run_depend>tiago_maps</run_depend>
   <run_depend>rviz_plugin_covariance</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>pal_startup_msgs</run_depend>
 </package>
