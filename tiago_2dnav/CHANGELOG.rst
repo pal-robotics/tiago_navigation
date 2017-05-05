@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* elevates torso and talks to head manager when navigating
+* Contributors: Procópio Stein
+
 0.9.13 (2017-05-04)
 -------------------
 * added navigation camera manager script and inst rules
