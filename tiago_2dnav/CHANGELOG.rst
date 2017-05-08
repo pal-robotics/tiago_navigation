@@ -2,6 +2,14 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* improved move_base goal status management
+* minor verbosity changes
+* enable disable head mgr through action client
+* moved subscriber init down to avoid callback before completing init
+* Contributors: Procópio Stein
+
 0.9.14 (2017-05-05)
 -------------------
 * elevates torso and talks to head manager when navigating
