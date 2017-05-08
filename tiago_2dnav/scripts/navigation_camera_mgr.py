@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from actionlib_msgs.msg import GoalStatusArray
+from actionlib_msgs.msg import GoalStatusArray, GoalStatus
 from control_msgs.msg import PointHeadActionGoal
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from pal_startup_msgs.srv import StartupStart, StartupStop
@@ -115,19 +115,20 @@ class NavigationCameraMgr:
 
         self.goal = data.status_list.pop()
 
-        if (self.goal.status == 1 and 
+        if (self.goal.status == GoalStatus.ACTIVE and 
             self.goal.status != self.previous_status):
             self.head_mgr_as("disable")
             self.look_down()
             self.elevate_torso()
             rospy.loginfo("navigation: " + self.goal.text)
+            self.previous_status = self.goal.status
 
-        elif (self.goal.status != 1 and 
+        elif (self.goal.status != GoalStatus.ACTIVE and 
+              self.goal.status != GoalStatus.PENDING and
             self.goal.status != self.previous_status):
             rospy.loginfo("navigation: " + self.goal.text)
             self.head_mgr_as("enable")
-
-        self.previous_status = self.goal.status
+            self.previous_status = self.goal.status
 
     def run(self):
         r = rospy.Rate(10)
