@@ -25,13 +25,13 @@ class NavigationCameraMgr:
             GoalStatusArray, self.callback)
 
         rospy.loginfo("monitoring move_base goal " 
-            "status and moving the head accordingly.")
+            "status and moving the camera accordingly")
 
     def head_mgr_as(self, command):
 
         if(not self.head_mgr_client.wait_for_server(
             timeout = rospy.Duration(2.0))):
-            rospy.logerr("failed to connect to head manager node.")
+            rospy.logwarn("failed to connect to head manager node")
             return
 
         if (command == "enable"):
@@ -40,7 +40,7 @@ class NavigationCameraMgr:
             
         elif (command == "disable"):
             action = DisableGoal()
-            rospy.loginfo("disabling head manager.")
+            rospy.loginfo("disabling head manager")
             action.duration = 0.0
             self.head_mgr_client.send_goal(action)
 
