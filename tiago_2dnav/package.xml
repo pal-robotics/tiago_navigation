@@ -28,4 +28,5 @@
   <run_depend>rviz_plugin_covariance</run_depend>
   <run_depend>trajectory_msgs</run_depend>
   <run_depend>pal_startup_msgs</run_depend>
+  <run_depend>pal_common_msgs</run_depend>
 </package>

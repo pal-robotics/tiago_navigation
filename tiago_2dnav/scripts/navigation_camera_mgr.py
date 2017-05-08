@@ -1,25 +1,48 @@
 #!/usr/bin/env python
 import rospy
-from actionlib_msgs.msg import GoalStatusArray
+from actionlib_msgs.msg import GoalStatusArray, GoalStatus
 from control_msgs.msg import PointHeadActionGoal
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from pal_startup_msgs.srv import StartupStart, StartupStop
+from pal_common_msgs.msg import DisableGoal, DisableAction
+import actionlib
 
 class NavigationCameraMgr:
 
     def __init__(self):
         self.previous_status = None
 
-        rospy.Subscriber('move_base/status', 
-            GoalStatusArray, self.callback)
         self.pub_head_topic = rospy.Publisher(
             '/head_controller/point_head_action/goal', 
             PointHeadActionGoal, queue_size=1)
         self.torso_cmd = rospy.Publisher('/torso_controller/command', 
             JointTrajectory, queue_size=1)
+        
+        self.head_mgr_client = actionlib.SimpleActionClient(
+            '/pal_head_manager/disable', DisableAction)
+        
+        rospy.Subscriber('move_base/status', 
+            GoalStatusArray, self.callback)
 
         rospy.loginfo("monitoring move_base goal " 
-            "status and moving the head accordingly.")
+            "status and moving the camera accordingly")
+
+    def head_mgr_as(self, command):
+
+        if(not self.head_mgr_client.wait_for_server(
+            timeout = rospy.Duration(2.0))):
+            rospy.logwarn("failed to connect to head manager node")
+            return
+
+        if (command == "enable"):
+            rospy.loginfo("enabling head manager.")
+            self.head_mgr_client.cancel_goal()
+            
+        elif (command == "disable"):
+            action = DisableGoal()
+            rospy.loginfo("disabling head manager")
+            action.duration = 0.0
+            self.head_mgr_client.send_goal(action)
 
     def head_mgr_service(self, command):
         if (command == "start"):
@@ -92,20 +115,20 @@ class NavigationCameraMgr:
 
         self.goal = data.status_list.pop()
 
-        if (self.goal.status == 1 and 
+        if (self.goal.status == GoalStatus.ACTIVE and 
             self.goal.status != self.previous_status):
-            self.head_mgr_service("stop")
+            self.head_mgr_as("disable")
             self.look_down()
             self.elevate_torso()
-            rospy.loginfo(self.goal.text)
+            rospy.loginfo("navigation: " + self.goal.text)
+            self.previous_status = self.goal.status
 
-        elif (self.goal.status != 1 and 
+        elif (self.goal.status != GoalStatus.ACTIVE and 
+              self.goal.status != GoalStatus.PENDING and
             self.goal.status != self.previous_status):
-            self.head_mgr_service("start")
-        #     self.look_up()
-            rospy.loginfo(self.goal.text)
-
-        self.previous_status = self.goal.status
+            rospy.loginfo("navigation: " + self.goal.text)
+            self.head_mgr_as("enable")
+            self.previous_status = self.goal.status
 
     def run(self):
         r = rospy.Rate(10)
