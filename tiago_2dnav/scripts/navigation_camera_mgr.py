@@ -10,13 +10,13 @@ class NavigationCameraMgr:
     def __init__(self):
         self.previous_status = None
 
-        rospy.Subscriber('move_base/status', 
-            GoalStatusArray, self.callback)
         self.pub_head_topic = rospy.Publisher(
             '/head_controller/point_head_action/goal', 
             PointHeadActionGoal, queue_size=1)
         self.torso_cmd = rospy.Publisher('/torso_controller/command', 
             JointTrajectory, queue_size=1)
+        rospy.Subscriber('move_base/status', 
+            GoalStatusArray, self.callback)
 
         rospy.loginfo("monitoring move_base goal " 
             "status and moving the head accordingly.")
