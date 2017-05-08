@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.15 (2017-05-08)
+-------------------
 * improved move_base goal status management
 * minor verbosity changes
 * enable disable head mgr through action client
