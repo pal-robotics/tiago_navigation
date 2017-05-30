@@ -2,6 +2,16 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Revert "adde dock panel in rviz"
+  This reverts commit 8a9044982e790965bbd262150258287a049e7bcc.
+* Revert "Allow multiple Tiagos on a single Gazebo"
+  This reverts commit 2a07d2782c53cbeee353109000bf03a0ad174005.
+  Conflicts:
+  tiago_laser_sensors/launch/rgbd_depth_laser.launch
+* Contributors: Procópio Stein
+
 0.9.15 (2017-05-08)
 -------------------
 * improved move_base goal status management
