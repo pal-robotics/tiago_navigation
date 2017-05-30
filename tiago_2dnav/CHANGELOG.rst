@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed deprecated launch
+* Contributors: Procópio Stein
+
 0.9.15 (2017-05-08)
 -------------------
 * improved move_base goal status management
@@ -109,7 +114,7 @@ Changelog for package tiago_2dnav
 * refs #10237 : removes rgbd sensor from navigation
   This is still experimental in ant... in the future it could be taken
   from there
-* disables saving initial_ params
+* disables saving initial params
   NOTE this generates 1 socket every time a param is set
 * renames to tiago (TiaGo)
 * Contributors: enriquefernandez
