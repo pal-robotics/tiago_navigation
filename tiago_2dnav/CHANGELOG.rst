@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.10.0 (2017-05-30)
+-------------------
 * removed deprecated launch
 * Contributors: Procópio Stein
 
