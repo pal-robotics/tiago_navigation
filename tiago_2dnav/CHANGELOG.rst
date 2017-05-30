@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.16 (2017-05-30)
+-------------------
 * Revert "adde dock panel in rviz"
   This reverts commit 8a9044982e790965bbd262150258287a049e7bcc.
 * Revert "Allow multiple Tiagos on a single Gazebo"
