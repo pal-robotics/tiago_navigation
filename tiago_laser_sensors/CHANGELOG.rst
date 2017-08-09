@@ -2,6 +2,15 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed typo in robot name
+* cosmetic (changed node name to normalize with pmb2)
+* added hokuyo scan_raw remap
+* filter node in base_laser.launch
+* increased fov and activated intensity
+* Contributors: Procópio Stein
+
 0.10.0 (2017-05-30)
 -------------------
 

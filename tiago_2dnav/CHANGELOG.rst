@@ -2,6 +2,13 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added the first_map_only parameter for the amcl used with topic
+* fixed the pose.yaml files for multi tiago
+* fix empty tf_prefix in navigation.sh calling
+* Contributors: AleDF
+
 0.10.0 (2017-05-30)
 -------------------
 * removed deprecated launch
