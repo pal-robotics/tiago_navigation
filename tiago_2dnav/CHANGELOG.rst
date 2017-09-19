@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated params to new pal local planner
+* Contributors: Procópio Stein
+
 0.10.1 (2017-08-09)
 -------------------
 * added the first_map_only parameter for the amcl used with topic
