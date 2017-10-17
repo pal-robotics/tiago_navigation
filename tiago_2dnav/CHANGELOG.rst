@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.0 (2017-10-17)
+-------------------
 * updated parameter due to refactoring in pal-local-planner
 * Contributors: Procópio Stein
 
