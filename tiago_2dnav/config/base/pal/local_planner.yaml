@@ -18,6 +18,6 @@ PalLocalPlanner:
   min_dist_plan_ahead: 0.25
   dist_to_final_speed: 0.25
   allow_backwards    : false
-  robotWidth      : 0.5
+  robot_width      : 0.5
 
   transform_tolerance: 0.2
