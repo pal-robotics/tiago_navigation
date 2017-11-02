@@ -2,6 +2,13 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update rviz config file for advanced navigation
+  - Disable by default the navfn potential viewer
+  - Add rgbd_scan viewer
+* Contributors: Jordi Pages
+
 0.11.0 (2017-10-17)
 -------------------
 * updated parameter due to refactoring in pal-local-planner
