@@ -2,6 +2,9 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.11.2 (2017-11-07)
 -------------------
 * remove virtual obstacle enclosing tables
