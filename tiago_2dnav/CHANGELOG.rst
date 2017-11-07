@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.11.3 (2017-11-07)
+-------------------
 * shutdown costmaps when the robot is not moving
 * Contributors: Jordi Pages
 
