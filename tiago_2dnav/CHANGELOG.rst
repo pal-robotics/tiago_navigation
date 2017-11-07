@@ -2,6 +2,9 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.2 (2017-11-07)
+-------------------
+
 0.11.1 (2017-11-02)
 -------------------
 * update rviz config file for advanced navigation
