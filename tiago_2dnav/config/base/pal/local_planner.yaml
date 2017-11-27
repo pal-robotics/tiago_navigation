@@ -10,14 +10,13 @@ PalLocalPlanner:
 
   # mcc and oac params
   max_vel_x : &max_vel_x 0.3
-  max_rot_vel: !degrees 30.0
+  max_rot_vel: !degrees 60.0
   travel_speed_sfl   : *max_vel_x
   point_b_sfl        : 0.26
   decay              : 0.85
   max_dist_plan_ahead: 2.0
-  min_dist_plan_ahead: 0.25
-  dist_to_final_speed: 0.25
+  min_dist_plan_ahead: 0.27
+  dist_to_final_speed: 0.27
+  
   allow_backwards    : false
-  robot_width      : 0.5
-
-  transform_tolerance: 0.2
+  robot_width      : 0.54
