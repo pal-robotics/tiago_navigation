@@ -2,6 +2,12 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* increased rot vel, adjusted footprint
+* use only one aggressive costmap clearing and a rotate recovery
+* Contributors: Procópio Stein
+
 0.11.3 (2017-11-07)
 -------------------
 * shutdown costmaps when the robot is not moving
