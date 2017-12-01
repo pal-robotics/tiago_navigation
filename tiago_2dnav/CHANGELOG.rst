@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* allow alternative goals if original is blocked
+* Contributors: Procópio Stein
+
 0.11.4 (2017-11-27)
 -------------------
 * increased rot vel, adjusted footprint
