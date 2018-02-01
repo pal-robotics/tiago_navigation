@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.12.0 (2018-02-01)
+-------------------
 * Merge branch 'urg-node-driver' into 'dubnium-devel'
   replaced hokuyo_node with urg_node
   See merge request robots/tiago_navigation!25
