@@ -2,6 +2,9 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.11.5 (2018-01-11)
 -------------------
 * allow alternative goals if original is blocked
