@@ -9,7 +9,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>hokuyo_node</run_depend>
+  <run_depend>urg_node</run_depend>
   <run_depend>sick_tim</run_depend>
   <run_depend>laser_filters</run_depend>
   <run_depend>pal_filters</run_depend>

@@ -1,10 +1,10 @@
-port    : /dev/hokuyo_laser
+serial_port: /dev/hokuyo_laser
 frame_id: /base_laser_link
 
 calibrate_time: true
 time_offset   : 0.0
 
-intensity: false
+publish_intensity: false
 
-min_ang: !degrees -90
-max_ang: !degrees  90
+angle_min: !degrees -90
+angle_max: !degrees  90
