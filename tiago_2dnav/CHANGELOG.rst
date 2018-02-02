@@ -2,6 +2,16 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'remove-rgbd-layers' into 'dubnium-devel'
+  removed rgbd layers from base config
+  Closes #1
+  See merge request robots/tiago_navigation!26
+* restored changes in public sim files
+* removed rgbd layers from base config
+* Contributors: Procópio Stein
+
 0.12.0 (2018-02-01)
 -------------------
 
