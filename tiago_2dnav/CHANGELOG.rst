@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.12.1 (2018-02-02)
+-------------------
 * Merge branch 'remove-rgbd-layers' into 'dubnium-devel'
   removed rgbd layers from base config
   Closes #1
