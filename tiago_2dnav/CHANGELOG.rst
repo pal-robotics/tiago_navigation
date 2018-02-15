@@ -2,6 +2,14 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'respawn-move-base' into 'dubnium-devel'
+  added respawn flag to move_base.launch
+  See merge request robots/tiago_navigation!27
+* added respawn flag to move_base.launch
+* Contributors: Jordi Pages, Procópio Stein
+
 0.12.1 (2018-02-02)
 -------------------
 * Merge branch 'remove-rgbd-layers' into 'dubnium-devel'
