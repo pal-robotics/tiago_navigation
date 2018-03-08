@@ -2,6 +2,15 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'restore-old-hokuyo-node' into 'dubnium-devel'
+  Revert "replaced hokuyo_node with urg_node"
+  See merge request robots/tiago_navigation!28
+* Revert "replaced hokuyo_node with urg_node"
+  This reverts commit b6568ab624b817325150434d7fecf7442e8fdfa2.
+* Contributors: Procópio Stein, Victor Lopez
+
 0.12.2 (2018-02-15)
 -------------------
 

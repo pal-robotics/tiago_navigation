@@ -2,6 +2,9 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.12.2 (2018-02-15)
 -------------------
 * Merge branch 'respawn-move-base' into 'dubnium-devel'
