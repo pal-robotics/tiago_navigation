@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add tf_prefix and multiple arguments for consistency
+* Contributors: Victor Lopez
+
 0.12.3 (2018-03-08)
 -------------------
 

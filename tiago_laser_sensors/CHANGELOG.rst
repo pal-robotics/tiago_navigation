@@ -2,6 +2,9 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.12.3 (2018-03-08)
 -------------------
 * Merge branch 'restore-old-hokuyo-node' into 'dubnium-devel'
