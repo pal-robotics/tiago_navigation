@@ -8,5 +8,5 @@ GlobalPlanner:
   use_quadratic: true
   use_grid_path: false
   old_navfn_behavior: false
-  neutral_cost: 135
+  neutral_cost: 100
   last_plan_if_blocked: true
