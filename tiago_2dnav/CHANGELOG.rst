@@ -2,6 +2,13 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Revert "avoid oscillating global path and prefer shorter paths"
+  This reverts commit 3f808b86f7e19c9dea9d647615b44b1ff53fba9c.
+* avoid oscillating global path and prefer shorter paths
+* Contributors: Procópio Stein
+
 0.12.4 (2018-03-21)
 -------------------
 * Add tf_prefix and multiple arguments for consistency
