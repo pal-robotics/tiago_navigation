@@ -6,6 +6,6 @@ EBandPlannerROS:
   max_vel_th: 1.0
   min_vel_lin: 0.02
   min_vel_th: 0.0
-  xy_goal_tolerance: 0.05
+  xy_goal_tolerance: 0.055
   yaw_goal_tolerance: 0.2
 
