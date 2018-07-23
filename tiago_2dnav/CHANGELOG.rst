@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.12.6 (2018-07-23)
+-------------------
 * Merge branch 'update-amcl-params' into 'dubnium-devel'
   updated the amcl config to match the specifics template
   See merge request robots/tiago_navigation!31
