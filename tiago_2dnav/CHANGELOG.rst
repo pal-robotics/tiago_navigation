@@ -2,6 +2,14 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update-amcl-params' into 'dubnium-devel'
+  updated the amcl config to match the specifics template
+  See merge request robots/tiago_navigation!31
+* updated the amcl config to match the specifics template
+* Contributors: Procópio Stein, Victor Lopez
+
 0.12.5 (2018-04-24)
 -------------------
 * Revert "avoid oscillating global path and prefer shorter paths"
