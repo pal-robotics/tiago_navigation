@@ -5,7 +5,8 @@
   <description>TiaGo-specific launch files needed to run
     navigation on the TiaGo robot.</description>
   <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
-  <license>Modified BSD</license>
+  <maintainer email="procopio.stein@pal-robotics.com">Procopio Stein</maintainer>
+  <license>Apache License 2.0</license>
   <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
 
   <buildtool_depend>catkin</buildtool_depend>
