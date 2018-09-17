@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.12.7 (2018-09-17)
+-------------------
 * updated rviz config
 * updated maintainers and license
 * updated karto config to use max range and less updates
