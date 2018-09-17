@@ -2,6 +2,16 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated rviz config
+* updated maintainers and license
+* updated karto config to use max range and less updates
+* updated plp params format
+* avoid narrow passages, use same config of pmb2
+* updated costmap config from specifics
+* Contributors: Procópio Stein
+
 0.12.6 (2018-07-23)
 -------------------
 * Merge branch 'update-amcl-params' into 'dubnium-devel'
