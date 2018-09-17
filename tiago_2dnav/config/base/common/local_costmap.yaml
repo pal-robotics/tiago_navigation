@@ -6,18 +6,18 @@ local_costmap:
   robot_base_frame: base_footprint
   transform_tolerance: 0.2
 
-  update_frequency : 5.0
-  publish_frequency: 2.0
+  update_frequency : 10.0
+  publish_frequency: 1.0
 
   static_map    : false
   rolling_window: true
   width         : 5.0
   height        : 5.0
-  # @todo try to reduce the resolution and check if it helps in narrow spaces
-  resolution    : 0.05
+  resolution    : 0.025
 
-  robot_radius: 0.25
+  robot_radius: 0.275
 
+  # attention, the order and combination method matters
   plugins:
     - name: obstacle_laser_layer
       type: 'costmap_2d::ObstacleLayer'
@@ -25,15 +25,15 @@ local_costmap:
       type: 'costmap_2d::ObstacleLayer'
     - name: obstacle_vo_layer
       type: 'costmap_2d::ObstacleLayer'
-    - name: footprint_layer
-      type: 'costmap_2d::FootprintLayer'
+    - name: obstacle_rgbd_layer
+      type: 'costmap_2d::ObstacleLayer'
     - name: inflation_layer
       type: 'costmap_2d::InflationLayer'
 
   obstacle_laser_layer:
     enabled: true
     observation_sources: base_scan
-    combination_method: 1 # @todo review why here for the local costmap we use '1' for all layers
+    combination_method: 0 # can erase static layer
 
     base_scan:
       sensor_frame: base_laser_link
@@ -44,10 +44,10 @@ local_costmap:
       inf_is_valid: true
       marking: true
       clearing: true
-      raytrace_range: 3.0
-      obstacle_range: 2.5
+      raytrace_range: 4.0
+      obstacle_range: 3.5
       min_obstacle_height: -0.1
-      max_obstacle_height: 0.2
+      max_obstacle_height: 0.4
 
   obstacle_sonar_layer:
     enabled: false
@@ -62,8 +62,8 @@ local_costmap:
       observation_persistence: 0.0
       marking: true
       clearing: true
-      raytrace_range: 3.0
-      obstacle_range: 2.5
+      raytrace_range: 4.5
+      obstacle_range: 3.0
       min_obstacle_height: 0.1
       max_obstacle_height: 1.8
 
@@ -98,10 +98,29 @@ local_costmap:
       min_obstacle_height: 0.0
       max_obstacle_height: 2.0
 
-  footprint_layer:
-    enabled: true
+  obstacle_rgbd_layer:
+    enabled: false
+    observation_sources: rgbd_scan
+    combination_method: 1
+
+    rgbd_scan:
+      sensor_frame: rgbd_laser_link
+      data_type: LaserScan
+      topic: rgbd_scan
+      expected_update_rate: 0.1
+      observation_persistence: 0.0
+      inf_is_valid: true
+      marking: true
+      clearing: true
+      raytrace_range: 2.9
+      obstacle_range: 2.8
+      blanking_range: 1.55
+      mark_blanking: true
+      min_obstacle_height: -0.1
+      max_obstacle_height: 0.2
+      debug: false
 
   inflation_layer:
-    enabled            : true
-    inflation_radius   : 0.3
-    cost_scaling_factor: 2.0
+    enabled            : false
+    inflation_radius   : 0.55
+    cost_scaling_factor: 5.0
