@@ -13,8 +13,8 @@ PalLocalPlanner:
   point_b_sfl        : 0.26
   decay              : 0.85
   max_dist_plan_ahead: 2.0
-  min_dist_plan_ahead: 0.27
-  dist_to_final_speed: 0.27
+  min_dist_plan_ahead: 0.3
+  dist_to_final_speed: 0.5
   allow_backwards    : false
 
   # oa params
