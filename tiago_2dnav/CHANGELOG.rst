@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.12.8 (2018-09-25)
+-------------------
 * Merge branch 'fix-collision-avoidance' into 'dubnium-devel'
   adjust local planner plan params
   See merge request robots/tiago_navigation!35
