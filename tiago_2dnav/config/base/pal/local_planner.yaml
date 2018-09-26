@@ -9,7 +9,6 @@ PalLocalPlanner:
   yaw_goal_tolerance: 0.2
 
   # mcc params
-  travel_speed_sfl   : *max_vel_x
   point_b_sfl        : 0.26
   decay              : 0.85
   max_dist_plan_ahead: 2.0
