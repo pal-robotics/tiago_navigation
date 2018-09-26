@@ -5,8 +5,8 @@ Changelog for package tiago_maps
 0.12.8 (2018-09-25)
 -------------------
 
-Forthcoming
------------
+0.12.9 (2018-09-26)
+-------------------
 * 0.12.8
 * changelog
 * Contributors: Procópio Stein

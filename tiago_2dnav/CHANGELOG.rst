@@ -10,8 +10,8 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
-Forthcoming
------------
+0.12.9 (2018-09-26)
+-------------------
 * changed param name from threshold to max_threshold
 * removed deprecated param
 * 0.12.8
