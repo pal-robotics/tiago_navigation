@@ -10,6 +10,18 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* changed param name from threshold to max_threshold
+* removed deprecated param
+* 0.12.8
+* changelog
+* Merge branch 'fix-collision-avoidance' into 'dubnium-devel'
+  adjust local planner plan params
+  See merge request robots/tiago_navigation!35
+* adjust local planner plan params
+* Contributors: Procópio Stein
+
 0.12.7 (2018-09-17)
 -------------------
 * updated rviz config
