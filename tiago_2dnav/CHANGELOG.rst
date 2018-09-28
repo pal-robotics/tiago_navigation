@@ -10,8 +10,8 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
-Forthcoming
------------
+0.12.10 (2018-09-28)
+--------------------
 * output move base log to screen
 * Contributors: Procópio Stein
 
