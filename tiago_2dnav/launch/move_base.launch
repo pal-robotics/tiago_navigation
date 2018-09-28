@@ -23,7 +23,7 @@
   <arg name="multiple" default="false"/>
   <arg name="tf_prefix" default=""/>
 
-  <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="log" respawn="true" launch-prefix="$(arg launch_prefix)">
+  <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" respawn="true" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
