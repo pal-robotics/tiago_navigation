@@ -5,6 +5,8 @@ recovery_behaviors:
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
   - name: 'rotate'
     type: rotate_recovery/RotateRecovery
+  - name: 'dummy'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
 
 aggressive_reset:
   reset_distance: 1.5
@@ -16,3 +18,7 @@ rotate:
 refresh_vo:
   reset_distance: 0.0
   layer_names: ["obstacle_vo_layer"]
+
+dummy:
+  reset_distance: 5.5
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
