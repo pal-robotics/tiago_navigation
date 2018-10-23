@@ -1,24 +1,59 @@
 recovery_behaviors:
+ # - name: 'in_place_blanking'
+ #   type: blanking_recovery/BlankingRecovery
   - name: 'refresh_vo'
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
-  - name: 'aggressive_reset'
+  - name: 'costmap_reset_far'
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
-  - name: 'rotate'
-    type: rotate_recovery/RotateRecovery
+  - name: 'costmap_reset_close'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  # - name: 'small_rotation_blanking'
+  #   type: blanking_recovery/BlankingRecovery
   - name: 'dummy'
     type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  # - name: 'full_rotation_blanking'
+  #   type: blanking_recovery/BlankingRecovery
+  - name: 'rotate'
+    type: rotate_recovery/RotateRecovery
 
-aggressive_reset:
+in_place_blanking:
+  max_rotational_vel: 0.4
+  rotation_steps: 0
+  clearing_max_dist: 0.8
+  count_threshold: 450
+  use_roof_camera: false
+
+costmap_reset_far:
+  reset_distance: 3.0
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
+
+costmap_reset_close:
   reset_distance: 1.5
-  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer"]
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
 
-rotate:
-  max_rotational_vel: 0.6
+dummy:
+  reset_distance: 5.5
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
+
+small_rotation_blanking:
+  max_rotational_vel: 0.4
+  rotation_steps: 3
+  clearing_max_dist: 0.7
+  count_threshold: 450
+  use_roof_camera: false
+  max_rotation_angle: !degrees 45
+  min_rotation_angle: !degrees -45
+
+full_rotation_blanking:
+  max_rotational_vel: 0.4
+  rotation_steps: 6
+  clearing_max_dist: 0.7
+  count_threshold: 450
+  use_roof_camera: false
 
 refresh_vo:
   reset_distance: 0.0
   layer_names: ["obstacle_vo_layer"]
 
-dummy:
-  reset_distance: 5.5
-  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
+rotate:
+  max_rotational_vel: 0.6
