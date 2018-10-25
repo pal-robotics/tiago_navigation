@@ -3,7 +3,7 @@ PalLocalPlanner:
   # main params
   max_vel_x : &max_vel_x 0.5
   max_rot_vel: !degrees 60.0
-  acc_lim_x    : 0.6
+  acc_lim_x    : 0.2
   acc_lim_theta: !degrees 60.0
   xy_goal_tolerance : 0.2
   yaw_goal_tolerance: 0.2
