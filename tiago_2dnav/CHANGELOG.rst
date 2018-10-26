@@ -10,6 +10,17 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* simplified recoveries for simple navigation
+* reduced acc x for smoothness
+* mirrowed recoveries from pmb2 plus rotate recovery
+* added dummy recovery
+* added vo clearing in recovery behavior
+* vo_layer uses base frame, greatly improves large maps costmap loops
+* increase max vel to 0.5 m/s
+* Contributors: Procópio Stein
+
 0.12.10 (2018-09-28)
 --------------------
 * output move base log to screen
