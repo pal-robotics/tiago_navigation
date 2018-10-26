@@ -10,8 +10,8 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
-Forthcoming
------------
+0.12.11 (2018-10-26)
+--------------------
 * simplified recoveries for simple navigation
 * reduced acc x for smoothness
 * mirrowed recoveries from pmb2 plus rotate recovery
