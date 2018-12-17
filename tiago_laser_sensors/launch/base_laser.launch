@@ -4,7 +4,7 @@
   <include file="$(find tiago_laser_sensors)/launch/$(arg laser)_laser.launch"/>
 
   <node name="laser_filter" pkg="laser_filters" type="scan_to_scan_filter_chain">
-    <rosparam file="$(find tiago_laser_sensors)/config/laser_filter.yaml" command="load"/>
+    <rosparam file="$(find tiago_laser_sensors)/config/$(arg laser)_filter.yaml" command="load"/>
     <remap from="scan"          to="scan_raw"/>
     <remap from="scan_filtered" to="scan"/>
   </node>
