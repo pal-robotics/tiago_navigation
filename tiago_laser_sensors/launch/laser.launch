@@ -1,5 +1,5 @@
 <launch>
-  <arg name="laser" default="sick_tim561"/>
+  <arg name="laser" default="sick-561"/>
 
   <rosparam param="laser_model" subst_value="True">$(arg laser)</rosparam>
 
