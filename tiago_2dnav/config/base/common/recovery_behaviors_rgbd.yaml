@@ -1,0 +1,82 @@
+recovery_behaviors:
+  - name: 'in_place_blanking'
+    type: blanking_recovery/BlankingRecovery
+  - name: 'refresh_vo'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'costmap_reset_far'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'costmap_reset_close'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'small_rotation_blanking_1'
+    type: blanking_recovery/BlankingRecovery
+  - name: 'small_rotation_blanking_2'
+    type: blanking_recovery/BlankingRecovery
+  - name: 'small_rotation_blanking_3'
+    type: blanking_recovery/BlankingRecovery
+  - name: 'dummy'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+
+in_place_blanking:
+  max_rotational_vel: 0.4
+  rotation_steps: 0
+  clearing_max_dist: 0.8
+  count_threshold: 450
+  base_depth_topic: "/xtion/depth/image"
+  use_roof_camera: false
+
+costmap_reset_far:
+  reset_distance: 3.0
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
+
+costmap_reset_close:
+  reset_distance: 1.5
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
+
+dummy:
+  reset_distance: 5.5
+  layer_names: ["obstacle_laser_layer", "obstacle_rgbd_layer", "obstacle_vo_layer"]
+
+small_rotation_blanking_1:
+  max_rotational_vel: 0.4
+  rotation_steps: 2
+  clearing_max_dist: 0.7
+  count_threshold: 450
+  base_depth_topic: "/xtion/depth/image"
+  use_roof_camera: false
+  max_rotation_angle: !degrees 120
+  min_rotation_angle: !degrees 0
+
+small_rotation_blanking_2:
+  max_rotational_vel: 0.4
+  rotation_steps: 2
+  clearing_max_dist: 0.7
+  count_threshold: 450
+  base_depth_topic: "/xtion/depth/image"
+  use_roof_camera: false
+  max_rotation_angle: !degrees 120
+  min_rotation_angle: !degrees 0
+
+small_rotation_blanking_3:
+  max_rotational_vel: 0.4
+  rotation_steps: 2
+  clearing_max_dist: 0.7
+  count_threshold: 450
+  base_depth_topic: "/xtion/depth/image"
+  use_roof_camera: false
+  max_rotation_angle: !degrees 120
+  min_rotation_angle: !degrees 0
+
+full_rotation_blanking:
+  max_rotational_vel: 0.4
+  rotation_steps: 6
+  clearing_max_dist: 0.7
+  base_depth_topic: "/xtion/depth/image"
+  count_threshold: 450
+  use_roof_camera: false
+
+refresh_vo:
+  reset_distance: 0.0
+  layer_names: ["obstacle_vo_layer"]
+
+rotate:
+  max_rotational_vel: 0.6

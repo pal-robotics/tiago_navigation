@@ -1,0 +1,12 @@
+# Independent settings for the local costmap
+local_costmap:
+  # attention, the order and combination method matters
+  plugins:
+    - name: obstacle_laser_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_sonar_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_vo_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: inflation_layer
+      type: 'costmap_2d::InflationLayer'

@@ -17,15 +17,7 @@ global_costmap:
 
   robot_radius: 0.25
 
-  plugins:
-    - name: static_layer
-      type: 'costmap_2d::StaticLayer'
-    - name: obstacle_laser_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_rgbd_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: inflation_layer
-      type: 'costmap_2d::InflationLayer'
+  #plugins are loaded on a separate file
 
   static_layer:
     enabled  : true

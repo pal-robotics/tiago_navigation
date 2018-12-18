@@ -17,18 +17,8 @@ local_costmap:
 
   robot_radius: 0.275
 
-  # attention, the order and combination method matters
-  plugins:
-    - name: obstacle_laser_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_sonar_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_vo_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: obstacle_rgbd_layer
-      type: 'costmap_2d::ObstacleLayer'
-    - name: inflation_layer
-      type: 'costmap_2d::InflationLayer'
+  #plugins are loaded in a separate yaml file
+
 
   obstacle_laser_layer:
     enabled: true
@@ -99,7 +89,7 @@ local_costmap:
       max_obstacle_height: 2.0
 
   obstacle_rgbd_layer:
-    enabled: false
+    enabled: true
     observation_sources: rgbd_scan
     combination_method: 1
 
