@@ -22,6 +22,7 @@
 
   <arg name="multiple" default="false"/>
   <arg name="tf_prefix" default=""/>
+  <arg name="rgbd_sensors"      default="false"/> <!-- unused, for compatibility-->
 
   <node pkg="move_base" type="move_base" name="move_base" clear_params="true" output="screen" respawn="true" launch-prefix="$(arg launch_prefix)">
     <remap from="odom"    to="$(arg odom)"/>
