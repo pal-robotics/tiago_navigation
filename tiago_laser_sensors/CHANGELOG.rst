@@ -5,6 +5,16 @@ Changelog for package tiago_laser_sensors
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+* Merge branch 'specifics-refactor' into 'erbium-devel'
+  Specifics refactor
+  See merge request robots/tiago_navigation!42
+* Add rgbd cloud
+* Expand filter parameters for each laser
+* Rename laser sensors to the new standard
+* Contributors: Victor Lopez
+
 0.12.11 (2018-10-26)
 --------------------
 

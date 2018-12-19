@@ -10,6 +10,17 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* Merge branch 'specifics-refactor' into 'erbium-devel'
+  Specifics refactor
+  See merge request robots/tiago_navigation!42
+* Add rgbd cloud
+* Add latch_xy_goal_tolerance: true to pal local planner
+* mapping_karto will call pmb2's mapping_karto
+* Add rgbd_sensors parameter
+* Contributors: Victor Lopez
+
 0.12.11 (2018-10-26)
 --------------------
 * simplified recoveries for simple navigation
