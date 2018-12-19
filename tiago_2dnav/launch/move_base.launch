@@ -16,9 +16,12 @@
   <arg name="config_base_path" default="$(find tiago_2dnav)"/>
 
   <arg name="public_sim"   default="false"/>
+  <arg name="rgbd_sensors"   default="false"/> <!-- do not enable with public_sim -->
 
-  <arg name="sim_sufix" value="_public_sim"     if="$(arg public_sim)"/>
-  <arg name="sim_sufix" value=""                unless="$(arg public_sim)"/>
+  <arg name="sim_suffix" value="_public_sim"     if="$(arg public_sim)"/>
+  <arg name="sim_suffix" value=""                unless="$(arg public_sim)"/>
+  <arg name="rgbd_suffix" value="_rgbd" if="$(arg rgbd_sensors)"/>
+  <arg name="rgbd_suffix" value=""      unless="$(arg rgbd_sensors)"/>
 
   <arg name="multiple" default="false"/>
   <arg name="tf_prefix" default=""/>
@@ -28,10 +31,11 @@
     <remap from="cmd_vel" to="$(arg cmd_vel)"/>
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/common/move_base.yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors.yaml"/>
-
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap$(arg sim_sufix).yaml"/>
-    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap$(arg sim_sufix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/recovery_behaviors$(arg rgbd_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap$(arg sim_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap$(arg sim_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/global_costmap_plugins$(arg sim_suffix)$(arg rgbd_suffix).yaml"/>
+    <rosparam command="load" file="$(arg config_base_path)/config/base/common/local_costmap_plugins$(arg sim_suffix)$(arg rgbd_suffix).yaml"/>
 
     <rosparam command="load" file="$(arg config_base_path)/config/base/global_planner/$(arg global_planner).yaml"/>
 

@@ -11,6 +11,7 @@
   <arg name="octomap"        default="false"/>
   <arg name="disable_vo"     default="false"/>
   <arg name="public_sim"     default="false"/>
+  <arg name="rgdb_sensors"   default="false"/>
   <arg name="tf_prefix"      default=""/>
   <arg name="multiple"       default="false"/>
 
@@ -33,6 +34,7 @@
     <arg name="global_planner" value="$(arg global_planner)"/>
     <arg name="local_planner"  value="$(arg local_planner)"/>
     <arg name="public_sim"     value="$(arg public_sim)"/>
+    <arg name="rgbd_sensors"   value="$(arg rgbd_sensors)"/>
     <arg name="tf_prefix"      value="$(arg tf_prefix)"/>
     <arg name="multiple"       value="$(arg multiple)"/>
   </include>

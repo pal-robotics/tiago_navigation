@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
-  <arg name="scan" default="scan"/>
-
-  <arg name="trajectory_file" default="$(env HOME)/.pal/trajectory.yaml"/>
-
-  <rosparam file="$(find tiago_2dnav)/config/mapping/karto.yaml" command="load"/>
-
-  <include file="$(find pal_karto)/launch/karto.launch">
-    <arg name="scan" value="$(arg scan)"/>
-    <arg name="trajectory_file" value="$(arg trajectory_file)"/>
-  </include>
+  <include file="$(find pmb2_2dnav)/launch/mapping_karto.launch" pass_all_args="true"/>
 </launch>
