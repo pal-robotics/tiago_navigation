@@ -10,8 +10,8 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
-Forthcoming
------------
+0.12.12 (2018-12-19)
+--------------------
 * Merge branch 'compatibility' into 'dubnium-devel'
   Add rgbd_sensors argument for compatibility
   See merge request robots/tiago_navigation!43
