@@ -5,6 +5,9 @@ Changelog for package tiago_laser_sensors
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+
 0.12.11 (2018-10-26)
 --------------------
 

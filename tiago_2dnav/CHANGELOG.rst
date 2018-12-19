@@ -10,6 +10,18 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* Merge branch 'compatibility' into 'dubnium-devel'
+  Add rgbd_sensors argument for compatibility
+  See merge request robots/tiago_navigation!43
+* Add rgbd_sensors argument for compatibility
+* Merge branch 'activate-latch' into 'dubnium-devel'
+  activated latch xy goal tolerance
+  See merge request robots/tiago_navigation!41
+* activated latch xy goal tolerance
+* Contributors: Procópio Stein, Victor Lopez
+
 0.12.11 (2018-10-26)
 --------------------
 * simplified recoveries for simple navigation
