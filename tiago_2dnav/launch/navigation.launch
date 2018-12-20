@@ -11,7 +11,7 @@
   <arg name="octomap"        default="false"/>
   <arg name="disable_vo"     default="false"/>
   <arg name="public_sim"     default="false"/>
-  <arg name="rgdb_sensors"   default="false"/>
+  <arg name="rgbd_sensors"   default="false"/>
   <arg name="tf_prefix"      default=""/>
   <arg name="multiple"       default="false"/>
 
