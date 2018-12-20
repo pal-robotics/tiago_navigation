@@ -10,6 +10,11 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* Fix typo
+* Contributors: Victor Lopez
+
 1.0.0 (2018-12-19)
 ------------------
 * Merge branch 'specifics-refactor' into 'erbium-devel'

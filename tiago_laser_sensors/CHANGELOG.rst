@@ -5,6 +5,9 @@ Changelog for package tiago_laser_sensors
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+
 1.0.0 (2018-12-19)
 ------------------
 * Merge branch 'specifics-refactor' into 'erbium-devel'
