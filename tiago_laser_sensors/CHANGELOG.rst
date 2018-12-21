@@ -5,6 +5,11 @@ Changelog for package tiago_laser_sensors
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+* rgbd is started on it's own
+* Contributors: Victor Lopez
+
 1.0.1 (2018-12-20)
 ------------------
 

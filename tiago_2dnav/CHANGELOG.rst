@@ -10,6 +10,9 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+
 1.0.1 (2018-12-20)
 ------------------
 * Fix typo
