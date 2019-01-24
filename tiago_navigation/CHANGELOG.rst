@@ -5,6 +5,9 @@ Changelog for package tiago_navigation
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+
 1.0.2 (2018-12-21)
 ------------------
 
