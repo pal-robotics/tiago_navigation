@@ -10,8 +10,8 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
-Forthcoming
------------
+1.0.3 (2019-01-24)
+------------------
 * Decrease yaw tolerance for eband planner for public simulation
 * Contributors: Victor Lopez
 
