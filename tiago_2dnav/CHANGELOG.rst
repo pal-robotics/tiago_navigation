@@ -10,6 +10,9 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+
 1.0.4 (2019-02-05)
 ------------------
 * Add missing exec depend
