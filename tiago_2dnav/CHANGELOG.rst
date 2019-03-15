@@ -10,6 +10,14 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* Merge branch 'teb_planner' into 'erbium-devel'
+  Add configuration for TEB planner
+  See merge request robots/tiago_navigation!45
+* Add configuration for TEB planner
+* Contributors: Victor Lopez, davidfernandez
+
 1.0.5 (2019-02-13)
 ------------------
 

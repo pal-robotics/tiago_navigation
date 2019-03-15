@@ -5,6 +5,9 @@ Changelog for package tiago_laser_sensors
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+
 1.0.5 (2019-02-13)
 ------------------
 * reduced laser FOV
