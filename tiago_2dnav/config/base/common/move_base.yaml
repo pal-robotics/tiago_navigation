@@ -8,7 +8,7 @@ oscillation_timeout : 10.0
 oscillation_distance:  0.2
 
 recovery_behavior_enabled: true
-shutdown_costmaps        : true
+shutdown_costmaps        : false
 
 search_alternative_goals: true
 alternative_goals_thresh: 0.5
