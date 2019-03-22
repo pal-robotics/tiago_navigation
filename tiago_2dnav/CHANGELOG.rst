@@ -10,6 +10,14 @@ Changelog for package tiago_2dnav
 * adjust local planner plan params
 * Contributors: Procópio Stein
 
+Forthcoming
+-----------
+* Merge branch 'fix-nav-test' into 'erbium-devel'
+  do not shutdown costmaps
+  See merge request robots/tiago_navigation!48
+* do not shutdown costmaps
+* Contributors: Procópio Stein
+
 1.0.6 (2019-03-15)
 ------------------
 * Merge branch 'teb_planner' into 'erbium-devel'

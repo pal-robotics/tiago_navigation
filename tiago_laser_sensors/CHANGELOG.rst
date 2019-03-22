@@ -5,6 +5,17 @@ Changelog for package tiago_laser_sensors
 0.12.8 (2018-09-25)
 -------------------
 
+Forthcoming
+-----------
+* Merge branch 'fix-tf2-compatibility' into 'erbium-devel'
+  tf2 compliance
+  See merge request robots/tiago_navigation!47
+* tf2 compliance
+* Revert "tf2 compliance"
+  This reverts commit 5c55400ac1c41562a7bc5b5b6089fdca290987f6.
+* tf2 compliance
+* Contributors: Procópio Stein, artivis
+
 1.0.6 (2019-03-15)
 ------------------
 
