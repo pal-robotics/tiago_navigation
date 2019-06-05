@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<launch>
-  <include file="$(find pmb2_2dnav)/launch/mapping_karto.launch" pass_all_args="true"/>
-</launch>
