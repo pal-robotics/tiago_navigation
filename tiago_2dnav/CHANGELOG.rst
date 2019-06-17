@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2019-06-17)
+------------------
 * added robot related dependencies
 * added pal_navigation_cfg_tiago dependency
 * moved config and launch to pal_navigation_cfg_tiago
