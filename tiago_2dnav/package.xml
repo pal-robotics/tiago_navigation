@@ -11,7 +11,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <exec_depend>pmb2_2dnav</exec_depend>
   <exec_depend>tiago_laser_sensors</exec_depend>
   <exec_depend>tiago_maps</exec_depend>
   <exec_depend>pal_navigation_cfg_tiago</exec_depend>
