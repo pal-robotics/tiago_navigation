@@ -2,6 +2,14 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'velodyne' into 'erbium-devel'
+  added launch file for velodyne laser
+  See merge request robots/tiago_navigation!50
+* remove pmb2_2dnav dependency with new navigation_cfg usage
+* Contributors: Sai Kishor Kothakota, Victor Lopez
+
 2.0.0 (2019-06-17)
 ------------------
 * added robot related dependencies

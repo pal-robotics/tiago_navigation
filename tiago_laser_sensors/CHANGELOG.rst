@@ -2,6 +2,14 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'velodyne' into 'erbium-devel'
+  added launch file for velodyne laser
+  See merge request robots/tiago_navigation!50
+* added launch file for velodyne laser
+* Contributors: Sai Kishor Kothakota, Victor Lopez
+
 2.0.0 (2019-06-17)
 ------------------
 
