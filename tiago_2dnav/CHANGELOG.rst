@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2019-09-12)
+------------------
 * Merge branch 'velodyne' into 'erbium-devel'
   added launch file for velodyne laser
   See merge request robots/tiago_navigation!50
