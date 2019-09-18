@@ -2,6 +2,14 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update_pal_map' into 'erbium-devel'
+  adding updated pal map
+  See merge request robots/tiago_navigation!51
+* adding updated pal map
+* Contributors: Federico Nardi, Procópio Stein
+
 2.0.1 (2019-09-12)
 ------------------
 
