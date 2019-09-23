@@ -2,6 +2,11 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* mapping uses scan_raw
+* Contributors: Procópio Stein
+
 2.0.2 (2019-09-18)
 ------------------
 
