@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-  <arg name="scan" default="scan"/>
+  <arg name="scan" default="scan_raw"/>
   <arg name="laser_model" default="sick-571"/>
   <arg name="mapping" default="karto"/>
 
