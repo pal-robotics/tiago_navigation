@@ -6,7 +6,7 @@
   <arg name="local_planner"  default="pal"/>
   <arg name="public_sim"     default="false"/>
   <arg name="rgbd_sensors"   default="false"/> 
-  <arg name="tf_prefix"      default=""/>
+  <arg name="robot_namespace"      default=""/>
   <arg name="multiple"       default="false"/>
 
   <!-- Navigation -->
@@ -16,7 +16,7 @@
     <arg name="global_planner" value="$(arg global_planner)"/>
     <arg name="local_planner"  value="$(arg local_planner)"/>
     <arg name="public_sim"     value="$(arg public_sim)"/>
-    <arg name="tf_prefix"      value="$(arg tf_prefix)"/>
+    <arg name="robot_namespace"      value="$(arg robot_namespace)"/>
     <arg name="multiple"       value="$(arg multiple)"/>
   </include>
 
