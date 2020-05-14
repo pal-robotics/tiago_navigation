@@ -2,6 +2,9 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.3 (2019-09-23)
 ------------------
 * mapping uses scan_raw
