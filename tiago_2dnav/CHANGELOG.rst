@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.5 (2020-05-14)
+------------------
 * updated basic nav cfg
 * updated rviz config
 * Contributors: Procópio Stein, procopiostein
