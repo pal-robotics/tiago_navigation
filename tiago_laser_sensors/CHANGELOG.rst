@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.4 (2020-05-14)
+------------------
 * Merge branch 'nav-valid' into 'erbium-devel'
   shortened rgbd scan FOV
   See merge request robots/tiago_navigation!54
