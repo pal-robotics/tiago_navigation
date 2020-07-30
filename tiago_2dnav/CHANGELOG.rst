@@ -2,6 +2,14 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'rename_tf_prefix' into 'erbium-devel'
+  Rename tf_prefix to robot_namespace
+  See merge request robots/tiago_navigation!53
+* Rename tf_prefix to robot_namespace
+* Contributors: davidfernandez, victor
+
 2.0.5 (2020-05-14)
 ------------------
 * updated basic nav cfg
