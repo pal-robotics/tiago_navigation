@@ -3,11 +3,11 @@
 
   <arg name="localization" default="amcl"/>
   <arg name="multiple" default="false"/>
-  <arg name="tf_prefix" default=""/>
+  <arg name="robot_namespace" default=""/>
 
   <include file="$(find pal_navigation_cfg_tiago)/launch/localization_$(arg localization).launch">
     <arg name="multiple" value="$(arg multiple)"/>
-    <arg name="tf_prefix" value="$(arg tf_prefix)"/>
+    <arg name="robot_namespace" value="$(arg robot_namespace)"/>
   </include>
 
 </launch>
