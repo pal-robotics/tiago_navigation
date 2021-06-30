@@ -1,8 +1,0 @@
-poi:
-  submap_0:
-    poi_0001: [submap_0, door, 1.5750000476837158, -3.0000000953674316, 0.0]
-    poi_0002: [submap_0, room1, 0.9750000834465027, -4.3064112470648979e-07, 0.0]
-    poi_0003: [submap_0, room2, 0.22500008344650269, -0.100000190734863, 0.0]
-visualLoc:
-  submap_0: {databaseName: databases/tree}
-

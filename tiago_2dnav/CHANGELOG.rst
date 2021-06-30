@@ -1,80 +1,93 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package tiago_2dnav
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package pmb2_2dnav
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.0.6 (2020-07-30)
+2.0.8 (2020-07-30)
 ------------------
 * Merge branch 'rename_tf_prefix' into 'erbium-devel'
   Rename tf_prefix to robot_namespace
-  See merge request robots/tiago_navigation!53
+  See merge request robots/pmb2_navigation!46
 * Rename tf_prefix to robot_namespace
 * Contributors: davidfernandez, victor
 
-2.0.5 (2020-05-14)
+2.0.7 (2020-07-02)
 ------------------
-* updated basic nav cfg
-* updated rviz config
-* Contributors: Procópio Stein, procopiostein
 
-2.0.4 (2020-05-14)
+2.0.6 (2020-04-02)
+------------------
+
+2.0.5 (2019-11-22)
+------------------
+* passing subtype parameter to move_base
+* Contributors: federiconardi
+
+2.0.4 (2019-10-01)
 ------------------
 
 2.0.3 (2019-09-23)
 ------------------
-* mapping uses scan_raw
+* use scan_raw for mapping
 * Contributors: Procópio Stein
 
 2.0.2 (2019-09-18)
 ------------------
 
-2.0.1 (2019-09-12)
+2.0.1 (2019-07-19)
 ------------------
-* Merge branch 'velodyne' into 'erbium-devel'
-  added launch file for velodyne laser
-  See merge request robots/tiago_navigation!50
-* remove pmb2_2dnav dependency with new navigation_cfg usage
-* Contributors: Sai Kishor Kothakota, Victor Lopez
+* Merge branch 'multi_pmb2' into 'erbium-devel'
+  Add multi pmb2 navigation
+  See merge request robots/pmb2_navigation!40
+* Add multi pmb2 navigation
+* Contributors: Adria Roig, Victor Lopez
 
 2.0.0 (2019-06-17)
 ------------------
-* added robot related dependencies
-* added pal_navigation_cfg_tiago dependency
-* moved config and launch to pal_navigation_cfg_tiago
+* added pal_navigation_cfg_pmb2 dependency
+* moved config and launch to pal_navigation_cfg_pmb2
 * Contributors: Procópio Stein, Sai Kishor Kothakota
 
-1.0.7 (2019-03-22)
+1.0.6 (2019-05-20)
 ------------------
-* Merge branch 'fix-nav-test' into 'erbium-devel'
-  do not shutdown costmaps
-  See merge request robots/tiago_navigation!48
-* do not shutdown costmaps
-* Contributors: Procópio Stein
-
-1.0.6 (2019-03-15)
-------------------
-* Merge branch 'teb_planner' into 'erbium-devel'
-  Add configuration for TEB planner
-  See merge request robots/tiago_navigation!45
-* Add configuration for TEB planner
+* Merge branch 'update_adv_nav' into 'erbium-devel'
+  Update AdvNav Rviz config
+  See merge request robots/pmb2_navigation!38
+* Update AdvNav Rviz config
 * Contributors: Victor Lopez, davidfernandez
 
-1.0.5 (2019-02-13)
+1.0.5 (2019-05-06)
 ------------------
+* updated teb config to match tiago's
+* Contributors: Procópio Stein
 
-1.0.4 (2019-02-05)
+1.0.4 (2019-03-22)
 ------------------
-* Add missing exec depend
-* Contributors: Victor Lopez
+* Merge branch 'update-karto-cfg' into 'erbium-devel'
+  updated karto params to improve loop closures
+  See merge request robots/pmb2_navigation!36
+* updated karto params to improve loop closures
+* Contributors: Procópio Stein
 
-1.0.3 (2019-01-24)
+1.0.3 (2019-01-25)
 ------------------
-* Decrease yaw tolerance for eband planner for public simulation
-* Contributors: Victor Lopez
+* Merge branch 'public_eband_conf' into 'erbium-devel'
+  added eband planner config
+  See merge request robots/pmb2_navigation!35
+* added eband planner config
+* Merge branch 'plugin_fix' into 'erbium-devel'
+  public simulation plugin fix
+  See merge request robots/pmb2_navigation!34
+* public simulation plugin fix
+* Contributors: Sai Kishor Kothakota, Victor Lopez
 
-1.0.2 (2018-12-21)
+1.0.2 (2019-01-17)
 ------------------
+* Merge branch 'public_sim_kinetic' into 'erbium-devel'
+  add Kinetic pulbic simulation changes
+  See merge request robots/pmb2_navigation!33
+* add kinetic public simulation changes
+* Contributors: Sai Kishor Kothakota, Victor Lopez
 
-1.0.1 (2018-12-20)
+1.0.1 (2019-01-15)
 ------------------
 * Fix typo
 * Contributors: Victor Lopez
@@ -83,251 +96,267 @@ Changelog for package tiago_2dnav
 ------------------
 * Merge branch 'specifics-refactor' into 'erbium-devel'
   Specifics refactor
-  See merge request robots/tiago_navigation!42
-* Add rgbd cloud
-* Add latch_xy_goal_tolerance: true to pal local planner
-* mapping_karto will call pmb2's mapping_karto
-* Add rgbd_sensors parameter
+  See merge request robots/pmb2_navigation!30
+* Cosmetic
+* Add parameters for using rgbd
+* Specify one karto file per laser model
 * Contributors: Victor Lopez
 
-0.12.11 (2018-10-26)
+0.13.17 (2018-12-19)
 --------------------
-* simplified recoveries for simple navigation
-* reduced acc x for smoothness
-* mirrowed recoveries from pmb2 plus rotate recovery
-* added dummy recovery
+* change the param load order to overrite the karto config
+* activated latch xy for goals
+* Contributors: Procópio Stein
+
+0.13.16 (2018-11-21)
+--------------------
+* added sonar layer
+* added sound feedback for loop closure
+* Contributors: Procópio Stein, Sai Kishor Kothakota
+
+0.13.15 (2018-10-20)
+--------------------
+* Merge branch 'clear-vo-on-recovery' into 'dubnium-devel'
+  added vo clearing in recovery behavior
+  See merge request robots/pmb2_navigation!25
 * added vo clearing in recovery behavior
-* vo_layer uses base frame, greatly improves large maps costmap loops
-* increase max vel to 0.5 m/s
 * Contributors: Procópio Stein
 
-0.12.10 (2018-09-28)
+0.13.14 (2018-10-03)
 --------------------
-* output move base log to screen
+* updated costmaps config to correspond to template generation
 * Contributors: Procópio Stein
 
-0.12.9 (2018-09-26)
--------------------
+0.13.13 (2018-09-28)
+--------------------
+* slightly increased max_threshold from 1.5 to 1.8
+* Contributors: Procópio Stein
+
+0.13.12 (2018-09-26)
+--------------------
 * changed param name from threshold to max_threshold
-* removed deprecated param
-* 0.12.8
-* changelog
-* Merge branch 'fix-collision-avoidance' into 'dubnium-devel'
-  adjust local planner plan params
-  See merge request robots/tiago_navigation!35
-* adjust local planner plan params
+* removed deprecated parameter
 * Contributors: Procópio Stein
 
-0.12.7 (2018-09-17)
--------------------
+0.13.11 (2018-09-26)
+--------------------
+* Merge branch 'adjust-plp-params' into 'dubnium-devel'
+  increased max threshold and reduced security
+  See merge request robots/pmb2_navigation!23
+* increased max threshold and reduced security
+* Contributors: Procópio Stein
+
+0.13.10 (2018-09-17)
+--------------------
+* increased plp threshold
+* updated recovery to match cobra, but commented blanking recoveries
 * updated rviz config
-* updated maintainers and license
-* updated karto config to use max range and less updates
-* updated plp params format
-* avoid narrow passages, use same config of pmb2
-* updated costmap config from specifics
+* enabled search alternative goals
+* reduced pub freq of costmaps, cleaned them up
+* adjusted default threshold and sec distance
+* better visualization
+* updated pal_local_planner config
 * Contributors: Procópio Stein
 
-0.12.6 (2018-07-23)
+0.13.9 (2018-06-22)
 -------------------
-* Merge branch 'update-amcl-params' into 'dubnium-devel'
-  updated the amcl config to match the specifics template
-  See merge request robots/tiago_navigation!31
-* updated the amcl config to match the specifics template
-* Contributors: Procópio Stein, Victor Lopez
 
-0.12.5 (2018-04-24)
+0.13.8 (2018-05-17)
+-------------------
+* updated amcl and karto configs for clarity and to match last developments in specifics
+* added odom filter config and changed search path to pmb2_2dnav
+* Contributors: Procópio Stein
+
+0.13.7 (2018-05-15)
+-------------------
+* added slippage related launch files
+* Contributors: Procópio Stein
+
+0.13.6 (2018-04-24)
 -------------------
 * Revert "avoid oscillating global path and prefer shorter paths"
-  This reverts commit 3f808b86f7e19c9dea9d647615b44b1ff53fba9c.
+  This reverts commit 0d0601e59441e560ffb56ce15d7cb37bce0a9d71.
+* Contributors: Procópio Stein
+
+0.13.5 (2018-04-17)
+-------------------
+
+0.13.4 (2018-04-12)
+-------------------
+
+0.13.3 (2018-04-06)
+-------------------
+* added TEB config
+* disable navigation in unknown
+* added dependency on range layer and teb local planner
 * avoid oscillating global path and prefer shorter paths
 * Contributors: Procópio Stein
 
-0.12.4 (2018-03-21)
--------------------
-* Add tf_prefix and multiple arguments for consistency
-* Contributors: Victor Lopez
-
-0.12.3 (2018-03-08)
+0.13.2 (2018-03-08)
 -------------------
 
-0.12.2 (2018-02-15)
+0.13.1 (2018-02-15)
 -------------------
 * Merge branch 'respawn-move-base' into 'dubnium-devel'
   added respawn flag to move_base.launch
-  See merge request robots/tiago_navigation!27
+  See merge request robots/pmb2_navigation!11
 * added respawn flag to move_base.launch
-* Contributors: Jordi Pages, Procópio Stein
-
-0.12.1 (2018-02-02)
--------------------
-* Merge branch 'remove-rgbd-layers' into 'dubnium-devel'
-  removed rgbd layers from base config
-  Closes #1
-  See merge request robots/tiago_navigation!26
-* restored changes in public sim files
-* removed rgbd layers from base config
 * Contributors: Procópio Stein
 
-0.12.0 (2018-02-01)
+0.13.0 (2018-02-01)
 -------------------
 
-0.11.5 (2018-01-11)
--------------------
-* allow alternative goals if original is blocked
-* Contributors: Procópio Stein
-
-0.11.4 (2017-11-27)
--------------------
-* increased rot vel, adjusted footprint
-* use only one aggressive costmap clearing and a rotate recovery
-* Contributors: Procópio Stein
-
-0.11.3 (2017-11-07)
--------------------
-* shutdown costmaps when the robot is not moving
-* Contributors: Jordi Pages
-
-0.11.2 (2017-11-07)
--------------------
-
-0.11.1 (2017-11-02)
--------------------
-* update rviz config file for advanced navigation
-  - Disable by default the navfn potential viewer
-  - Add rgbd_scan viewer
-* Contributors: Jordi Pages
-
-0.11.0 (2017-10-17)
+0.12.0 (2017-10-17)
 -------------------
 * updated parameter due to refactoring in pal-local-planner
 * Contributors: Procópio Stein
 
-0.10.2 (2017-09-19)
--------------------
-* updated params to new pal local planner
+0.11.10 (2017-09-27)
+--------------------
+* normalized package.xml for all packages
 * Contributors: Procópio Stein
 
-0.10.1 (2017-08-09)
+0.11.9 (2017-09-19)
 -------------------
-* added the first_map_only parameter for the amcl used with topic
-* fixed the pose.yaml files for multi tiago
-* fix empty tf_prefix in navigation.sh calling
-* Contributors: AleDF
-
-0.10.0 (2017-05-30)
--------------------
-* removed deprecated launch
+* updated parameters to new pal local planner
 * Contributors: Procópio Stein
 
-0.9.15 (2017-05-08)
+0.11.8 (2017-09-18)
 -------------------
-* improved move_base goal status management
-* minor verbosity changes
-* enable disable head mgr through action client
-* moved subscriber init down to avoid callback before completing init
+* added config base path arg, so it can load params from .pal
 * Contributors: Procópio Stein
 
-0.9.14 (2017-05-05)
+0.11.7 (2017-08-08)
 -------------------
-* elevates torso and talks to head manager when navigating
+* allow global plan in unkown spaces
 * Contributors: Procópio Stein
 
-0.9.13 (2017-05-04)
--------------------
-* added navigation camera manager script and inst rules
-* removed pointcloud_to_laserscan entries and files
-  the pointcloud to laserscan files were moved to specific tools
-  they will be available only if advanced navigation is active
-* reduced planner patience to 0.1
-* tweaked global planner params
-* added launch and config for rgbd_scan
-* reduced max rot vel and adde time offset for all laser configs
-* local planner config to new version of planner
-* doubled mapping resolution and tweaked some params
-* adde dock panel in rviz
-* Allow multiple Tiagos on a single Gazebo
-* Contributors: Procópio Stein, davidfernandez
-
-0.9.12 (2016-12-21)
+0.11.6 (2017-07-03)
 -------------------
 
-0.9.11 (2016-10-27)
+0.11.5 (2017-06-30)
 -------------------
-* Update global_planner.yaml, commented neutral_cost
-* added param config to activate global planner special behaviors:
-  1. reuse last valid path if goal becames blocked
-  2. (commented) try alternative goto points inside a radius if original is blocked
+* added rotate recovery behavior
 * Contributors: Procópio Stein
 
-0.9.10 (2016-10-25)
+0.11.4 (2017-06-30)
 -------------------
-* enable rgbd layer for obstacle avoidance
-* Contributors: Jordi Pages
 
-0.9.9 (2016-10-21)
-------------------
-* fix rviz config file
-* add proper obstacle layers in recovery mode yaml
-* visualize RGBD laser scan. Refs #14514
-* refs #14514: project RGBD pointcloud to laserscan
-* fixes #14514
-* fixes #14512, #14514
-* remove tab
-* fix arg not being assigned
-* remove typo
-* remove commented lines in public sim config files
-* public simulation for tiago including navigation
-  refs #14239
-* Contributors: Jordi Pages
+0.11.3 (2017-06-01)
+-------------------
 
-0.9.8 (2016-07-28)
-------------------
-* Add advanced navigation rviz file
-* Contributors: Victor Lopez
+0.11.2 (2017-04-25)
+-------------------
+* updated adv nav rviz config
+* Contributors: Procópio Stein
 
-0.9.7 (2016-06-22)
-------------------
-* move_base config file base path param
-* Contributors: Jeremie Deray
+0.11.1 (2017-04-22)
+-------------------
+* added advanced nav config
+* Contributors: Procópio Stein
 
-0.9.6 (2016-06-15)
-------------------
-* update rviz conf to add sonars
-* Contributors: Jeremie Deray
+0.11.0 (2017-02-28)
+-------------------
+* removed legacy move_base configs
+* updated costmap files to match template
+* fixed global planner config file
+* updated rviz navigation config
+* 0.10.4
+* changelogs
+* updated costmap and recovery params
+* fixed robot radius
+* Contributors: Procópio Stein
 
-0.9.5 (2016-06-10)
-------------------
-* update rviz with sonars & POI
+0.10.4 (2017-02-28)
+-------------------
+* updated costmap and recovery params
+* fixed robot radius
+* Contributors: Procópio Stein
+
+0.10.3 (2017-02-24)
+-------------------
+* enhanced navigation config, fixed recovery behaviors
+* Contributors: Procópio Stein
+
+0.10.2 (2017-02-23)
+-------------------
+
+0.10.1 (2017-02-23)
+-------------------
+* removed rgbd launches and config, fixed dependencies
+* minor changes in mapping and localization config
+* better mapping and slam configurations
+* updated local_planner config for enhanced version of planner
+* updated costmap config based on new tiago files
 * add rviz launch file
-* update rviz conf
+* Contributors: Jeremie Deray, Procópio Stein
+
+0.10.0 (2016-03-15)
+-------------------
+* use degree
 * Contributors: Jeremie Deray
 
-0.9.4 (2016-03-30)
-------------------
-* increase karto scan range threshold
-* record scan
-* new laser launch
-* meld pmb2_2dnav tiago_2dnav
-* add laser_filter conf
-* missing nav debug scripts
-* Improved parameters for actually creating map, its not perfect, but it works
-* Hokuyo laser max range is 5 meters instead of 10 in the sick
-* Copied parameters tested on stockbot for navigation
-* Contributors: Jeremie Deray, Jordi Adell, Sammy Pfeiffer
+0.9.15 (2016-03-10)
+-------------------
+* missing deps maps
+* Contributors: Jeremie Deray
 
-0.9.3 (2015-04-14)
-------------------
+0.9.14 (2016-03-02)
+-------------------
 
-0.9.2 (2015-01-20)
-------------------
+0.9.13 (2016-02-10)
+-------------------
 
-0.9.1 (2015-01-20)
+0.9.12 (2016-02-10)
+-------------------
+
+0.9.11 (2016-02-09)
+-------------------
+
+0.9.10 (2016-02-09)
+-------------------
+* final review of parameters with jeremie
+* restoring plugins in costmaps (but commented)
+* correcting errors in pm2_2dnav
+  restored amcl laser range to default values, corrected typo in local costmap, removed plugins example
+* minor cleaning in pmb2 navigation files
+* cleaned generic pmb2_2dnav and improved specific pmb2_5_2dnav
+* Contributors: Procopio Stein, procopiostein
+
+0.9.9 (2015-10-26)
 ------------------
-* refs #10237 : removes rgbd sensor from navigation
-  This is still experimental in ant... in the future it could be taken
-  from there
-* disables saving initial params
-  NOTE this generates 1 socket every time a param is set
-* renames to tiago (TiaGo)
-* Contributors: enriquefernandez
+* disable free space mapping for pmb2 & add warning abt it
+* Fixing localization amcl jumps
+* update rviz conf
+* Custom launch file for pmb2-5
+* Contributors: Jeremie Deray, Luca Marchionni
+
+0.9.8 (2015-10-01)
+------------------
+* typo
+* add slam graph display to rviz
+* amcl laser min/max range
+* karto laser max_range
+* karto map free space
+* reduce global inflation radius
+* reduce visualization pub rate
+* amcl config add param defaut value + comments
+* rviz do not display sonar/rgbd related stuff
+* do not launch xtion related stuff
+* deactivate rgbd layer for costmaps
+* Add laser classification displays
+* Sync filter script with ant
+* Sync with ant_2dnav
+* Add covariance (odometry + pose) displays
+  NOTE they are disabled by default because they have some issues yet
+  with the 6DOF mode property, which is not disabled properly on startup
+* Update layout and add inertia + CoM marker
+* Update rviz layout
+* Increase the number of sonars from 3 to 5
+* Contributors: Enrique Fernandez, Jeremie Deray
+
+0.9.7 (2015-02-02)
+------------------
+* Replace ant -> pmb2
+* Rename files
+* Contributors: Enrique Fernandez
