@@ -8,6 +8,7 @@
   <arg name="rgbd_sensors"   default="false"/> 
   <arg name="robot_namespace"      default=""/>
   <arg name="multiple"       default="false"/>
+  <arg name="base_type"     default="pmb2"/>
 
   <!-- Navigation -->
   <include file="$(find pal_navigation_cfg_tiago)/launch/move_base.launch">
@@ -18,6 +19,7 @@
     <arg name="public_sim"     value="$(arg public_sim)"/>
     <arg name="robot_namespace"      value="$(arg robot_namespace)"/>
     <arg name="multiple"       value="$(arg multiple)"/>
+    <arg name="base_type"       value="$(arg base_type)"/>
   </include>
 
 </launch>
