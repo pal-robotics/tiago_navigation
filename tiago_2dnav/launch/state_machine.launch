@@ -5,14 +5,14 @@
   <arg name="public_sim"     default="false"/>
   <arg name="base_frame" default="/base_footprint"/>
   <arg name="map_frame"  default="/map"/>
-  <arg name="base_type"     default="pmb2"/>
+  <arg name="base_type"  default="pmb2"/>
 
   <include file="$(find pal_navigation_cfg_tiago)/launch/state_machine.launch">
     <arg name="state"  value="$(arg state)"/>
     <arg name="public_sim" value="$(arg public_sim)"/>
     <arg name="base_frame" value="$(arg base_frame)"/>
     <arg name="map_frame"  value="$(arg map_frame)"/>
-    <arg name="base_type"       value="$(arg base_type)"/>
+    <arg name="base_type"  value="$(arg base_type)"/>
   </include>
 
 </launch>
