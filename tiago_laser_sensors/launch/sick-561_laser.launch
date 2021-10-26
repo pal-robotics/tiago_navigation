@@ -2,7 +2,7 @@
   <arg name="side" default=""/>
   <arg name="device_number" default="0"/>
 
-  <node name="sick_tim561" pkg="sick_tim" type="sick_tim551_2050001" clear_params="true">
+  <node name="$(arg side)sick_tim561" pkg="sick_tim" type="sick_tim551_2050001" clear_params="true">
     <rosparam file="$(find tiago_laser_sensors)/config/sick_tim561_laser.yaml" command="load"/>
     <param name="frame_id" value="base_$(arg side)laser_link"/>
     <param name="device_number" value="$(arg device_number)"/>

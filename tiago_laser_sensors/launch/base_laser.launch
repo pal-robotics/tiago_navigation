@@ -9,13 +9,13 @@
   <group if="$(eval arg('base_type') == 'omni_base')">
     <!-- Rear Laser Scan -->
     <include file="$(find tiago_laser_sensors)/launch/$(arg laser)_laser.launch">
-      <arg name="side" value="rear"/>
+      <arg name="side" value="rear_"/>
       <arg name="device_number" value="1"/>
     </include>
 
     <!-- Front Laser Scan -->
     <include file="$(find tiago_laser_sensors)/launch/$(arg laser)_laser.launch">
-      <arg name="side" value="front"/>
+      <arg name="side" value="front_"/>
       <arg name="device_number" value="0"/>
     </include>
 
