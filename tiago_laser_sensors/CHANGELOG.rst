@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.0 (2021-11-03)
+------------------
 * Merge branch 'omni_base_robot' into 'erbium-devel'
   Omni base robot
   See merge request robots/tiago_navigation!57
