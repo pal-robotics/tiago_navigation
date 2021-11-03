@@ -2,6 +2,17 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'omni_base_robot' into 'erbium-devel'
+  Omni base robot
+  See merge request robots/tiago_navigation!57
+* added ira_laser_tools dependency
+* corrected the side parameter to include underscore
+* tiago supports two laser scanners
+* tiago navigation with omni base
+* Contributors: antoniobrandi, saikishor
+
 2.0.6 (2020-07-30)
 ------------------
 
