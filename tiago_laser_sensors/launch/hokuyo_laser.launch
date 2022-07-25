@@ -2,9 +2,9 @@
   <arg name="side" default=""/>
   <arg name="device_number" default="0"/>
   <arg name="device_port"   value="2" if="$(eval arg('side') == 'rear_')"/>
-  <arg name="device_port"   value="0" unless="$(eval arg('side') == 'rear_')"/>
+  <arg name="device_port"   value="1" unless="$(eval arg('side') == 'rear_')"/>
   
-  <node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" clear_params="true">
+  <node name="$(arg side)hokuyo" pkg="hokuyo_node" type="hokuyo_node" clear_params="true">
     <param name="frame_id" value="base_$(arg side)laser_link"/>
     <param name="port"     value="/dev/ttyACM$(arg device_port)"/>
     <rosparam file="$(find tiago_laser_sensors)/config/hokuyo_urg_04lx_ug01_laser.yaml" command="load"/>
