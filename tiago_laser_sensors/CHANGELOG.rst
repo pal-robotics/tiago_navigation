@@ -2,6 +2,17 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/hokuyo-support' into 'erbium-devel'
+  Added support for double hokuyo
+  See merge request robots/tiago_navigation!58
+* fixed the redefined device_port issue
+* Keep backcompatibility with single laser
+* New standard for USB connections
+* Added support for double hokuyo
+* Contributors: Irina Cocolos, antoniobrandi, saikishor
+
 2.1.0 (2021-11-03)
 ------------------
 * Merge branch 'omni_base_robot' into 'erbium-devel'
