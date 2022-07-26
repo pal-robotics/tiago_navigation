@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.1 (2022-07-26)
+------------------
 * Merge branch 'fix/hokuyo-support' into 'erbium-devel'
   Added support for double hokuyo
   See merge request robots/tiago_navigation!58
