@@ -2,6 +2,14 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/hokuyo-port' into 'erbium-devel'
+  fix hokuyo port based on tiago-171
+  See merge request robots/tiago_navigation!59
+* fix hokuyo port based on tiago-171
+* Contributors: antoniobrandi
+
 2.1.1 (2022-07-26)
 ------------------
 * Merge branch 'fix/hokuyo-support' into 'erbium-devel'
