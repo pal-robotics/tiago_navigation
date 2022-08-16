@@ -2,8 +2,9 @@
   <arg name="side"               default=""/>
   <arg name="device_number"      default="0"/>
   <arg name="base_type"          default="pmb2"/>
-  <arg name="device_port"        value="0" unless="$(eval arg('side') == 'rear_')"/>
-  <arg name="device_port"        value="1" if="$(eval arg('side') == 'rear_')"/>
+  <arg name="device_port"        value="0" if="$(eval arg('side') == '')"/>
+  <arg name="device_port"        value="1" if="$(eval arg('side') == 'front_')"/>
+  <arg name="device_port"        value="2" if="$(eval arg('side') == 'rear_')"/>
   <arg name="base_type_suffix"   value="" unless="$(eval arg('base_type') == 'omni_base')"/>
   <arg name="base_type_suffix"   value="_omni" if="$(eval arg('base_type') == 'omni_base')"/>
 
