@@ -2,6 +2,14 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.4 (2022-08-16)
+------------------
+* Merge branch 'fix/revert-hokuyo-port' into 'erbium-devel'
+  Revert cde7819b
+  See merge request robots/tiago_navigation!61
+* Revert cde7819b
+* Contributors: antoniobrandi
+
 2.1.3 (2022-08-16)
 ------------------
 * Merge branch 'fix/laser-fov' into 'erbium-devel'
