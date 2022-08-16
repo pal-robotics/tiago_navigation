@@ -2,6 +2,15 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.3 (2022-08-16)
+------------------
+* Merge branch 'fix/laser-fov' into 'erbium-devel'
+  Fix laser fov for tiago with omni base and hokuyo
+  See merge request robots/tiago_navigation!60
+* adjusted fov for sick with omni base
+* Fix laser fov for tiago with omni base and hokuyo
+* Contributors: antoniobrandi
+
 2.1.2 (2022-08-11)
 ------------------
 * Merge branch 'fix/hokuyo-port' into 'erbium-devel'
