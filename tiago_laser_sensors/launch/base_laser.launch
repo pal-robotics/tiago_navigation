@@ -11,12 +11,14 @@
     <include file="$(find tiago_laser_sensors)/launch/$(arg laser)_laser.launch">
       <arg name="side" value="rear_"/>
       <arg name="device_number" value="0"/>
+      <arg name="base_type" value="$(arg base_type)"/>
     </include>
 
     <!-- Front Laser Scan -->
     <include file="$(find tiago_laser_sensors)/launch/$(arg laser)_laser.launch">
       <arg name="side" value="front_"/>
       <arg name="device_number" value="1"/>
+      <arg name="base_type" value="$(arg base_type)"/>
     </include>
 
     <!-- Laser Scan Merger -->
