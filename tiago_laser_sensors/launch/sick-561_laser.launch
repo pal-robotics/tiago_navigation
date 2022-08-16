@@ -1,9 +1,12 @@
 <launch>
-  <arg name="side" default=""/>
-  <arg name="device_number" default="0"/>
+  <arg name="side"              default=""/>
+  <arg name="device_number"     default="0"/>
+  <arg name="base_type"         default="pmb2"/>
+  <arg name="base_type_suffix"  value="" unless="$(eval arg('base_type') == 'omni_base')"/>
+  <arg name="base_type_suffix"  value="_omni" if="$(eval arg('base_type') == 'omni_base')"/>
 
   <node name="$(arg side)sick_tim561" pkg="sick_tim" type="sick_tim551_2050001" clear_params="true">
-    <rosparam file="$(find tiago_laser_sensors)/config/sick_tim561_laser.yaml" command="load"/>
+    <rosparam file="$(find tiago_laser_sensors)/config/sick_tim561_laser$(arg base_type_suffix).yaml" command="load"/>
     <param name="frame_id" value="base_$(arg side)laser_link"/>
     <param name="device_number" value="$(arg device_number)"/>
     <remap from="scan" to="scan_$(arg side)raw"/>
