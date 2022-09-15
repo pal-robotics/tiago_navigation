@@ -18,8 +18,9 @@ from launch_pal.include_utils import include_launch_py_description
 
 def generate_launch_description():
     # Most navigation configuration is launched from pmb2_2dnav/launch/pmb2_nav_bringup.launch.py
-    pmb2_nav_bringup = include_launch_py_description(pkg_name="pmb2_2dnav",
-                                                     paths=["launch", "pmb2_nav_bringup.launch.py"])
+    pmb2_nav_bringup = include_launch_py_description(pkg_name='pmb2_2dnav',
+                                                     paths=['launch',
+                                                            'pmb2_nav_bringup.launch.py'])
     ld = LaunchDescription()
     ld.add_action(pmb2_nav_bringup)
     return ld
