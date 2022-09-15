@@ -2,6 +2,15 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'default_hokuyo_for_tiago' into 'erbium-devel'
+  Use device names instead of ports
+  See merge request robots/tiago_navigation!62
+* Use device names instead of ports
+  Default to hokuyo_laser for robots with no side
+* Contributors: Jordan Palacios, antoniobrandi
+
 2.1.4 (2022-08-16)
 ------------------
 * Merge branch 'fix/revert-hokuyo-port' into 'erbium-devel'
