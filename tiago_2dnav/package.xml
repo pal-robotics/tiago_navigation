@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>tiago_2dnav</name>
   <version>2.0.6</version>
   <description>TIAGo-specific launch files needed to run navigation on a TIAGo robot.</description>
