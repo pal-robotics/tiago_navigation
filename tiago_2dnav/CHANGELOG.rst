@@ -13,6 +13,24 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'update_copyright' into 'humble-devel'
+  Update copyright
+  See merge request robots/tiago_navigation!65
+* update package format
+* update copyright
+* Merge branch 'update_maintainers' into 'humble-devel'
+  update maintainers
+  See merge request robots/tiago_navigation!64
+* update maintainers
+* Merge branch 'linters' into 'humble-devel'
+  linters
+  See merge request robots/tiago_navigation!63
+* linters
+* First version of foxy-devel tiago_2dnav
+* Contributors: Jordan Palacios, Noel Jimenez, Victor Lopez
+
 2.0.6 (2020-04-02)
 ------------------
 

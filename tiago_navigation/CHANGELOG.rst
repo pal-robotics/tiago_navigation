@@ -2,6 +2,19 @@
 Changelog for package tiago_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update_copyright' into 'humble-devel'
+  Update copyright
+  See merge request robots/tiago_navigation!65
+* update package format
+* Merge branch 'update_maintainers' into 'humble-devel'
+  update maintainers
+  See merge request robots/tiago_navigation!64
+* update maintainers
+* First version of foxy-devel tiago_2dnav
+* Contributors: Jordan Palacios, Noel Jimenez, Victor Lopez
+
 2.0.6 (2020-07-30)
 ------------------
 
