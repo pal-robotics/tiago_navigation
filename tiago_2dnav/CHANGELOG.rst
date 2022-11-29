@@ -13,6 +13,15 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'mlu/fix/tiago_2dnav_buildtool' into 'humble-devel'
+  Fix  buildtool_depend of tiago_2dnav
+  See merge request robots/tiago_navigation!68
+* Fix  buildtool_depend of tiago_2dnav
+  Must be ament_cmake_auto
+* Contributors: Noel Jimenez, mathiasluedtke
+
 4.0.0 (2022-11-08)
 ------------------
 * Merge branch 'update_copyright' into 'humble-devel'
