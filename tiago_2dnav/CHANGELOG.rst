@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.1 (2022-11-29)
+------------------
 * Merge branch 'mlu/fix/tiago_2dnav_buildtool' into 'humble-devel'
   Fix  buildtool_depend of tiago_2dnav
   See merge request robots/tiago_navigation!68
