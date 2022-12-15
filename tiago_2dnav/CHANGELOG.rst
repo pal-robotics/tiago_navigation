@@ -13,6 +13,13 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge pull request #12 from jmguerreroh/humble-devel
+  Remap to show laser scan on RViz
+* Remap to show laser scan on RViz
+* Contributors: Sai Kishor Kothakota, jmguerreroh
+
 4.0.1 (2022-11-29)
 ------------------
 * Merge branch 'mlu/fix/tiago_2dnav_buildtool' into 'humble-devel'
