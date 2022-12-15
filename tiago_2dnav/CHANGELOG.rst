@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.2 (2022-12-15)
+------------------
 * Merge pull request #12 from jmguerreroh/humble-devel
   Remap to show laser scan on RViz
 * Remap to show laser scan on RViz
