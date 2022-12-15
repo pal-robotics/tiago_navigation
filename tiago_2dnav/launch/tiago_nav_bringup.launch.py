@@ -14,6 +14,7 @@
 
 from launch import LaunchDescription
 from launch_pal.include_utils import include_launch_py_description
+from launch_ros.actions import SetRemap
 
 
 def generate_launch_description():
@@ -21,6 +22,10 @@ def generate_launch_description():
     pmb2_nav_bringup = include_launch_py_description(pkg_name='pmb2_2dnav',
                                                      paths=['launch',
                                                             'pmb2_nav_bringup.launch.py'])
+
+    scan_remap = SetRemap(src='scan', dst='scan_raw')
     ld = LaunchDescription()
+
+    ld.add_action(scan_remap)
     ld.add_action(pmb2_nav_bringup)
     return ld
