@@ -5,12 +5,22 @@ from control_msgs.msg import PointHeadActionGoal
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from pal_startup_msgs.srv import StartupStart, StartupStop
 from pal_common_msgs.msg import DisableGoal, DisableAction
+from ddynamic_reconfigure_python.ddynamic_reconfigure import DDynamicReconfigure
 import actionlib
 
 class NavigationCameraMgr:
 
     def __init__(self):
         self.previous_status = None
+
+        # This node Dynamic params
+        self.ddr = DDynamicReconfigure("advance_nav_head")
+
+        self.z_target = self.ddr.add_variable("z_target",
+                                             "target of the head while navigating",
+                                             0.54, 0.0, 0.70)
+
+        self.ddr.start(self.ddr_cb)
 
         self.pub_head_topic = rospy.Publisher(
             '/head_controller/point_head_action/goal', 
@@ -26,6 +36,10 @@ class NavigationCameraMgr:
 
         rospy.loginfo("monitoring move_base goal " 
             "status and moving the camera accordingly")
+
+    def ddr_cb(self, config, level):
+        self.z_target = config['z_target']
+        return config
 
     def head_mgr_as(self, command):
 
@@ -88,6 +102,7 @@ class NavigationCameraMgr:
 
         phag.goal.target.header.frame_id = "/base_link"
         phag.goal.target.point.x = 0.9
+        phag.goal.target.point.z = self.z_target
 
         phag.goal.pointing_axis.x = 1.0
         phag.goal.pointing_frame = "/head_2_link"
@@ -127,6 +142,7 @@ class NavigationCameraMgr:
               self.goal.status != GoalStatus.PENDING and
             self.goal.status != self.previous_status):
             rospy.loginfo("navigation: " + self.goal.text)
+            self.look_up()
             self.head_mgr_as("enable")
             self.previous_status = self.goal.status
 
