@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.6 (2023-01-30)
+------------------
 * Merge branch 'feat/map-manager' into 'erbium-devel'
   move to map manager
   See merge request robots/tiago_navigation!66
