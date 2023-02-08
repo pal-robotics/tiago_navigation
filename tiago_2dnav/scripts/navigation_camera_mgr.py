@@ -18,7 +18,7 @@ class NavigationCameraMgr:
 
         self.z_target = self.ddr.add_variable("z_target",
                                              "target of the head while navigating",
-                                             0.54, 0.0, 0.70)
+                                             0.0, 0.0, 0.70)
 
         self.ddr.start(self.ddr_cb)
 
