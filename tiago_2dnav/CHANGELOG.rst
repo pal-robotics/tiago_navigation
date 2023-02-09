@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.7 (2023-02-09)
+------------------
 * Merge branch 'add_head_parameter' into 'erbium-devel'
   Add dynamic parameter to change head angle
   See merge request robots/tiago_navigation!69
