@@ -1,0 +1,11 @@
+<launch>
+  <!-- Copies calibration files to $ROS_HOME if missing -->
+
+  <arg name="device_id" default="XXXXX"/>
+  <arg name="calibration_file_path" value="$(eval find('tiago_rgbd_sensors'))"/>
+
+  <node name="roof_rgbd_camera_filter" pkg="pal_pcl" type="pal_stockbot_floor_filter_node" respawn="true" output="screen">
+        <remap from="cloud1" to="xtion/depth_registered/points"/>
+        <rosparam command="load" file="$(arg calibration_file_path)/config/roof_floor_filter_xtion.yaml" />
+  </node>
+</launch>
