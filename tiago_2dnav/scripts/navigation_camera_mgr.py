@@ -14,7 +14,7 @@ class NavigationCameraMgr:
         self.previous_status = None
 
         # This node Dynamic params
-        self.ddr = DDynamicReconfigure("advance_nav_head")
+        self.ddr = DDynamicReconfigure("/advance_nav_head")
 
         self.z_target = self.ddr.add_variable("z_target",
                                              "target of the head while navigating",
