@@ -2,6 +2,14 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update_pal_office_map' into 'erbium-devel'
+  Update pal office map
+  See merge request robots/tiago_navigation!71
+* Add new pal office map
+* Contributors: antoniobrandi, thomaspeyrucain
+
 2.1.7 (2023-02-09)
 ------------------
 
