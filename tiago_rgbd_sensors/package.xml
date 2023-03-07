@@ -3,7 +3,7 @@
   <name>tiago_rgbd_sensors</name>
   <version>2.1.6</version>
   <description>tiago-specific RGBD sensors launch and config files.</description>
-  <maintainer email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</maintainer>
+  <maintainer email="sergio.moyano@pal-robotics.com">sergio.moyano</maintainer>
   <license>Apache License 2.0</license>
   <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
 
