@@ -1,0 +1,42 @@
+# check param info on pal_pcl cfg
+
+base_frame_id: "base_footprint"
+max_processing_rate: 6
+
+continuous_transform: True
+
+# frustum filter (degrees)
+enable_frustum_filter:  True
+frustum_vertical_FOV:   47.0
+frustum_horizontal_FOV: 58.0
+frustum_near_plane:      0.0
+frustum_far_plane:      20.0
+
+# filtering points belonging to floor
+max_x_wrt_base_footprint:           3.0
+number_of_divisions:                3
+min_obstacle_height_starting_value: 0.12
+min_obstacle_height_ending_value:   0.20
+max_obstacle_height:                1.95
+
+# lateral filter
+filter_y_enable:         False
+filter_y_distance_left:  1.0
+threshold_value_left:    0.10
+filter_y_distance_right: 1.0
+threshold_value_right:   0.10
+
+# reprojection of points bellow floor
+enable_negative_projection:    False
+flip_verticaly:                False
+max_x_negative_base_footprint: 0.5
+min_y_wrt_base_footprint:     -0.7
+max_y_wrt_base_footprint:      0.7
+min_distance_below_floor:      0.06
+projection_height:             0.4
+
+# noise reduction
+downsampling_leaf_size:  0.02
+enable_radius_filter:    True
+radius:                  0.05
+min_neighbors:          12

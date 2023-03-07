@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tiago_rgbd_sensors</name>
+  <version>2.1.6</version>
+  <description>tiago-specific RGBD sensors launch and config files.</description>
+  <maintainer email="sergio.moyano@pal-robotics.com">sergio.moyano</maintainer>
+  <license>Apache License 2.0</license>
+  <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>openni2_launch</exec_depend>
+  <exec_depend>pal-orbbec-openni2</exec_depend>
+  <exec_depend>pal_usb_utils</exec_depend>
+  <exec_depend>pal_pcl</exec_depend>
+  
+</package>

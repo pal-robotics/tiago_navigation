@@ -1,0 +1,6 @@
+<launch>
+  <arg name="roof_device_id" default="XXXXX"/>
+  <include file="$(find tiago_rgbd_sensors)/launch/roof_xtion.launch" pass_all_args="true">
+    <arg name="device_id" value="$(arg roof_device_id)" unless="$(eval roof_device_id == 'XXXXX')"/>
+  </include>
+</launch>
