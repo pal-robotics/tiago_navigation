@@ -2,8 +2,8 @@
 Changelog for package tiago_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.9 (2023-03-08)
+------------------
 * Merge branch 'fix/stvl-obstacle-rgbd-layer' into 'erbium-devel'
   fix
   See merge request robots/tiago_navigation!74
