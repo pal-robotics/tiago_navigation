@@ -14,5 +14,4 @@
   <run_depend>laser_filters</run_depend>
   <run_depend>pal_filters</run_depend>
   <run_depend>ira_laser_tools</run_depend>
-  <run_depend>pointcloud_to_laserscan</run_depend>
 </package>
