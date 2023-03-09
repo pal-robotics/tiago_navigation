@@ -2,6 +2,14 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/removed-pointcloud-to-laserscan' into 'erbium-devel'
+  removed pointcloud to laser_scan
+  See merge request robots/tiago_navigation!75
+* removed pointcloud to laser_scan
+* Contributors: andreacapodacqua, antoniobrandi
+
 2.1.8 (2023-03-06)
 ------------------
 

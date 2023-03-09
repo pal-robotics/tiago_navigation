@@ -2,6 +2,9 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.1.8 (2023-03-06)
 ------------------
 * Merge branch 'update_pal_office_map' into 'erbium-devel'
