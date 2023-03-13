@@ -1,0 +1,26 @@
+scan_filter_chain:
+
+- name: footprint_filter
+  type: laser_filters/LaserScanFootprintFilter
+  params:
+    inscribed_radius: 0.275
+
+- name: range
+  type: laser_filters/LaserScanRangeFilter
+  params:
+    lower_threshold: 0.01
+    upper_threshold: 30.0
+    lower_replacement_value: -.inf
+    upper_replacement_value: .inf
+    
+# we have set the filter window to match
+# the marking dist in the costmap cfg
+- name: ghost
+  type: pal_filters/LaserScanGhostFilter
+  params:
+    resolution: 0.1
+    min_x: -3.0
+    max_x:  3.0
+    min_y: -3.0
+    max_y:  3.0
+    max_n:  2
