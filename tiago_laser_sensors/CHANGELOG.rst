@@ -2,6 +2,14 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/ydlidar' into 'erbium-devel'
+  fixed ydlidar laser sensors
+  See merge request robots/tiago_navigation!78
+* fixed ydlidar laser sensors
+* Contributors: antoniobrandi
+
 2.1.11 (2023-03-13)
 -------------------
 * Merge branch 'feat/ydlidar' into 'erbium-devel'
