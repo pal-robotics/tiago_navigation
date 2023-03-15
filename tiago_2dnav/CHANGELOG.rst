@@ -2,8 +2,8 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.13 (2023-03-15)
+-------------------
 * Merge branch 'fix_rosparam' into 'erbium-devel'
   Change the advance nav head to be global parameter
   See merge request robots/tiago_navigation!73
