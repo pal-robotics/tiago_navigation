@@ -2,6 +2,9 @@
 Changelog for package tiago_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.1.13 (2023-03-15)
 -------------------
 
