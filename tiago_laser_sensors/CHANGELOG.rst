@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.14 (2023-03-15)
+-------------------
 * Merge branch 'fix/port' into 'erbium-devel'
   fixed laser port
   See merge request robots/tiago_navigation!79
