@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
@@ -21,7 +19,6 @@ from launch_pal.include_utils import include_launch_py_description
 
 
 def generate_launch_description():
-    pmb2_laser_sensors_dir = get_package_share_directory("pmb2_laser_sensors")
     laser_model = LaunchConfiguration("laser")
 
     declare_laser_cmd = DeclareLaunchArgument(
@@ -31,7 +28,7 @@ def generate_launch_description():
     )
 
     laser_launch = include_launch_py_description(
-        pmb2_laser_sensors_dir,
+        "pmb2_laser_sensors",
         ["launch", "laser.launch.py"],
         launch_arguments={"laser": laser_model}.items(),
     )
