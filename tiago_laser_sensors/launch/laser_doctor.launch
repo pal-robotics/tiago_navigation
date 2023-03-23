@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="node_doctor" name="laser_node_doctor" type="node_doctor_node.py" output="screen">
+        <param name="topic_to_check" value="/scan"/>
+        <param name="node_to_reboot" value="laser_ros_node"/>
+        <param name="check_interval" value="60.0"/>
+        <param name="check_timeout" value="3.0"/>
+        <param name="wait_after_start" value="20.0"/>
+        <param name="publish_tablet_screen" value="false"/>
+        <param name="pal_startup_computer_name" value="control"/>
+    </node>
+</launch>
