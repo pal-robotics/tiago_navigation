@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.15 (2023-03-23)
+-------------------
 * Merge branch 'fix/ydlidar-angle' into 'erbium-devel'
   fix ydlidar mounting angle
   See merge request robots/tiago_navigation!81
