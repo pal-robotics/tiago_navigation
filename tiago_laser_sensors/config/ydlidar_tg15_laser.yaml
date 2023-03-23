@@ -17,8 +17,8 @@ support_motor_dtr:        false
 invalid_range_is_inf:     false
 point_cloud_preservative: false
 
-angle_min:                -95
-angle_max:                 95
+angle_min:                -65
+angle_max:                 125
 range_min:                0.01
 range_max:                15.0
 frequency:                10.0
