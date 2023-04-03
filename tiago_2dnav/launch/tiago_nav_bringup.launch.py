@@ -12,20 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
+
+from ament_index_python.packages import get_package_share_directory
+
 from launch import LaunchDescription
-from launch_pal.include_utils import include_launch_py_description
-from launch_ros.actions import SetRemap
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    # Most navigation configuration is launched from pmb2_2dnav/launch/pmb2_nav_bringup.launch.py
-    pmb2_nav_bringup = include_launch_py_description(pkg_name='pmb2_2dnav',
-                                                     paths=['launch',
-                                                            'pmb2_nav_bringup.launch.py'])
+    nav2_bringup_pkg = os.path.join(
+        get_package_share_directory("pal_navigation_cfg_bringup"), "launch"
+    )
+    pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
 
-    scan_remap = SetRemap(src='scan', dst='scan_raw')
+    is_robot_arg = DeclareLaunchArgument(
+        'is_robot', default_value='false',
+        description='Real Robot or Simulated one'
+    )
+
+    nav_bringup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(nav2_bringup_pkg, "nav_bringup.launch.py")
+        ),
+        launch_arguments={
+            "params_file": os.path.join(pmb2_2dnav, "params", "pmb2_nav.yaml"),
+            "remappings_file": os.path.join(pmb2_2dnav, "params", "pmb2_remappings.yaml"),
+        }.items()
+    )
+
+    # Create the launch description and populate
     ld = LaunchDescription()
+    ld.add_action(is_robot_arg)
+    ld.add_action(nav_bringup_launch)
 
-    ld.add_action(scan_remap)
-    ld.add_action(pmb2_nav_bringup)
     return ld
