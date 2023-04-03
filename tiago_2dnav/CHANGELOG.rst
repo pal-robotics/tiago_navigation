@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.3 (2023-04-03)
+------------------
 * Merge branch 'feat/pal-navigation-cfg' into 'humble-devel'
   Using pal_navigation_cfg
   See merge request robots/tiago_navigation!77
