@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.4 (2023-04-05)
+------------------
 * Update package.xml version
 * Merge branch 'laser_migration' into 'humble-devel'
   laser sensors migration
