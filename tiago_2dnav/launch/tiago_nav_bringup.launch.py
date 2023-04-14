@@ -17,34 +17,21 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    nav2_bringup_pkg = os.path.join(
-        get_package_share_directory("pal_navigation_cfg_bringup"), "launch"
-    )
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
 
-    is_robot_arg = DeclareLaunchArgument(
-        'is_robot', default_value='false',
-        description='Real Robot or Simulated one'
-    )
-
-    nav_bringup_launch = IncludeLaunchDescription(
+    pmb2_nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(nav2_bringup_pkg, "nav_bringup.launch.py")
+            os.path.join(pmb2_2dnav, "pmb2_nav_bringup.launch.py")
         ),
-        launch_arguments={
-            "params_file": os.path.join(pmb2_2dnav, "params", "pmb2_nav.yaml"),
-            "remappings_file": os.path.join(pmb2_2dnav, "params", "pmb2_remappings.yaml"),
-        }.items()
     )
 
     # Create the launch description and populate
     ld = LaunchDescription()
-    ld.add_action(is_robot_arg)
-    ld.add_action(nav_bringup_launch)
+    ld.add_action(pmb2_nav_bringup_launch)
 
     return ld
