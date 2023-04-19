@@ -2,6 +2,14 @@
 Changelog for package tiago_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/add-buildings' into 'erbium-devel'
+  add buildings to tiago
+  See merge request robots/tiago_navigation!84
+* add buildings to tiago
+* Contributors: antoniobrandi
+
 2.1.16 (2023-03-23)
 -------------------
 
