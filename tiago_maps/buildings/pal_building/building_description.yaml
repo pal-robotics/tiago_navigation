@@ -1,0 +1,42 @@
+floors:
+    #floor_1:
+    #    floor_id: 1
+    #    map: pal_office
+    #    docks:
+    #         dock_1:
+    #            search_poi: dockstation
+    #            docked_poi: docked_pose
+    #    docks:
+    #         dock_2:
+    #            search_poi: []
+    #            docked_poi: []
+    #    elevators: 
+    #        elevator_1:
+    #           poi_in: poi_elevator_min1
+    #           poi_out: pout_elevator_min1
+    #           patt_in: elev_1_in.png
+    #           patt_out: elev_1_out.png
+    #           patt_acc_in: 0.4
+    #           patt_acc_out: 0.4
+    #           dist_from_door_in: 0.51
+    #           dist_from_door_out: 0.40
+    #           rotation: 0 
+    floor_1:
+        floor_id: 1
+        map: pal_office
+        docks:
+            dock_1:
+                search_poi: dockstation
+                docked_poi: docked_pose
+        elevators: 
+            elevator_1:
+               poi_in: poi_elevator_min1
+               poi_out: pout_elevator_min1
+               patt_in: elev_1_in.png
+               patt_out: elev_1_out.png
+               patt_acc_in: 0.4
+               patt_acc_out: 0.4
+               dist_from_door_in: 0.51
+               dist_from_door_out: 0.40
+               rotation: 0 
+
