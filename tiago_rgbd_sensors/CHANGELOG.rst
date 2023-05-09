@@ -2,6 +2,14 @@
 Changelog for package tiago_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/cpu_load' into 'erbium-devel'
+  fix of high cpu load by using depth pcl topic
+  See merge request robots/tiago_navigation!85
+* fix of high cpu load by using depth pcl topic
+* Contributors: andreacapodacqua, antoniobrandi
+
 2.1.17 (2023-04-19)
 -------------------
 
