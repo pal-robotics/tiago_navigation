@@ -26,7 +26,7 @@ def generate_launch_description():
 
     pmb2_nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pmb2_2dnav, "pmb2_nav_bringup.launch.py")
+            os.path.join(pmb2_2dnav, 'launch', 'pmb2_nav_bringup.launch.py')
         ),
     )
 
