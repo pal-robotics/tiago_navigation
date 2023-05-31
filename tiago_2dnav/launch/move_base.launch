@@ -9,10 +9,9 @@
   <arg name="robot_namespace"      default=""/>
   <arg name="multiple"       default="false"/>
   <arg name="base_type"     default="pmb2"/>
-  <arg name="use_flex_navigation"   default="true"/> 
-
-  <arg name="flex_suffix" value="_flex" if="$(arg use_flex_navigation)"/>
-  <arg name="flex_suffix" value=""      unless="$(arg use_flex_navigation)"/>
+  
+  <arg name="flex_suffix" value="_flex" unless="$(arg public_sim)"/>
+  <arg name="flex_suffix" value=""      if="$(arg public_sim)"/>
 
   <!-- Navigation -->
   <include file="$(find pal_navigation_cfg_tiago)/launch/move_base$(arg flex_suffix).launch">
