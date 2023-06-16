@@ -13,6 +13,18 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'feat/laser-filters' into 'humble-devel'
+  using laser filters in simulation
+  See merge request robots/tiago_navigation!83
+* clarifying remappings usage
+* using pmb2_sim_nav_bringup and update deps
+* using sim bringup
+* start laser filters in simulation
+* using laser filters in simulation
+* Contributors: antoniobrandi
+
 4.0.3 (2023-04-03)
 ------------------
 * Merge branch 'feat/pal-navigation-cfg' into 'humble-devel'
