@@ -1,5 +1,7 @@
 #* Remappings that will be applied to all the Navigation,
 #* SLAM and Localization parameters for TIAGo Robot
+#*
+#* Used in NavigationConfigBuilder in pal_navigation_cfg
 #* If not set, following default parameters will be used
 
 global_frame : "map"  # Default: "map"
