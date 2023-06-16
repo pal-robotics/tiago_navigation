@@ -24,14 +24,14 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     pmb2_2dnav = get_package_share_directory("pmb2_2dnav")
 
-    pmb2_nav_bringup_launch = IncludeLaunchDescription(
+    pmb2_sim_nav_bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pmb2_2dnav, 'launch', 'pmb2_nav_bringup.launch.py')
+            os.path.join(pmb2_2dnav, 'launch', 'pmb2_sim_nav_bringup.launch.py')
         ),
     )
 
     # Create the launch description and populate
     ld = LaunchDescription()
-    ld.add_action(pmb2_nav_bringup_launch)
+    ld.add_action(pmb2_sim_nav_bringup_launch)
 
     return ld

@@ -1,0 +1,16 @@
+#* Remappings that will be applied to all the Navigation,
+#* SLAM and Localization parameters for TIAGo Robot
+#*
+#* Used in NavigationConfigBuilder in pal_navigation_cfg
+#* If not set, following default parameters will be used
+
+global_frame : "map"  # Default: "map"
+base_link_frame : "base_link" # Default: "base_link" 
+odom_topic : "/mobile_base_controller/odom"  # Default: "/odom"
+# As today use_sim_time can only be set from the launch file 
+# https://github.com/ros-planning/navigation2/blob/main/nav2_bringup/launch/navigation_launch.py#L111
+use_sim_time : True # Default: True 
+robot_radius : 0.275  # Default: 0.275
+scan_topic : "/scan"  # Default: "/scan_raw"
+odom_frame : "odom" # Default: "odom"
+base_footprint_frame : "base_footprint" # Default: "base_footprint"
