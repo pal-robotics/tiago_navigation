@@ -2,7 +2,7 @@
 <launch>
 
   <arg name="config_base_path" default="$(find pal_navigation_cfg_tiago)"/>
-  <arg name="global_planner" default="global_planner"/>
+  <arg name="global_planner" default="navfn"/>
   <arg name="local_planner"  default="pal"/>
   <arg name="public_sim"     default="false"/>
   <arg name="rgbd_sensors"   default="false"/> 
