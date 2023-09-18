@@ -2,6 +2,15 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_modules' into 'humble-devel'
+  Adding laser module
+  See merge request robots/tiago_navigation!88
+* Adding laser module
+  Conditioned to pal distros only
+* Contributors: Jordan Palacios
+
 4.0.5 (2023-06-16)
 ------------------
 
