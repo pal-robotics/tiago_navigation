@@ -4,6 +4,10 @@ project(tiago_laser_sensors)
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
+if(pal_module_cmake_FOUND)
+  pal_register_modules(module/laser.yaml)
+endif()
+
 if(BUILD_TESTING)
   ament_auto_find_test_dependencies()
   ament_lint_auto_find_test_dependencies()
