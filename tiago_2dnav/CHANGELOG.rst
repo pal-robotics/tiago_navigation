@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.6 (2023-09-18)
+------------------
 * Merge branch 'remove_pal_flags_dependency' into 'humble-devel'
   Remove pal flags dependency
   See merge request robots/tiago_navigation!86
