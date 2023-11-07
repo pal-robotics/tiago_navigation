@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.0.7 (2023-11-07)
+------------------
 * Specify laser model
 * Contributors: Noel Jimenez
 
