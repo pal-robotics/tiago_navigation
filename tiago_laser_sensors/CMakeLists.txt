@@ -5,7 +5,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 if(pal_module_cmake_FOUND)
-  pal_register_modules(module/laser.yaml)
+  pal_register_modules(module/10_laser.yaml)
 endif()
 
 if(BUILD_TESTING)
