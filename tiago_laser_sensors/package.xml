@@ -7,6 +7,8 @@
   <license>Apache License 2.0</license>
   <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
 
+  <url type="website">https://github.com/pal-robotics/tiago_simulation</url>
+
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
