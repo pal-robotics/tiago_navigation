@@ -13,6 +13,11 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Add website tag
+* Contributors: Noel Jimenez
+
 4.0.7 (2023-11-07)
 ------------------
 

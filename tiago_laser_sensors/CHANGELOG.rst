@@ -2,6 +2,12 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add website tag
+* Rename laser module
+* Contributors: Noel Jimenez
+
 4.0.7 (2023-11-07)
 ------------------
 * Specify laser model
