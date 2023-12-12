@@ -13,6 +13,9 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+
 4.0.8 (2023-11-14)
 ------------------
 * Add website tag

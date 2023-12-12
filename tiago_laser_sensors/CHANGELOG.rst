@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Bump module names
+* Contributors: Noel Jimenez
+
 4.0.8 (2023-11-14)
 ------------------
 * Add website tag
