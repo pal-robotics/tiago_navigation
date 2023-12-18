@@ -2,16 +2,19 @@
 <launch>
 
   <arg name="config_base_path" default="$(find pal_navigation_cfg_tiago)"/>
-  <arg name="global_planner" default="global_planner"/>
+  <arg name="global_planner" default="navfn"/>
   <arg name="local_planner"  default="pal"/>
   <arg name="public_sim"     default="false"/>
   <arg name="rgbd_sensors"   default="false"/> 
   <arg name="robot_namespace"      default=""/>
   <arg name="multiple"       default="false"/>
   <arg name="base_type"     default="pmb2"/>
+  
+  <arg name="flex_suffix" value="_flex" unless="$(arg public_sim)"/>
+  <arg name="flex_suffix" value=""      if="$(arg public_sim)"/>
 
   <!-- Navigation -->
-  <include file="$(find pal_navigation_cfg_tiago)/launch/move_base.launch">
+  <include file="$(find pal_navigation_cfg_tiago)/launch/move_base$(arg flex_suffix).launch">
     <arg name="rgbd_sensors" value="$(arg rgbd_sensors)"/>
     <arg name="config_base_path" value="$(arg config_base_path)"/>
     <arg name="global_planner" value="$(arg global_planner)"/>
