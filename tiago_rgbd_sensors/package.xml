@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>tiago_rgbd_sensors</name>
-  <version>2.1.18</version>
+  <version>2.2.0</version>
   <description>tiago-specific RGBD sensors launch and config files.</description>
   <maintainer email="sergio.moyano@pal-robotics.com">sergio.moyano</maintainer>
   <license>Apache License 2.0</license>

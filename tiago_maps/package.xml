@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>tiago_maps</name>
-  <version>2.1.18</version>
+  <version>2.2.0</version>
   <description>TiaGo-specific maps and launch files.</description>
   <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
   <license>Modified BSD</license>

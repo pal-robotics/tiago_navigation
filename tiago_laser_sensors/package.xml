@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>tiago_laser_sensors</name>
-  <version>2.1.18</version>
+  <version>2.2.0</version>
   <description>TiaGo-specific laser sensors launch and config files.</description>
   <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
   <license>Modified BSD</license>
