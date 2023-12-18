@@ -2,6 +2,16 @@
 Changelog for package tiago_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/move-base-flex' into 'erbium-devel'
+  using move base flex
+  See merge request robots/tiago_navigation!70
+* add navfn as default global planner
+* using move_base only in public_sim
+* using move base flex
+* Contributors: andreacapodacqua, antoniobrandi
+
 2.1.18 (2023-05-09)
 -------------------
 
