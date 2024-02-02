@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.10 (2024-02-02)
+-------------------
 * Merge branch 'feat/register-components' into 'humble-devel'
   using components and parameters
   See merge request robots/tiago_navigation!95
