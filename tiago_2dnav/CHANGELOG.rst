@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.11 (2024-02-12)
+-------------------
 * Merge branch 'fix/pal_nav2_bringup' into 'humble-devel'
   Use pal_nav2_bringup only for private simulation
   See merge request robots/tiago_navigation!96
