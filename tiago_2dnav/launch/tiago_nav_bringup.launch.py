@@ -35,7 +35,6 @@ def navigation_bringup(context, *args, **kwargs):
     tiago_2dnav = get_package_share_directory("tiago_2dnav")
     pmb2_maps = get_package_share_directory("pmb2_maps")
     nav2_bringup = get_package_share_directory("nav2_bringup")
-    pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
 
     if is_public_sim == "True" or is_public_sim == "true":
         nav2_bringup_launch = IncludeLaunchDescription(
@@ -72,6 +71,7 @@ def navigation_bringup(context, *args, **kwargs):
         actions.append(nav2_bringup_launch)
         actions.append(rviz_bringup_launch)
     else:
+        pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
         pal_nav2_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
