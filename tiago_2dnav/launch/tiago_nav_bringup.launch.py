@@ -96,11 +96,17 @@ def generate_launch_description():
         description="Whether or not you are using a public simulation",
     )
 
+    declare_world_name_arg = DeclareLaunchArgument(
+        "world_name", default_value="",
+        description="Specify world name, we'll convert to full path"
+    )
+
     navigation_bringup_launch = OpaqueFunction(function=navigation_bringup)
 
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(declare_is_public_sim_arg)
+    ld.add_action(declare_world_name_arg)
     ld.add_action(navigation_bringup_launch)
 
     return ld
