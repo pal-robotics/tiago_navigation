@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.0.12 (2024-02-13)
+-------------------
 * Merge branch 'abr/fix/world-name' into 'humble-devel'
   set default world_name for standalone navigation
   See merge request robots/tiago_navigation!97
