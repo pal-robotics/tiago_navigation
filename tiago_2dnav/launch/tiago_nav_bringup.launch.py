@@ -15,16 +15,15 @@
 import os
 
 from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
 from launch.actions import (
-    IncludeLaunchDescription,
     DeclareLaunchArgument,
+    IncludeLaunchDescription,
     OpaqueFunction,
 )
 from launch.conditions import IfCondition, UnlessCondition
-from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
 
 
 def navigation_bringup(context, *args, **kwargs):
@@ -32,7 +31,6 @@ def navigation_bringup(context, *args, **kwargs):
     is_public_sim = LaunchConfiguration("is_public_sim").perform(context)
     world_name = LaunchConfiguration("world_name").perform(context)
 
-    pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
     tiago_2dnav = get_package_share_directory("tiago_2dnav")
     pal_maps = get_package_share_directory("pal_maps")
     nav2_bringup = get_package_share_directory("nav2_bringup")
@@ -74,7 +72,7 @@ def navigation_bringup(context, *args, **kwargs):
                 ),
                 "map": os.path.join(
                     pal_maps,
-                    "configurations",
+                    "maps",
                     world_name,
                     "map.yaml",
                 ),
@@ -100,7 +98,7 @@ def navigation_bringup(context, *args, **kwargs):
         actions.append(slam_bringup_launch)
         actions.append(rviz_bringup_launch)
     else:
-
+        pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
         laser_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
