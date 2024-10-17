@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.3.0 (2024-10-17)
+------------------
 * Merge branch 'man/feat/nav-rviz-config' into 'humble-devel'
   added unless condition to rviz
   See merge request robots/tiago_navigation!117
