@@ -39,6 +39,7 @@ class LaunchArguments(LaunchArgumentsBase):
     world_name: DeclareLaunchArgument = CommonArgs.world_name
     base_type: DeclareLaunchArgument = TiagoArgs.base_type
     slam: DeclareLaunchArgument = CommonArgs.slam
+    advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
 
 
 def generate_launch_description():
@@ -164,6 +165,7 @@ def private_nav_function(context, *args, **kwargs):
     )
 
     rviz_node = Node(
+        condition=UnlessCondition(LaunchConfiguration("advanced_navigation")),
         package="rviz2",
         executable="rviz2",
         arguments=["-d", os.path.join(
