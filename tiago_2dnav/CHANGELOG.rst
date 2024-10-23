@@ -13,8 +13,8 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
-Forthcoming
------------
+4.4.0 (2024-10-23)
+------------------
 * Merge branch 'feat/aca/omni-navigation-mppi' into 'humble-devel'
   Using MPPI
   See merge request robots/tiago_navigation!119
