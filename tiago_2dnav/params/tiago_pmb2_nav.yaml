@@ -16,10 +16,10 @@ nodes:
     params: [navigate_w_replanning_and_recovery]
   controller_server:
     app: controller_server
-    params: [dwb_w_progress_checker_and_goal_checker, local_costmap_w_filters]
+    params: [mppi_diff, local_costmap_w_filters]
   planner_server:
     app: planner_server
-    params: [navfn, global_costmap_w_filters]
+    params: [smac_2D, global_costmap_w_filters]
   behavior_server:
     app: behavior_server
     params: [spin_backup_wait]

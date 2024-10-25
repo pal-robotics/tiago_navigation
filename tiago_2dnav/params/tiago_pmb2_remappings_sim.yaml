@@ -12,8 +12,11 @@ odom_topic : "/mobile_base_controller/odom"
 dock_link_frame: "base_dock_link"
 robot_radius : 0.275
 footprint: ""
+laser_min_angle: -1.65806 # !degrees -95 (not supported)
+laser_max_angle: 1.65806 # !degrees  95 (not supported)
 
 #laser remappings
 laser_frame: "base_laser_link"
 scan_topic : "/scan"
 scan_raw_topic : "/scan_raw"
+device_number_laser_0: 0
