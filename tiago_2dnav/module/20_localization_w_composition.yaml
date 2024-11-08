@@ -1,5 +1,0 @@
-localization_w_composition:
-  launch: "pal_nav2_bringup nav_bringup.launch.py
-          params_file:=tiago_@base_type@_loc_w_composition.yaml
-          remappings_file:=tiago_@base_type@_remappings.yaml
-          robot_name:=@robot_type@"

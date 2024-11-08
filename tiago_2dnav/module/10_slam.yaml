@@ -1,0 +1,4 @@
+slam:
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=slam
+          robot_name:=@base_type@"
