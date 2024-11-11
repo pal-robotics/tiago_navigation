@@ -122,7 +122,7 @@ def private_nav_function(context, *args, **kwargs):
         paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
             "pipeline": "navigation",
-            "robot_name": "pmb2",
+            "robot_name": base_type,
         },
     )
 
