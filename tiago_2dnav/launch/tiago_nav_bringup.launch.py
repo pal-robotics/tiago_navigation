@@ -60,7 +60,7 @@ def public_nav_function(context, *args, **kwargs):
     world_name = read_launch_argument("world_name", context)
     actions = []
     tiago_2dnav = get_package_share_directory("tiago_2dnav")
-    param_file = os.path.join(tiago_2dnav, "params", "tiago_" + base_type + "_nav_public_sim.yaml")
+    param_file = os.path.join(tiago_2dnav, "config", "tiago_" + base_type + "_nav_public_sim.yaml")
 
     pal_maps = get_package_share_directory("pal_maps")
 
@@ -69,7 +69,7 @@ def public_nav_function(context, *args, **kwargs):
 
     nav_bringup_launch = include_scoped_launch_py_description(
         pkg_name="nav2_bringup",
-        paths=['launch', "navigation_launch.py"],
+        paths=["launch", "navigation_launch.py"],
         launch_arguments={
             "params_file": param_file,
             "use_sim_time": "True"
@@ -117,51 +117,42 @@ def private_nav_function(context, *args, **kwargs):
     actions = []
     tiago_2dnav = get_package_share_directory("tiago_2dnav")
 
-    remappings_file = os.path.join(
-        tiago_2dnav, "params", "tiago_" + base_type + "_remappings_sim.yaml")
-
     nav_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=['launch', "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "tiago_2dnav",
-            "params_file": "tiago_" + base_type + "_nav.yaml",
-            "robot_name": "tiago",
-            "remappings_file": remappings_file,
-        })
+            "pipeline": "navigation",
+            "robot_name": base_type,
+        },
+    )
+
     slam_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "tiago_2dnav",
-            "params_file": "tiago_slam.yaml",
-            "robot_name": "tiago",
-            "remappings_file": remappings_file,
+            "pipeline": "slam",
+            "robot_name": base_type,
         },
         condition=IfCondition(LaunchConfiguration("slam"))
     )
 
     loc_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "tiago_2dnav",
-            "params_file": "tiago_" + base_type + "_loc.yaml",
-            "robot_name": "tiago",
-            "remappings_file": remappings_file,
+            "pipeline": "localization",
+            "robot_name": base_type,
         },
         condition=UnlessCondition(LaunchConfiguration("slam"))
     )
 
     laser_bringup_launch = include_scoped_launch_py_description(
-        pkg_name="pal_nav2_bringup",
-        paths=["launch", "nav_bringup.launch.py"],
+        pkg_name="pal_navigation_cfg_utils",
+        paths=["launch", "pipeline_executor.launch.py"],
         launch_arguments={
-            "params_pkg": "tiago_laser_sensors",
-            "params_file": base_type + "_laser_pipeline_sim.yaml",
-            "robot_name": "tiago",
-            "remappings_file": remappings_file,
-        }
+            "pipeline": "laser_sim",
+            "robot_name": base_type,
+        },
     )
 
     rviz_node = Node(

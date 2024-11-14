@@ -1,0 +1,4 @@
+rgbd_w_composition:
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=rgbd_w_composition_@camera_model@
+          robot_name:=@base_type@"

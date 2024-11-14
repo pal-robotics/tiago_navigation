@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>tiago_laser_sensors</name>
+  <name>tiago_rgbd_sensors</name>
   <version>4.5.0</version>
   <description>Launch files and scripts needed to bring up the ROS nodes of a TIAGo robot.</description>
   <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>

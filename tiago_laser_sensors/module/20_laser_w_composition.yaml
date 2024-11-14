@@ -1,6 +1,0 @@
-laser_w_composition:
-  launch: "pal_nav2_bringup nav_bringup.launch.py 
-          params_pkg:=tiago_laser_sensors
-          params_file:=@base_type@_laser_pipeline_w_composition.yaml
-          remappings_file:=tiago_@base_type@_remappings.yaml
-          robot_name:=@robot_type@"

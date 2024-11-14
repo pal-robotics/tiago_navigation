@@ -1,0 +1,4 @@
+laser_w_composition:
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=laser_w_composition_@laser_model@
+          robot_name:=@base_type@"

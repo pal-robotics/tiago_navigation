@@ -1,0 +1,4 @@
+localization_w_composition:
+  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
+          pipeline:=localization_w_composition
+          robot_name:=@base_type@"
