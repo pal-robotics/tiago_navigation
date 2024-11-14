@@ -2,6 +2,14 @@
 Changelog for package tiago_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/nav-params' into 'humble-devel'
+  using new pipeline architecture
+  See merge request robots/tiago_navigation!121
+* using new pipeline architecture
+* Contributors: antoniobrandi
+
 4.5.0 (2024-10-25)
 ------------------
 

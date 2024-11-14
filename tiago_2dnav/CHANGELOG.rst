@@ -13,6 +13,16 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/nav-params' into 'humble-devel'
+  using new pipeline architecture
+  See merge request robots/tiago_navigation!121
+* removed advanced_navigation rviz config
+* typo
+* using new pipeline architecture
+* Contributors: antoniobrandi
+
 4.5.0 (2024-10-25)
 ------------------
 * Merge branch 'abr/feat/mppi' into 'humble-devel'
