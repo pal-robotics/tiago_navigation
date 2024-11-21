@@ -13,6 +13,14 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/rviz' into 'humble-devel'
+  start rviz with use_sim_time
+  See merge request robots/tiago_navigation!124
+* start rviz with use_sim_time
+* Contributors: antoniobrandi
+
 4.6.0 (2024-11-14)
 ------------------
 * Merge branch 'abr/feat/nav-params' into 'humble-devel'

@@ -2,6 +2,9 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 4.6.0 (2024-11-14)
 ------------------
 * Merge branch 'abr/feat/nav-params' into 'humble-devel'
