@@ -2,6 +2,16 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/deps-and-specs' into 'humble-devel'
+  nav deps and specs
+  See merge request robots/tiago_navigation!125
+* add rgbd dependencies if alum
+* nav deps and specifics
+* fix dep
+* Contributors: andreacapodacqua, antoniobrandi
+
 4.6.1 (2024-11-21)
 ------------------
 

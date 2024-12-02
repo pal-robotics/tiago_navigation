@@ -13,6 +13,15 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'abr/feat/deps-and-specs' into 'humble-devel'
+  nav deps and specs
+  See merge request robots/tiago_navigation!125
+* nav deps and specifics
+* fix dep
+* Contributors: andreacapodacqua, antoniobrandi
+
 4.6.1 (2024-11-21)
 ------------------
 * Merge branch 'abr/fix/rviz' into 'humble-devel'
