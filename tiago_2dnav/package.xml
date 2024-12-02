@@ -14,16 +14,17 @@
 
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
 
-  <exec_depend>tiago_laser_sensors</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
   <exec_depend>launch_pal</exec_depend>
-  <exec_depend>pal_maps</exec_depend>
-  <exec_depend>rviz2</exec_depend>
-  <exec_depend>ros2launch</exec_depend>
   <exec_depend>nav2_bringup</exec_depend>
-  <exec_depend>tiago_laser_sensors</exec_depend>
+  <exec_depend>omni_base_2dnav</exec_depend>
+  <exec_depend>pal_maps</exec_depend>
+  <exec_depend>pmb2_2dnav</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>rviz2</exec_depend>
   <exec_depend>tiago_description</exec_depend>
+
   <exec_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_utils</exec_depend>
-  <exec_depend condition="$PAL_DISTRO >= alum">pal_nav2_bt_navigator</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
