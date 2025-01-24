@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.8.0 (2025-01-24)
+------------------
 * Merge branch 'abr/feat/rgbd' into 'humble-devel'
   uniform rgb launch
   See merge request robots/tiago_navigation!126
