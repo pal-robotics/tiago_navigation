@@ -13,6 +13,14 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/public-sim' into 'humble-devel'
+  Update tiago_nav_bringup.launch.py
+  See merge request robots/tiago_navigation!127
+* Update tiago_nav_bringup.launch.py
+* Contributors: antoniobrandi
+
 4.8.0 (2025-01-24)
 ------------------
 
