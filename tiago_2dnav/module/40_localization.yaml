@@ -1,0 +1,2 @@
+localization:
+  launch: "@base_type@_2dnav localization.launch.py"
