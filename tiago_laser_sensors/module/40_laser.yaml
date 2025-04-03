@@ -1,0 +1,2 @@
+laser:
+  launch: "@base_type@_laser_sensors laser_@laser_model@.launch.py"

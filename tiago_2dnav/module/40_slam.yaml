@@ -1,0 +1,2 @@
+slam:
+  launch: "@base_type@_2dnav slam.launch.py"

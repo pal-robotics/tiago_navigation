@@ -1,0 +1,2 @@
+rgbd:
+  launch: "astra_camera_cfg rgbd.launch.py camera_name:=head_front_camera"

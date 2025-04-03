@@ -1,4 +1,0 @@
-laser:
-  launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=laser_@laser_model@
-          robot_name:=@base_type@"

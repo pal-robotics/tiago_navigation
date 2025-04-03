@@ -1,2 +1,0 @@
-rgbd:
-  launch: "astra_camera astra_mini.launch.py camera_name:=head_front_camera"
