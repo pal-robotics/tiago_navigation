@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix astra frame name
+* Contributors: antoniobrandi
+
 4.10.0 (2025-04-03)
 -------------------
 * Adopt pal configuration

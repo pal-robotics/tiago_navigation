@@ -13,6 +13,9 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+
 4.10.0 (2025-04-03)
 -------------------
 * Adopt pal configuration
