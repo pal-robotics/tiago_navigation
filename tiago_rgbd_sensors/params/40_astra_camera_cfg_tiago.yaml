@@ -1,0 +1,6 @@
+/astra_camera_driver:
+  use_if:
+    robot_type: tiago
+  ros__parameters:
+    camera_name : "head_front_camera"
+    camera_link_frame_id : "head_front_camera_link"
