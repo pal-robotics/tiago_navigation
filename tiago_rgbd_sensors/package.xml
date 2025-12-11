@@ -15,6 +15,8 @@
   <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
 
   <exec_depend condition="$PAL_DISTRO >= alum">astra_camera_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pcl_ros</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_pcl</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

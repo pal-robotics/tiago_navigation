@@ -1,2 +1,2 @@
 rgbd:
-  launch: "astra_camera_cfg rgbd.launch.py"
+  launch: "tiago_rgbd_sensors rgbd.launch.py camera_model:=@camera_model@"

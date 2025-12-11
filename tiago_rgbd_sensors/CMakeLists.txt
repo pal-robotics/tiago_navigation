@@ -16,6 +16,12 @@ if(pal_configuration_cmake_FOUND)
     RESOURCE_NAME
       astra_camera_cfg
   )
+  pal_register_configs(
+    CONFIGS
+      params/40_pal_pcl_astra_tiago.yaml
+    RESOURCE_NAME
+      pcl_ros
+  )
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_configuration_cmake package was not found. Configurations not registered.")
 endif()
@@ -25,4 +31,4 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-ament_auto_package()
+ament_auto_package(INSTALL_TO_SHARE launch)
