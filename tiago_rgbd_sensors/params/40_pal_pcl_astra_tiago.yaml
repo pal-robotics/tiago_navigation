@@ -1,0 +1,8 @@
+/head_front_camera_floor_filter:
+  use_if:
+    robot_type: tiago
+  use_preset: "floor_filter_far_w_downsample.yaml"
+
+  remappings:
+    input: "${namespace}/head_front_camera/depth/points"
+    output: "${namespace}/head_front_camera/obstacles/points"
