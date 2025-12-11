@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.12.0 (2025-12-11)
+-------------------
 * Point Cloud filter pipeline
 * Contributors: antoniobrandi
 
