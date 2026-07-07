@@ -13,6 +13,11 @@ Changelog for package pmb2_2dnav
 2.0.7 (2020-07-02)
 ------------------
 
+Forthcoming
+-----------
+* adapt eulero migration
+* Contributors: antoniobrandi
+
 4.12.0 (2025-12-11)
 -------------------
 
