@@ -81,7 +81,7 @@ def declare_actions(
         name='rgbd_container',
         namespace=LaunchConfiguration('namespace'),
         package='rclcpp_components',
-        executable='component_container',
+        executable='component_container_mt',
         emulate_tty=True,
         output='screen',
         condition=UnlessNodeRunning('rgbd_container')
@@ -100,6 +100,7 @@ def declare_actions(
                 namespace='head_front_camera',
                 parameters=astra_camera_driver_config['parameters'],
                 remappings=astra_camera_driver_config['remappings'],
+                extra_arguments=[{'use_intra_process_comms': True}],
             ),
             ComposableNode(
                 package='astra_camera',
@@ -108,6 +109,7 @@ def declare_actions(
                 namespace='head_front_camera',
                 parameters=point_cloud_xyz_config['parameters'],
                 remappings=point_cloud_xyz_config['remappings'],
+                extra_arguments=[{'use_intra_process_comms': True}],
             ),
             ComposableNode(
                 package='astra_camera',
@@ -116,6 +118,7 @@ def declare_actions(
                 namespace='head_front_camera',
                 parameters=point_cloud_xyzrgb_config['parameters'],
                 remappings=point_cloud_xyzrgb_config['remappings'],
+                extra_arguments=[{'use_intra_process_comms': True}],
             ),
             # Floor Filter
             ComposableNode(
@@ -125,6 +128,7 @@ def declare_actions(
                 namespace='head_front_camera',
                 parameters=head_front_camera_floor_filter_config['parameters'],
                 remappings=head_front_camera_floor_filter_config['remappings'],
+                extra_arguments=[{'use_intra_process_comms': True}],
             ),
         ],
     )
