@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use intra process communication
+* Contributors: antoniobrandi
+
 4.13.0 (2026-07-07)
 -------------------
 
