@@ -52,7 +52,7 @@ def declare_actions(
         pkg='pcl_ros',
         node=head_front_camera_floor_filter_node,
         ld=launch_description,
-        cmdline_args=False,
+        cmdline_args=['use_sim_time'],
     )
 
     # If the container node already exists, just load the component
