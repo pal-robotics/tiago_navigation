@@ -2,8 +2,8 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+4.14.1 (2026-10-05)
+-------------------
 * adding use sim time arg
 * Contributors: martinaannicelli
 
