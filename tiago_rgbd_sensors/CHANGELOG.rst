@@ -2,6 +2,11 @@
 Changelog for package tiago_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* adding use sim time arg
+* Contributors: martinaannicelli
+
 4.14.0 (2026-09-29)
 -------------------
 * Use intra process communication
